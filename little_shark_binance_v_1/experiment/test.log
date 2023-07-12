@@ -1,0 +1,190 @@
+INFO:numexpr.utils:NumExpr defaulting to 8 threads.
+INFO:Rovers_3.0:Getting tradable symbols from Binance.
+INFO:Rovers_3.0:56 pairs found
+INFO:Rovers_3.0:56 items stored, 0items not stored
+INFO:Rovers_3.0:Prices saved successfully.
+INFO:Rovers_3.0:56 items stored, 0items not stored
+INFO:Rovers_3.0:Prices saved successfully.
+INFO:Rovers_3.0:Getting tradable symbols from Binance.
+INFO:Rovers_3.0:46 pairs found
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:Prices saved successfully.
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:46 items stored, 0items not stored
+INFO:Rovers_3.0:Prices saved successfully for 1m.
+INFO:Rovers_3.0:Prices saved successfully for 3m.
+INFO:Rovers_3.0:Prices saved successfully for 5m.
+INFO:Rovers_3.0:Prices saved successfully for 15m.
+INFO:Rovers_3.0:Prices saved successfully for 30m.
+INFO:Rovers_3.0:Prices saved successfully for 1h.
+INFO:Rovers_3.0:Prices saved successfully for 2h.
+INFO:Rovers_3.0:Prices saved successfully for 4h.
+INFO:Rovers_3.0:Prices saved successfully for 6h.
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1m_250
+INFO:Rovers_3.0:Deriving data for1m_300
+INFO:Rovers_3.0:Deriving data for1m_350
+INFO:Rovers_3.0:Deriving data for1m_400
+INFO:Rovers_3.0:Deriving data for1m_450
+INFO:Rovers_3.0:Deriving data for1m_499
+INFO:Rovers_3.0:Deriving data for3m_200
+INFO:Rovers_3.0:Deriving data for3m_250
+INFO:Rovers_3.0:Deriving data for3m_300
+INFO:Rovers_3.0:Deriving data for3m_350
+INFO:Rovers_3.0:Deriving data for3m_400
+INFO:Rovers_3.0:Deriving data for3m_450
+INFO:Rovers_3.0:Deriving data for3m_499
+INFO:Rovers_3.0:Deriving data for5m_200
+INFO:Rovers_3.0:Deriving data for5m_250
+INFO:Rovers_3.0:Deriving data for5m_300
+INFO:Rovers_3.0:Deriving data for5m_350
+INFO:Rovers_3.0:Deriving data for5m_400
+INFO:Rovers_3.0:Deriving data for5m_450
+INFO:Rovers_3.0:Deriving data for5m_499
+INFO:Rovers_3.0:Deriving data for15m_200
+INFO:Rovers_3.0:Deriving data for15m_250
+INFO:Rovers_3.0:Deriving data for15m_300
+INFO:Rovers_3.0:Deriving data for15m_350
+INFO:Rovers_3.0:Deriving data for15m_400
+INFO:Rovers_3.0:Deriving data for15m_450
+INFO:Rovers_3.0:Deriving data for15m_499
+INFO:Rovers_3.0:Deriving data for30m_200
+INFO:Rovers_3.0:Deriving data for30m_250
+INFO:Rovers_3.0:Deriving data for30m_300
+INFO:Rovers_3.0:Deriving data for30m_350
+INFO:Rovers_3.0:Deriving data for30m_400
+INFO:Rovers_3.0:Deriving data for30m_450
+INFO:Rovers_3.0:Deriving data for30m_499
+INFO:Rovers_3.0:Deriving data for1h_200
+INFO:Rovers_3.0:Deriving data for1h_250
+INFO:Rovers_3.0:Deriving data for1h_300
+INFO:Rovers_3.0:Deriving data for1h_350
+INFO:Rovers_3.0:Deriving data for1h_400
+INFO:Rovers_3.0:Deriving data for1h_450
+INFO:Rovers_3.0:Deriving data for1h_499
+INFO:Rovers_3.0:Deriving data for2h_200
+INFO:Rovers_3.0:Deriving data for2h_250
+INFO:Rovers_3.0:Deriving data for2h_300
+INFO:Rovers_3.0:Deriving data for2h_350
+INFO:Rovers_3.0:Deriving data for2h_400
+INFO:Rovers_3.0:Deriving data for2h_450
+INFO:Rovers_3.0:Deriving data for2h_499
+INFO:Rovers_3.0:Deriving data for4h_200
+INFO:Rovers_3.0:Deriving data for4h_250
+INFO:Rovers_3.0:Deriving data for4h_300
+INFO:Rovers_3.0:Deriving data for4h_350
+INFO:Rovers_3.0:Deriving data for4h_400
+INFO:Rovers_3.0:Deriving data for4h_450
+INFO:Rovers_3.0:Deriving data for4h_499
+INFO:Rovers_3.0:Deriving data for6h_200
+INFO:Rovers_3.0:Deriving data for6h_250
+INFO:Rovers_3.0:Deriving data for6h_300
+INFO:Rovers_3.0:Deriving data for6h_350
+INFO:Rovers_3.0:Deriving data for6h_400
+INFO:Rovers_3.0:Deriving data for6h_450
+INFO:Rovers_3.0:Deriving data for6h_499
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1h_200
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1h_200
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1h_200
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1h_200
+INFO:Rovers_3.0:Deriving data for6h_200
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1h_200
+INFO:Rovers_3.0:Deriving data for30m_200
+INFO:Rovers_3.0:Deriving data for6h_200
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1h_200
+INFO:Rovers_3.0:Deriving data for30m_200
+INFO:Rovers_3.0:Deriving data for6h_200
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1h_200
+INFO:Rovers_3.0:Deriving data for30m_200
+INFO:Rovers_3.0:Deriving data for6h_200
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1m_250
+INFO:Rovers_3.0:Deriving data for3m_200
+INFO:Rovers_3.0:Deriving data for3m_250
+INFO:Rovers_3.0:Deriving data for1m_200
+INFO:Rovers_3.0:Deriving data for1m_250
+INFO:Rovers_3.0:Deriving data for1m_300
+INFO:Rovers_3.0:Deriving data for1m_350
+INFO:Rovers_3.0:Deriving data for1m_400
+INFO:Rovers_3.0:Deriving data for1m_450
+INFO:Rovers_3.0:Deriving data for1m_499
+INFO:Rovers_3.0:Deriving data for3m_200
+INFO:Rovers_3.0:Deriving data for3m_250
+INFO:Rovers_3.0:Deriving data for3m_300
+INFO:Rovers_3.0:Deriving data for3m_350
+INFO:Rovers_3.0:Deriving data for3m_400
+INFO:Rovers_3.0:Deriving data for3m_450
+INFO:Rovers_3.0:Deriving data for3m_499
+INFO:Rovers_3.0:Deriving data for5m_200
+INFO:Rovers_3.0:Deriving data for5m_250
+INFO:Rovers_3.0:Deriving data for5m_300
+INFO:Rovers_3.0:Deriving data for5m_350
+INFO:Rovers_3.0:Deriving data for5m_400
+INFO:Rovers_3.0:Deriving data for5m_450
+INFO:Rovers_3.0:Deriving data for5m_499
+INFO:Rovers_3.0:Deriving data for15m_200
+INFO:Rovers_3.0:Deriving data for15m_250
+INFO:Rovers_3.0:Deriving data for15m_300
+INFO:Rovers_3.0:Deriving data for15m_350
+INFO:Rovers_3.0:Deriving data for15m_400
+INFO:Rovers_3.0:Deriving data for15m_450
+INFO:Rovers_3.0:Deriving data for15m_499
+INFO:Rovers_3.0:Deriving data for30m_200
+INFO:Rovers_3.0:Deriving data for30m_250
+INFO:Rovers_3.0:Deriving data for30m_300
+INFO:Rovers_3.0:Deriving data for30m_350
+INFO:Rovers_3.0:Deriving data for30m_400
+INFO:Rovers_3.0:Deriving data for30m_450
+INFO:Rovers_3.0:Deriving data for30m_499
+INFO:Rovers_3.0:Deriving data for1h_200
+INFO:Rovers_3.0:Deriving data for1h_250
+INFO:Rovers_3.0:Deriving data for1h_300
+INFO:Rovers_3.0:Deriving data for1h_350
+INFO:Rovers_3.0:Deriving data for1h_400
+INFO:Rovers_3.0:Deriving data for1h_450
+INFO:Rovers_3.0:Deriving data for1h_499
+INFO:Rovers_3.0:Deriving data for2h_200
+INFO:Rovers_3.0:Deriving data for2h_250
+INFO:Rovers_3.0:Deriving data for2h_300
+INFO:Rovers_3.0:Deriving data for2h_350
+INFO:Rovers_3.0:Deriving data for2h_400
+INFO:Rovers_3.0:Deriving data for2h_450
+INFO:Rovers_3.0:Deriving data for2h_499
+INFO:Rovers_3.0:Deriving data for4h_200
+INFO:Rovers_3.0:Deriving data for4h_250
+INFO:Rovers_3.0:Deriving data for4h_300
+INFO:Rovers_3.0:Deriving data for4h_350
+INFO:Rovers_3.0:Deriving data for4h_400
+INFO:Rovers_3.0:Deriving data for4h_450
+INFO:Rovers_3.0:Deriving data for4h_499
+INFO:Rovers_3.0:Deriving data for6h_200
+INFO:Rovers_3.0:Deriving data for6h_250
+INFO:Rovers_3.0:Deriving data for6h_300
+INFO:Rovers_3.0:Deriving data for6h_350
+INFO:Rovers_3.0:Deriving data for6h_400
+INFO:Rovers_3.0:Deriving data for6h_450
+INFO:Rovers_3.0:Deriving data for6h_499
