@@ -11,12 +11,11 @@ def config_logging():
     logger.setLevel(logging.INFO)
 
 
-    fh = logging.FileHandler(f'log_little_shark_v_1.log')
-    fh.setLevel(logging.INFO)
-
-
     ch = logging.StreamHandler()
     ch.setLevel(logging.INFO)
+    
+    fh = logging.FileHandler(f'log_little_shark_v_1.log')
+    fh.setLevel(logging.INFO)
 
 
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
