@@ -14,15 +14,15 @@ import datetime
 def main():
     # Initialization
     logger.critical("Little Shark v1.0 start!!!")
-    
+
     num_wave = 1
     status = "Searching Trading Pairs"
-    
+
     # Creat the trading_min_qty_file
     binance_get_min_trading_qty_for_symbols()
     cancel_all_orders_dynamic()
     logger.critical("Initialization complete!")
-    
+
     while(num_wave <= WAVE_LIMIT):
         try:
             # Step 1: Find the best trading pairs
@@ -85,7 +85,5 @@ def main():
             logger.info("Wait for one minute and try to resume the process.")
             time.sleep(60)
             
-            
-        
 if __name__ == "__main__":
     main()

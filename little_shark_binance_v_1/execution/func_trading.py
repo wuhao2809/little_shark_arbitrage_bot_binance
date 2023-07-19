@@ -79,6 +79,7 @@ def check_trading_status(symbol_1, symbol_2, hedge_ratio, original_z_score, limi
     logger.info(f"Current symbol_1 qty is {symbol_1_position_qty}, profit {symbol_1_position_unrealized_profit}")
     logger.info(f"Current symbol_2 qty is {symbol_2_position_qty}, profit {symbol_2_position_unrealized_profit}")
     logger.info(f"Total profit is {total_unrealized_profit}")
+    logger.info(f"Total invested value is {total_invested_value}")
     
     # EXIT
     # check stop loss and take profit

@@ -7,7 +7,7 @@ from remote_logger.remote_logger_handler import RemoteLoggerHandler
 
 def config_logging():
 
-    logger = logging.getLogger('Rovers_3.0')
+    logger = logging.getLogger('log_little_shark_v_1')
     logger.setLevel(logging.INFO)
 
 
@@ -37,7 +37,7 @@ def config_logging():
     # sentry_client = SentryLoggerClient(dsn=dsn)
     # sentry_handler = RemoteLoggerHandler(client=sentry_client)
     # sentry_handler.setLevel(logging.INFO)
-    
+
     logger.addHandler(fh)
     logger.addHandler(ch)
     # logger.addHandler(sentry_handler)

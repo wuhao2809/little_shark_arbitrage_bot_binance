@@ -79,6 +79,8 @@ def binance_get_min_trading_qty_for_symbols():
     with open ("trading_min_qty.json", "w") as jf:
         json.dump(result_dict, jf, indent=4)
         logger.info("The trading_min_qty.json file has been completed.")
+
+# binance_get_min_trading_qty_for_symbols()
     
 def binance_get_min_trading_qty(symbol: str):
     """

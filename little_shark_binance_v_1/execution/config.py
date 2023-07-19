@@ -84,14 +84,14 @@ elif mode == "real":
     INTERVAL = "15m" # 1m 3m 5m 15m 30m 1h 2h 4h 6h 8h 12h 1d 3d 1w 1M
     INTERVAL_INT = 15
 
-    LEVERAGE = 2
+    LEVERAGE = 5
 
     NUM_INTERVAL_LIMIT = 400
     TRIGGER_Z_SCORE_THRESHOD = 1.1
 
     TRADING_TIMES_THRESHOD = 5
     
-    ACCOUNT_BALANCE_INVESTABLE = 330
+    ACCOUNT_BALANCE_INVESTABLE = 350
     TOTAL_INVESTABLE_VALUE = ACCOUNT_BALANCE_INVESTABLE * LEVERAGE * 0.9
     INVESTIBLE_CAPITAL_EACH_TIME = TOTAL_INVESTABLE_VALUE / TRADING_TIMES_THRESHOD
 
@@ -115,15 +115,15 @@ elif mode == "real":
     # threshod for trading
     TRADING_TIME_LIMIT_INTERVALS = 50
 
-    TAKE_PROFIT_RATIO = 0.02 * LEVERAGE
-    STOP_LOSS_RATIO = 0.06 * LEVERAGE
+    TAKE_PROFIT_RATIO = 0.01 * LEVERAGE
+    STOP_LOSS_RATIO = 0.03 * LEVERAGE
 
     TAKE_PROFIT_VALUE = TAKE_PROFIT_RATIO * TOTAL_INVESTABLE_VALUE
     STOP_LOSS_VALUE = STOP_LOSS_RATIO * TOTAL_INVESTABLE_VALUE
 
     INVESTED_VALUE_BIAS_RATIO = 0.90
 
-    WAITING_INTERVAL = 180 # seconds to wait for the z-score cross the zero line
+    WAITING_INTERVAL = 300 # seconds to wait for the z-score cross the zero line
 
     SECONDS_WAIT_LIMIT_CLOSE = 60 # seconds to wait for the closing limit order
     SECONDS_WAIT_MARKET_CLOSE = 30 # seconds to wait for the closing market order
