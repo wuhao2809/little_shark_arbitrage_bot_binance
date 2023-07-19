@@ -1,47 +1,131 @@
-2023-07-10 04:43:26,131 - Rovers_3.0 - INFO - 0 pairs found
-2023-07-10 04:43:51,714 - Rovers_3.0 - INFO - 41 pairs found
-2023-07-10 04:45:14,034 - Rovers_3.0 - INFO - 58 pairs found
-2023-07-10 05:14:01,854 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
-2023-07-10 05:14:19,908 - Rovers_3.0 - INFO - 57 pairs found
-2023-07-10 05:14:19,909 - Rovers_3.0 - INFO - deriving recent price
-2023-07-10 05:14:26,438 - Rovers_3.0 - INFO - 57 items stored, 0items not stored
-2023-07-10 05:14:26,455 - Rovers_3.0 - INFO - Prices saved successfully.
-2023-07-10 06:20:21,719 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
-2023-07-10 06:20:41,198 - Rovers_3.0 - INFO - 55 pairs found
-2023-07-10 06:20:41,200 - Rovers_3.0 - INFO - Deriving recent price, with the interval of15m and num of interval limit499
-2023-07-10 06:20:47,217 - Rovers_3.0 - INFO - 55 items stored, 0items not stored
-2023-07-10 06:20:47,227 - Rovers_3.0 - INFO - Prices saved successfully.
-2023-07-10 06:20:47,228 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 06:21:28,607 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 06:21:33,015 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
-2023-07-10 06:21:52,165 - Rovers_3.0 - INFO - 55 pairs found
-2023-07-10 06:21:52,166 - Rovers_3.0 - INFO - Deriving recent price, with the interval of15m and num of interval limit499
-2023-07-10 06:21:57,752 - Rovers_3.0 - INFO - 55 items stored, 0items not stored
-2023-07-10 06:21:57,763 - Rovers_3.0 - INFO - Prices saved successfully.
-2023-07-10 06:21:57,763 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 06:23:51,759 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
-2023-07-10 06:24:09,997 - Rovers_3.0 - INFO - 55 pairs found
-2023-07-10 06:24:09,999 - Rovers_3.0 - INFO - Deriving recent price, with the interval of15m and num of interval limit499
-2023-07-10 06:24:15,707 - Rovers_3.0 - INFO - 55 items stored, 0items not stored
-2023-07-10 06:24:15,723 - Rovers_3.0 - INFO - Prices saved successfully.
-2023-07-10 06:24:15,723 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 06:25:06,780 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 06:25:11,844 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 06:26:29,433 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 06:26:59,117 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 06:44:44,956 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 06:48:33,853 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
-2023-07-10 06:48:54,890 - Rovers_3.0 - INFO - 55 pairs found
-2023-07-10 06:48:54,891 - Rovers_3.0 - INFO - Deriving recent price, with the interval of15m and num of interval limit499
-2023-07-10 06:49:01,870 - Rovers_3.0 - INFO - 55 items stored, 0items not stored
-2023-07-10 06:49:01,888 - Rovers_3.0 - INFO - Prices saved successfully.
-2023-07-10 06:49:01,889 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 07:01:25,495 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 07:02:02,939 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 16:15:23,163 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 16:20:54,931 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 18:18:26,457 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 18:20:46,949 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 18:21:58,544 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 18:22:36,213 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
-2023-07-10 18:23:39,573 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
+2023-07-19 20:02:59,633 - Rovers_3.0 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-19 20:03:00,718 - Rovers_3.0 - INFO - The trading_min_qty.json file has been completed.
+2023-07-19 20:03:01,195 - Rovers_3.0 - CRITICAL - Initialization complete!
+2023-07-19 20:03:01,195 - Rovers_3.0 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-19 20:03:01,195 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-19 20:03:32,264 - Rovers_3.0 - INFO - 34 pairs found
+2023-07-19 20:03:32,265 - Rovers_3.0 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-19 20:03:40,837 - Rovers_3.0 - INFO - 34 items stored, 0items not stored
+2023-07-19 20:03:40,850 - Rovers_3.0 - INFO - Prices saved successfully.
+2023-07-19 20:03:40,850 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
+2023-07-19 20:04:11,373 - Rovers_3.0 - INFO - Obtaining co-integrated pairs complete.
+2023-07-19 20:04:11,373 - Rovers_3.0 - INFO - Chooing the best trading pair
+2023-07-19 20:04:11,375 - Rovers_3.0 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-19 20:09:50,679 - Rovers_3.0 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-19 20:09:52,443 - Rovers_3.0 - INFO - The trading_min_qty.json file has been completed.
+2023-07-19 20:09:52,854 - Rovers_3.0 - CRITICAL - Initialization complete!
+2023-07-19 20:09:52,854 - Rovers_3.0 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-19 20:09:52,854 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-19 20:10:12,016 - Rovers_3.0 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-19 20:10:12,759 - Rovers_3.0 - INFO - The trading_min_qty.json file has been completed.
+2023-07-19 20:10:13,128 - Rovers_3.0 - CRITICAL - Initialization complete!
+2023-07-19 20:10:13,128 - Rovers_3.0 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-19 20:10:13,128 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-19 20:10:37,121 - Rovers_3.0 - INFO - 5 pairs found
+2023-07-19 20:10:37,123 - Rovers_3.0 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-19 20:10:38,685 - Rovers_3.0 - INFO - 5 items stored, 0items not stored
+2023-07-19 20:10:38,691 - Rovers_3.0 - INFO - Prices saved successfully.
+2023-07-19 20:10:38,691 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
+2023-07-19 20:10:44,845 - Rovers_3.0 - INFO - Obtaining co-integrated pairs complete.
+2023-07-19 20:10:44,845 - Rovers_3.0 - INFO - Chooing the best trading pair
+2023-07-19 20:10:44,846 - Rovers_3.0 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-19 20:11:14,852 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-19 20:11:36,094 - Rovers_3.0 - INFO - 5 pairs found
+2023-07-19 20:11:36,095 - Rovers_3.0 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-19 20:11:36,982 - Rovers_3.0 - INFO - 5 items stored, 0items not stored
+2023-07-19 20:11:36,987 - Rovers_3.0 - INFO - Prices saved successfully.
+2023-07-19 20:11:36,988 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
+2023-07-19 20:11:38,614 - Rovers_3.0 - INFO - Obtaining co-integrated pairs complete.
+2023-07-19 20:11:38,615 - Rovers_3.0 - INFO - Chooing the best trading pair
+2023-07-19 20:11:38,616 - Rovers_3.0 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-19 20:12:08,622 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-19 20:12:30,825 - Rovers_3.0 - INFO - 5 pairs found
+2023-07-19 20:12:30,825 - Rovers_3.0 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-19 20:12:31,604 - Rovers_3.0 - INFO - 5 items stored, 0items not stored
+2023-07-19 20:12:31,614 - Rovers_3.0 - INFO - Prices saved successfully.
+2023-07-19 20:12:31,614 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
+2023-07-19 20:12:33,095 - Rovers_3.0 - INFO - Obtaining co-integrated pairs complete.
+2023-07-19 20:12:33,095 - Rovers_3.0 - INFO - Chooing the best trading pair
+2023-07-19 20:12:33,097 - Rovers_3.0 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-19 20:13:03,103 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-19 20:13:32,728 - Rovers_3.0 - INFO - 5 pairs found
+2023-07-19 20:13:32,730 - Rovers_3.0 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-19 20:13:35,789 - Rovers_3.0 - INFO - 5 items stored, 0items not stored
+2023-07-19 20:13:35,792 - Rovers_3.0 - INFO - Prices saved successfully.
+2023-07-19 20:13:35,792 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
+2023-07-19 20:13:37,320 - Rovers_3.0 - INFO - Obtaining co-integrated pairs complete.
+2023-07-19 20:13:37,321 - Rovers_3.0 - INFO - Chooing the best trading pair
+2023-07-19 20:13:37,322 - Rovers_3.0 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-19 20:19:20,382 - Rovers_3.0 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-19 20:19:22,058 - Rovers_3.0 - INFO - The trading_min_qty.json file has been completed.
+2023-07-19 20:19:22,539 - Rovers_3.0 - CRITICAL - Initialization complete!
+2023-07-19 20:19:22,540 - Rovers_3.0 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-19 20:19:22,540 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-19 20:19:52,562 - Rovers_3.0 - INFO - 34 pairs found
+2023-07-19 20:19:52,563 - Rovers_3.0 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-19 20:20:07,461 - Rovers_3.0 - INFO - 34 items stored, 0items not stored
+2023-07-19 20:20:07,471 - Rovers_3.0 - INFO - Prices saved successfully.
+2023-07-19 20:20:07,471 - Rovers_3.0 - INFO - Obtaining co-integrated pairs
+2023-07-19 20:20:33,293 - Rovers_3.0 - INFO - Obtaining co-integrated pairs complete.
+2023-07-19 20:20:33,293 - Rovers_3.0 - INFO - Chooing the best trading pair
+2023-07-19 20:20:33,294 - Rovers_3.0 - CRITICAL - Tradable symbols found EOSUSDT and COMPUSDT
+2023-07-19 20:20:33,486 - Rovers_3.0 - CRITICAL - Best trading pairs found, EOSUSDT and COMPUSDT with the hedge ratio of 0.001907840825214724
+2023-07-19 20:20:33,786 - Rovers_3.0 - INFO - Setting leverage.
+2023-07-19 20:20:35,052 - Rovers_3.0 - INFO - {'symbol': 'EOSUSDT', 'leverage': 2, 'maxNotionalValue': '30000000'}
+2023-07-19 20:20:35,151 - Rovers_3.0 - INFO - {'symbol': 'COMPUSDT', 'leverage': 2, 'maxNotionalValue': '1000000'}
+2023-07-19 20:20:35,151 - Rovers_3.0 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 COMPUSDT with the hedge ratio of 0.001907840825214724
+2023-07-19 20:20:35,151 - Rovers_3.0 - CRITICAL - Original z_score is -1.2413139844452064
+2023-07-19 20:20:35,534 - Rovers_3.0 - INFO - The limit time for this wave is 2023-07-20 08:50:35.534547
+2023-07-19 20:20:35,534 - Rovers_3.0 - CRITICAL - Checking trading status...
+2023-07-19 20:20:37,948 - Rovers_3.0 - INFO - Current symbol_1 qty is 0, profit 0
+2023-07-19 20:20:37,950 - Rovers_3.0 - INFO - Current symbol_2 qty is 0, profit 0
+2023-07-19 20:20:37,950 - Rovers_3.0 - INFO - Total profit is 0
+2023-07-19 20:20:39,950 - Rovers_3.0 - INFO - Placing market open order for EOSUSDT
+2023-07-19 20:20:40,041 - Rovers_3.0 - INFO - {'orderId': 24153853208, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'TFYWV831mYMvzNXQRoOEkJ', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '132.8', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689769240043}
+2023-07-19 20:20:40,041 - Rovers_3.0 - INFO - Placing market open order for COMPUSDT
+2023-07-19 20:20:40,131 - Rovers_3.0 - INFO - {'orderId': 7724869861, 'symbol': 'COMPUSDT', 'status': 'NEW', 'clientOrderId': 'gJ28c0WUKl9YDiS0jiurh9', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.253', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689769240137}
+2023-07-19 20:21:10,603 - Rovers_3.0 - INFO - All positions have been opened.
+2023-07-19 20:21:10,942 - Rovers_3.0 - INFO - Current z score is -1.2284981562294692, original_z_score is -1.2413139844452064.
+2023-07-19 20:21:10,942 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:24:12,594 - Rovers_3.0 - INFO - Current z score is -1.2105320776860116, original_z_score is -1.2413139844452064.
+2023-07-19 20:24:12,595 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:27:14,660 - Rovers_3.0 - INFO - Current z score is -1.5746872176348279, original_z_score is -1.2413139844452064.
+2023-07-19 20:27:14,662 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:30:16,123 - Rovers_3.0 - INFO - Current z score is -1.6148166195724218, original_z_score is -1.2413139844452064.
+2023-07-19 20:30:16,124 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:33:17,296 - Rovers_3.0 - INFO - Current z score is -1.5934531622646637, original_z_score is -1.2413139844452064.
+2023-07-19 20:33:17,297 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:36:17,304 - Rovers_3.0 - CRITICAL - Checking trading status...
+2023-07-19 20:36:19,680 - Rovers_3.0 - INFO - Current symbol_1 qty is 132.8, profit -0.3984
+2023-07-19 20:36:19,681 - Rovers_3.0 - INFO - Current symbol_2 qty is 0.253, profit 0.06668365
+2023-07-19 20:36:19,681 - Rovers_3.0 - INFO - Total profit is -0.33171635
+2023-07-19 20:36:21,821 - Rovers_3.0 - INFO - Placing market open order for EOSUSDT
+2023-07-19 20:36:21,919 - Rovers_3.0 - INFO - {'orderId': 24154278164, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'cbF9T7rnifukvHUVBMb33i', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '133.4', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689770181927}
+2023-07-19 20:36:21,920 - Rovers_3.0 - INFO - Placing market open order for COMPUSDT
+2023-07-19 20:36:22,019 - Rovers_3.0 - INFO - {'orderId': 7725162794, 'symbol': 'COMPUSDT', 'status': 'NEW', 'clientOrderId': 'UWc0KkQWOZgWTqUd4Zolnz', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.255', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689770182023}
+2023-07-19 20:36:52,518 - Rovers_3.0 - INFO - All positions have been opened.
+2023-07-19 20:36:52,685 - Rovers_3.0 - INFO - Current z score is -1.5886985484560519, original_z_score is -1.2413139844452064.
+2023-07-19 20:36:52,685 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:39:54,708 - Rovers_3.0 - INFO - Current z score is -1.4051465826845853, original_z_score is -1.2413139844452064.
+2023-07-19 20:39:54,709 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:42:55,234 - Rovers_3.0 - INFO - Current z score is -1.4075716349971046, original_z_score is -1.2413139844452064.
+2023-07-19 20:42:55,234 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:45:56,158 - Rovers_3.0 - INFO - Current z score is -1.22268077785938, original_z_score is -1.2413139844452064.
+2023-07-19 20:45:56,158 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:48:57,060 - Rovers_3.0 - INFO - Current z score is -1.1145662181197376, original_z_score is -1.2413139844452064.
+2023-07-19 20:48:57,061 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:51:57,067 - Rovers_3.0 - CRITICAL - Checking trading status...
+2023-07-19 20:52:00,712 - Rovers_3.0 - INFO - Current symbol_1 qty is 266.2, profit 0.13400241
+2023-07-19 20:52:00,712 - Rovers_3.0 - INFO - Current symbol_2 qty is 0.508, profit 0.2129679
+2023-07-19 20:52:00,713 - Rovers_3.0 - INFO - Total profit is 0.34697031
+2023-07-19 20:52:03,324 - Rovers_3.0 - INFO - Placing market open order for EOSUSDT
+2023-07-19 20:52:03,408 - Rovers_3.0 - INFO - {'orderId': 24154771756, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'ZfbmNo25IZidz1yvl6Yjhu', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '133.0', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689771123433}
+2023-07-19 20:52:03,408 - Rovers_3.0 - INFO - Placing market open order for COMPUSDT
+2023-07-19 20:52:03,490 - Rovers_3.0 - INFO - {'orderId': 7725447864, 'symbol': 'COMPUSDT', 'status': 'NEW', 'clientOrderId': 'JieAclGaQIfUQvm92LeHEN', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.254', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689771123516}
+2023-07-19 20:52:33,804 - Rovers_3.0 - INFO - All positions have been opened.
+2023-07-19 20:52:33,989 - Rovers_3.0 - INFO - Current z score is -1.1935659824043023, original_z_score is -1.2413139844452064.
+2023-07-19 20:52:33,990 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:55:35,156 - Rovers_3.0 - INFO - Current z score is -0.9734537277172405, original_z_score is -1.2413139844452064.
+2023-07-19 20:55:35,157 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.
+2023-07-19 20:58:36,191 - Rovers_3.0 - INFO - Current z score is -1.203278925359885, original_z_score is -1.2413139844452064.
+2023-07-19 20:58:36,191 - Rovers_3.0 - INFO - Waiting for next inspection time for 180s.

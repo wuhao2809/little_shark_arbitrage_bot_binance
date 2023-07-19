@@ -6,8 +6,7 @@ from remote_logger.clients.sentry_logger_client import SentryLoggerClient
 from remote_logger.remote_logger_handler import RemoteLoggerHandler
 
 def config_logging():
-    logging.basicConfig(filename='test.log', level=logging.INFO)
- 
+
     logger = logging.getLogger('Rovers_3.0')
     logger.setLevel(logging.INFO)
 

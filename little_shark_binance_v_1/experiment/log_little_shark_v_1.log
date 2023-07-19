@@ -187,3 +187,194 @@
 2023-07-12 07:24:09,557 - Rovers_3.0 - INFO - Deriving data for6h_400
 2023-07-12 07:24:16,874 - Rovers_3.0 - INFO - Deriving data for6h_450
 2023-07-12 07:24:33,873 - Rovers_3.0 - INFO - Deriving data for6h_499
+2023-07-13 00:35:25,796 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-13 00:36:35,849 - Rovers_3.0 - INFO - 43 pairs found
+2023-07-13 02:39:00,627 - Rovers_3.0 - INFO - 43 items stored, 0items not stored
+2023-07-13 02:39:05,663 - Rovers_3.0 - INFO - Prices saved successfully for simulation_strategy_parameters.
+2023-07-13 11:25:49,582 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-13 11:26:08,264 - Rovers_3.0 - INFO - 46 pairs found
+2023-07-13 11:26:18,697 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:26:18,731 - Rovers_3.0 - INFO - Prices saved successfully.
+2023-07-13 11:31:45,931 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:31:57,291 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:32:08,083 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:32:21,422 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:32:37,518 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:32:49,705 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:33:02,350 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:33:16,335 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:33:29,461 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:35:50,858 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:36:12,970 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:36:34,557 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:36:53,273 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:37:15,632 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:37:36,742 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:37:57,629 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:38:17,782 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:38:40,610 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 11:39:57,285 - Rovers_3.0 - INFO - Prices saved successfully for 1m.
+2023-07-13 11:39:57,315 - Rovers_3.0 - INFO - Prices saved successfully for 3m.
+2023-07-13 11:39:57,339 - Rovers_3.0 - INFO - Prices saved successfully for 5m.
+2023-07-13 11:39:57,362 - Rovers_3.0 - INFO - Prices saved successfully for 15m.
+2023-07-13 11:39:57,392 - Rovers_3.0 - INFO - Prices saved successfully for 30m.
+2023-07-13 11:39:57,416 - Rovers_3.0 - INFO - Prices saved successfully for 1h.
+2023-07-13 11:39:57,445 - Rovers_3.0 - INFO - Prices saved successfully for 2h.
+2023-07-13 11:39:57,467 - Rovers_3.0 - INFO - Prices saved successfully for 4h.
+2023-07-13 11:39:57,485 - Rovers_3.0 - INFO - Prices saved successfully for 6h.
+2023-07-13 11:40:14,391 - Rovers_3.0 - INFO - Deriving data for1m_200
+2023-07-13 11:40:17,922 - Rovers_3.0 - INFO - Deriving data for1m_250
+2023-07-13 11:40:21,957 - Rovers_3.0 - INFO - Deriving data for1m_300
+2023-07-13 11:40:26,335 - Rovers_3.0 - INFO - Deriving data for1m_350
+2023-07-13 11:40:31,506 - Rovers_3.0 - INFO - Deriving data for1m_400
+2023-07-13 11:40:38,643 - Rovers_3.0 - INFO - Deriving data for1m_450
+2023-07-13 11:41:01,174 - Rovers_3.0 - INFO - Deriving data for1m_499
+2023-07-13 11:41:04,314 - Rovers_3.0 - INFO - Deriving data for3m_200
+2023-07-13 11:41:07,834 - Rovers_3.0 - INFO - Deriving data for3m_250
+2023-07-13 11:41:12,007 - Rovers_3.0 - INFO - Deriving data for3m_300
+2023-07-13 11:41:16,454 - Rovers_3.0 - INFO - Deriving data for3m_350
+2023-07-13 11:41:21,673 - Rovers_3.0 - INFO - Deriving data for3m_400
+2023-07-13 11:41:28,765 - Rovers_3.0 - INFO - Deriving data for3m_450
+2023-07-13 11:41:51,674 - Rovers_3.0 - INFO - Deriving data for3m_499
+2023-07-13 11:41:54,801 - Rovers_3.0 - INFO - Deriving data for5m_200
+2023-07-13 11:41:58,362 - Rovers_3.0 - INFO - Deriving data for5m_250
+2023-07-13 11:42:02,493 - Rovers_3.0 - INFO - Deriving data for5m_300
+2023-07-13 11:42:06,960 - Rovers_3.0 - INFO - Deriving data for5m_350
+2023-07-13 11:42:12,118 - Rovers_3.0 - INFO - Deriving data for5m_400
+2023-07-13 11:42:19,795 - Rovers_3.0 - INFO - Deriving data for5m_450
+2023-07-13 11:42:41,461 - Rovers_3.0 - INFO - Deriving data for5m_499
+2023-07-13 11:42:44,630 - Rovers_3.0 - INFO - Deriving data for15m_200
+2023-07-13 11:42:48,114 - Rovers_3.0 - INFO - Deriving data for15m_250
+2023-07-13 11:42:52,226 - Rovers_3.0 - INFO - Deriving data for15m_300
+2023-07-13 11:42:56,583 - Rovers_3.0 - INFO - Deriving data for15m_350
+2023-07-13 11:43:01,686 - Rovers_3.0 - INFO - Deriving data for15m_400
+2023-07-13 11:43:09,442 - Rovers_3.0 - INFO - Deriving data for15m_450
+2023-07-13 11:43:33,892 - Rovers_3.0 - INFO - Deriving data for15m_499
+2023-07-13 11:43:37,254 - Rovers_3.0 - INFO - Deriving data for30m_200
+2023-07-13 11:43:40,959 - Rovers_3.0 - INFO - Deriving data for30m_250
+2023-07-13 11:43:45,066 - Rovers_3.0 - INFO - Deriving data for30m_300
+2023-07-13 11:43:49,512 - Rovers_3.0 - INFO - Deriving data for30m_350
+2023-07-13 11:43:54,638 - Rovers_3.0 - INFO - Deriving data for30m_400
+2023-07-13 11:44:02,068 - Rovers_3.0 - INFO - Deriving data for30m_450
+2023-07-13 11:44:23,353 - Rovers_3.0 - INFO - Deriving data for30m_499
+2023-07-13 11:44:26,562 - Rovers_3.0 - INFO - Deriving data for1h_200
+2023-07-13 11:44:30,166 - Rovers_3.0 - INFO - Deriving data for1h_250
+2023-07-13 11:44:34,301 - Rovers_3.0 - INFO - Deriving data for1h_300
+2023-07-13 11:44:38,713 - Rovers_3.0 - INFO - Deriving data for1h_350
+2023-07-13 11:44:43,881 - Rovers_3.0 - INFO - Deriving data for1h_400
+2023-07-13 11:44:51,006 - Rovers_3.0 - INFO - Deriving data for1h_450
+2023-07-13 11:45:15,139 - Rovers_3.0 - INFO - Deriving data for1h_499
+2023-07-13 11:45:18,256 - Rovers_3.0 - INFO - Deriving data for2h_200
+2023-07-13 11:45:21,787 - Rovers_3.0 - INFO - Deriving data for2h_250
+2023-07-13 11:45:25,872 - Rovers_3.0 - INFO - Deriving data for2h_300
+2023-07-13 11:45:30,207 - Rovers_3.0 - INFO - Deriving data for2h_350
+2023-07-13 11:45:35,389 - Rovers_3.0 - INFO - Deriving data for2h_400
+2023-07-13 11:45:43,129 - Rovers_3.0 - INFO - Deriving data for2h_450
+2023-07-13 11:46:07,031 - Rovers_3.0 - INFO - Deriving data for2h_499
+2023-07-13 11:46:10,213 - Rovers_3.0 - INFO - Deriving data for4h_200
+2023-07-13 11:46:13,726 - Rovers_3.0 - INFO - Deriving data for4h_250
+2023-07-13 11:46:17,815 - Rovers_3.0 - INFO - Deriving data for4h_300
+2023-07-13 11:46:22,270 - Rovers_3.0 - INFO - Deriving data for4h_350
+2023-07-13 11:46:27,469 - Rovers_3.0 - INFO - Deriving data for4h_400
+2023-07-13 11:46:34,855 - Rovers_3.0 - INFO - Deriving data for4h_450
+2023-07-13 11:46:58,560 - Rovers_3.0 - INFO - Deriving data for4h_499
+2023-07-13 11:47:01,751 - Rovers_3.0 - INFO - Deriving data for6h_200
+2023-07-13 11:47:05,391 - Rovers_3.0 - INFO - Deriving data for6h_250
+2023-07-13 11:47:09,654 - Rovers_3.0 - INFO - Deriving data for6h_300
+2023-07-13 11:47:14,198 - Rovers_3.0 - INFO - Deriving data for6h_350
+2023-07-13 11:47:19,406 - Rovers_3.0 - INFO - Deriving data for6h_400
+2023-07-13 11:47:27,001 - Rovers_3.0 - INFO - Deriving data for6h_450
+2023-07-13 11:47:50,228 - Rovers_3.0 - INFO - Deriving data for6h_499
+2023-07-13 18:18:24,220 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-13 18:18:43,084 - Rovers_3.0 - INFO - 48 pairs found
+2023-07-13 18:18:51,793 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-13 18:18:51,834 - Rovers_3.0 - INFO - Prices saved successfully.
+2023-07-13 18:19:18,261 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-13 18:19:37,049 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-13 18:19:51,757 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-13 18:20:06,717 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-13 18:20:20,251 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-13 18:20:34,460 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-13 18:20:48,618 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-13 18:21:05,904 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-13 18:21:22,482 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-13 18:21:27,538 - Rovers_3.0 - INFO - Prices saved successfully for 1m.
+2023-07-13 18:21:27,563 - Rovers_3.0 - INFO - Prices saved successfully for 3m.
+2023-07-13 18:21:27,583 - Rovers_3.0 - INFO - Prices saved successfully for 5m.
+2023-07-13 18:21:27,601 - Rovers_3.0 - INFO - Prices saved successfully for 15m.
+2023-07-13 18:21:27,618 - Rovers_3.0 - INFO - Prices saved successfully for 30m.
+2023-07-13 18:21:27,635 - Rovers_3.0 - INFO - Prices saved successfully for 1h.
+2023-07-13 18:21:27,653 - Rovers_3.0 - INFO - Prices saved successfully for 2h.
+2023-07-13 18:21:27,670 - Rovers_3.0 - INFO - Prices saved successfully for 4h.
+2023-07-13 18:21:27,687 - Rovers_3.0 - INFO - Prices saved successfully for 6h.
+2023-07-13 18:21:34,114 - Rovers_3.0 - INFO - Deriving data for1m_200
+2023-07-13 18:21:37,780 - Rovers_3.0 - INFO - Deriving data for1m_250
+2023-07-13 18:21:42,051 - Rovers_3.0 - INFO - Deriving data for1m_300
+2023-07-13 18:21:46,599 - Rovers_3.0 - INFO - Deriving data for1m_350
+2023-07-13 18:21:51,908 - Rovers_3.0 - INFO - Deriving data for1m_400
+2023-07-13 18:21:58,879 - Rovers_3.0 - INFO - Deriving data for1m_450
+2023-07-13 18:22:21,482 - Rovers_3.0 - INFO - Deriving data for1m_499
+2023-07-13 18:22:24,828 - Rovers_3.0 - INFO - Deriving data for3m_200
+2023-07-13 18:22:28,781 - Rovers_3.0 - INFO - Deriving data for3m_250
+2023-07-13 18:22:33,110 - Rovers_3.0 - INFO - Deriving data for3m_300
+2023-07-13 18:22:37,955 - Rovers_3.0 - INFO - Deriving data for3m_350
+2023-07-13 18:22:43,485 - Rovers_3.0 - INFO - Deriving data for3m_400
+2023-07-13 18:22:56,537 - Rovers_3.0 - INFO - Deriving data for3m_450
+2023-07-13 18:23:10,318 - Rovers_3.0 - INFO - Deriving data for3m_499
+2023-07-13 18:23:13,657 - Rovers_3.0 - INFO - Deriving data for5m_200
+2023-07-13 18:23:17,409 - Rovers_3.0 - INFO - Deriving data for5m_250
+2023-07-13 18:23:21,764 - Rovers_3.0 - INFO - Deriving data for5m_300
+2023-07-13 18:23:26,383 - Rovers_3.0 - INFO - Deriving data for5m_350
+2023-07-13 18:23:31,763 - Rovers_3.0 - INFO - Deriving data for5m_400
+2023-07-13 18:23:38,620 - Rovers_3.0 - INFO - Deriving data for5m_450
+2023-07-13 18:23:52,390 - Rovers_3.0 - INFO - Deriving data for5m_499
+2023-07-13 18:23:55,798 - Rovers_3.0 - INFO - Deriving data for15m_200
+2023-07-13 18:24:03,604 - Rovers_3.0 - INFO - Deriving data for15m_250
+2023-07-13 18:24:11,809 - Rovers_3.0 - INFO - Deriving data for15m_300
+2023-07-13 18:24:16,500 - Rovers_3.0 - INFO - Deriving data for15m_350
+2023-07-13 18:24:21,910 - Rovers_3.0 - INFO - Deriving data for15m_400
+2023-07-13 18:24:28,956 - Rovers_3.0 - INFO - Deriving data for15m_450
+2023-07-13 18:24:42,304 - Rovers_3.0 - INFO - Deriving data for15m_499
+2023-07-13 18:24:45,649 - Rovers_3.0 - INFO - Deriving data for30m_200
+2023-07-13 18:24:49,386 - Rovers_3.0 - INFO - Deriving data for30m_250
+2023-07-13 18:24:53,746 - Rovers_3.0 - INFO - Deriving data for30m_300
+2023-07-13 18:24:58,428 - Rovers_3.0 - INFO - Deriving data for30m_350
+2023-07-13 18:25:03,875 - Rovers_3.0 - INFO - Deriving data for30m_400
+2023-07-13 18:25:10,987 - Rovers_3.0 - INFO - Deriving data for30m_450
+2023-07-13 18:25:25,581 - Rovers_3.0 - INFO - Deriving data for30m_499
+2023-07-13 18:25:29,019 - Rovers_3.0 - INFO - Deriving data for1h_200
+2023-07-13 18:25:32,798 - Rovers_3.0 - INFO - Deriving data for1h_250
+2023-07-13 18:25:39,364 - Rovers_3.0 - INFO - Deriving data for1h_300
+2023-07-13 18:25:45,496 - Rovers_3.0 - INFO - Deriving data for1h_350
+2023-07-13 18:25:51,038 - Rovers_3.0 - INFO - Deriving data for1h_400
+2023-07-13 18:25:57,894 - Rovers_3.0 - INFO - Deriving data for1h_450
+2023-07-13 18:26:11,225 - Rovers_3.0 - INFO - Deriving data for1h_499
+2023-07-13 18:26:14,434 - Rovers_3.0 - INFO - Deriving data for2h_200
+2023-07-13 18:26:18,154 - Rovers_3.0 - INFO - Deriving data for2h_250
+2023-07-13 18:26:22,495 - Rovers_3.0 - INFO - Deriving data for2h_300
+2023-07-13 18:26:27,080 - Rovers_3.0 - INFO - Deriving data for2h_350
+2023-07-13 18:26:32,415 - Rovers_3.0 - INFO - Deriving data for2h_400
+2023-07-13 18:26:39,421 - Rovers_3.0 - INFO - Deriving data for2h_450
+2023-07-13 18:26:51,361 - Rovers_3.0 - INFO - Deriving data for2h_499
+2023-07-13 18:26:54,614 - Rovers_3.0 - INFO - Deriving data for4h_200
+2023-07-13 18:26:58,275 - Rovers_3.0 - INFO - Deriving data for4h_250
+2023-07-13 18:27:02,547 - Rovers_3.0 - INFO - Deriving data for4h_300
+2023-07-13 18:27:07,166 - Rovers_3.0 - INFO - Deriving data for4h_350
+2023-07-13 18:27:12,593 - Rovers_3.0 - INFO - Deriving data for4h_400
+2023-07-13 18:27:19,628 - Rovers_3.0 - INFO - Deriving data for4h_450
+2023-07-13 18:27:32,197 - Rovers_3.0 - INFO - Deriving data for4h_499
+2023-07-13 18:27:35,486 - Rovers_3.0 - INFO - Deriving data for6h_200
+2023-07-13 18:27:39,259 - Rovers_3.0 - INFO - Deriving data for6h_250
+2023-07-13 18:27:43,684 - Rovers_3.0 - INFO - Deriving data for6h_300
+2023-07-13 18:27:48,451 - Rovers_3.0 - INFO - Deriving data for6h_350
+2023-07-13 18:27:53,909 - Rovers_3.0 - INFO - Deriving data for6h_400
+2023-07-13 18:28:01,224 - Rovers_3.0 - INFO - Deriving data for6h_450
+2023-07-13 18:28:16,557 - Rovers_3.0 - INFO - Deriving data for6h_499
+2023-07-13 20:08:05,420 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-13 20:08:29,241 - Rovers_3.0 - INFO - 46 pairs found
+2023-07-13 20:09:14,703 - Rovers_3.0 - INFO - 46 items stored, 0items not stored
+2023-07-13 20:09:14,743 - Rovers_3.0 - INFO - Prices saved successfully.
+2023-07-14 13:47:39,038 - Rovers_3.0 - INFO - Getting tradable symbols from Binance.
+2023-07-14 13:48:02,224 - Rovers_3.0 - INFO - 48 pairs found
+2023-07-14 13:48:14,447 - Rovers_3.0 - INFO - 48 items stored, 0items not stored
+2023-07-14 13:48:14,576 - Rovers_3.0 - INFO - Prices saved successfully.

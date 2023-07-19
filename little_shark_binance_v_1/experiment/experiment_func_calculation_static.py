@@ -1,6 +1,5 @@
-from config import trigger_z_score_threshod, trading_times_threshod, investable_capital_each_time, estimated_trading_fee_rate
+from experiment_config import trigger_z_score_threshod, trading_times_threshod, investable_capital_each_time, estimated_trading_fee_rate
 from statsmodels.tsa.stattools import coint
-from binance_market_observer import binance_get_recent_close_price
 import statsmodels.api as sm
 import scipy.stats as stats
 import pandas as pd

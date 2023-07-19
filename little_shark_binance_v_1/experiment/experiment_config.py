@@ -12,8 +12,8 @@ session_private = UMFutures(key = api_key, secret= api_secret)
 
 # Overall configurations
 interval = "15m" # 1m 3m 5m 15m 30m 1h 2h 4h 6h 8h 12h 1d 3d 1w 1M
-num_interval_limit = 499
-trigger_z_score_threshod = 0.6
+num_interval_limit = 350 + 100 + 46
+trigger_z_score_threshod = 0.8
 trading_times_threshod = 5
 investable_capital_each_time = 100
 

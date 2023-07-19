@@ -1,4 +1,4 @@
-from config import session_public
+from experiment_config import session_public
 
 def binance_get_exchange_symbols():
     """get the exchange symbols from the binance
