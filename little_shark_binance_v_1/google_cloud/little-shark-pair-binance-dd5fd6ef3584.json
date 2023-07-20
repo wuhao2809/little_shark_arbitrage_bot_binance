@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "little-shark-pair-binance",
+  "private_key_id": "dd5fd6ef35841ab7c42e1640ed2b1dd84ebb1f18",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDAssCy2gWXMb8l\nOvHV7E2BOAe4qggQMhTkiyiK0TqPMvRWVJCqxwYzXQeojGVdDyDmJQ4fYUTbiQ9Q\n7w3r2I+9muO0brZroxWbZayu3TSMbXAmhIvkK/h/oO4pi6DetOc7yNc0ThHzVr6Z\njwvr2yzl05Ypo2kbw4MT11VbCjJGMIPq0GZ4gEw8iyFagGkKdMskfZUPZGPA/XLA\nbYuJDUhQ6/uuDTCK+eAB5OgN7B/BZtiasyOiWtyLAgi5X99fp95s0sP3kHvOLBym\n8LDY4wjbSzWoVFMu7bkYKCnjCs52PbPp78OjXLic8vvQAzts5sPNFvsG5fgMJeES\nZBzR1a3NAgMBAAECggEAMhDfbzilNjTHIIGxnq6wLnAj1W9b+/U/J2gehv64k8cd\n46ZCFhTyv/qeSET9+xE4r4MWKcIIdW+lapZJzCquogkxu0n+nHW5YfAnTyGLCydN\n+bv7arOf820ZI/Myv1pKL+bNPzo/gLVbfSNE6ik+f5IbVEMwRnXkQw3yD97U1BZI\nX7WrlMdxyVjY/dCpx1tIyf6peaq3Mr37UzKzB6UsXtkek6e9VfTuWROQCPJ5se6u\nROf4T0SQkpyiTJ/XFcORe8Y+WCweZHt4nQUReQ/yztEebDQKTw9UlGLoPf9mobn6\n24S/UMR/5iazyftKyMD3bWklbZRHrhINeFY8yGk3IwKBgQDlG27B/a5wgNSSvDVX\n0FmN3DroEDDdDZLxO2/k4IkJGy4vUohqStciP6s9wEiSLbqdVwWE81UGkTaQnNFo\n4dNgyzI0hU2erDtJORVfTgseDCVHak8koqAq4ncAVu3Lh2Z5Gd0SMX3XFnR4SB0v\nAKHDZ5KUxuSNb/fPZCaqZRtT8wKBgQDXUT+wsjECvk/jj5J2+QGM/bKT+XpPhlzJ\nM4iU2D+CSTnsnCHXCoazeZhMWj7CdF9wk04K0sL+rdRyNOUvrW1OI8UbgGL76gl3\nTD6NyonMxhVd1L3ffNSSHY3pdtRwHn+ZkVj1mn8jhF2Dkry+qAFfpkUJ9wCbszG8\no74pvuYnPwKBgQCcgzAX4FihzLDriR2b3t6+9btcO2tWJ+bBW4xmPCoBiYr0kxpU\nGsp7QCmYptos2oaI5CEGIUFtmhg/lJHOZ6+CiW3DyWksQ5bAv/lkwSkBHuT8s5hb\ne6mVgl4vYjNS/i23/z4yJpNEM7ffT8x4BqN7nS7a6kDKiros+MsdTrLrlwKBgBrn\nhxrQGTmriBX6MaX2FVCFvtOon7TiKCPn8ZAPuVfRSJCdLclOAmjYr8QSnrbzjZ1m\neqD1lvH1zI78twqPFBJoe8+k6jlqFAa5GzPic/eHZNIVrCgJ1BHx6XKbq43a8bzB\noakGxg4tEvZG1pjIK2vFPekx2PybloJov3E97kpHAoGBAMYoPIOG53SeEy1Bo0ib\n7g20X3+kmljSa0e+4UoFrEJehrXndVXilFfCaSvYUf47iIWzg+G86aNgyyoXk2kr\n5vyFe9fbwXlrBKUa8VgR8bFTQuOAvGCHtD0gQZv/M3jmwwy1cD6dO1EgadTs/om+\n0RuhDPWlE6PtanFJz0/zOh7D\n-----END PRIVATE KEY-----\n",
+  "client_email": "wuhao2809@little-shark-pair-binance.iam.gserviceaccount.com",
+  "client_id": "103762214613488911061",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/wuhao2809%40little-shark-pair-binance.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -5,7 +5,7 @@ import datetime
 ##### IMPORTANT!!!!!!!!!!!
 ##### ARE YOU SURE YOU ARE GOING TO TRADE?
 ##### CHECK LEVERAGE
-mode = "real"
+mode = "test"
 
 
 # API KEY REAL
@@ -37,7 +37,6 @@ if mode == "test":
     ACCOUNT_BALANCE_INVESTABLE = 15000
     TOTAL_INVESTABLE_VALUE = ACCOUNT_BALANCE_INVESTABLE * LEVERAGE * 0.9
     INVESTIBLE_CAPITAL_EACH_TIME = TOTAL_INVESTABLE_VALUE / TRADING_TIMES_THRESHOD
-    print(INVESTIBLE_CAPITAL_EACH_TIME)
 
     WAVE_LIMIT = 10
 
@@ -84,14 +83,14 @@ elif mode == "real":
     INTERVAL = "15m" # 1m 3m 5m 15m 30m 1h 2h 4h 6h 8h 12h 1d 3d 1w 1M
     INTERVAL_INT = 15
 
-    LEVERAGE = 5
+    LEVERAGE = 8
 
     NUM_INTERVAL_LIMIT = 400
-    TRIGGER_Z_SCORE_THRESHOD = 1.1
+    TRIGGER_Z_SCORE_THRESHOD = 0.8
 
-    TRADING_TIMES_THRESHOD = 5
+    TRADING_TIMES_THRESHOD = 10
     
-    ACCOUNT_BALANCE_INVESTABLE = 350
+    ACCOUNT_BALANCE_INVESTABLE = 580
     TOTAL_INVESTABLE_VALUE = ACCOUNT_BALANCE_INVESTABLE * LEVERAGE * 0.9
     INVESTIBLE_CAPITAL_EACH_TIME = TOTAL_INVESTABLE_VALUE / TRADING_TIMES_THRESHOD
 
@@ -106,7 +105,7 @@ elif mode == "real":
 
     TRADING_VOLUME_THRESHOD_RATE = 1 / 100 # trading volume threshod, representeed as percentage of BTCUSDT 24h trading volume in USDT
 
-    WAIT_SEARCH_BEST_PAIR = 300
+    WAIT_SEARCH_BEST_PAIR = 60
     
     WIN_RATE_THRESHOD = 0.90
     TRADING_FEE_RATE = 0.0004
@@ -123,7 +122,7 @@ elif mode == "real":
 
     INVESTED_VALUE_BIAS_RATIO = 0.90
 
-    WAITING_INTERVAL = 300 # seconds to wait for the z-score cross the zero line
+    WAITING_INTERVAL = 301 # seconds to wait for the z-score cross the zero line
 
     SECONDS_WAIT_LIMIT_CLOSE = 60 # seconds to wait for the closing limit order
     SECONDS_WAIT_MARKET_CLOSE = 30 # seconds to wait for the closing market order

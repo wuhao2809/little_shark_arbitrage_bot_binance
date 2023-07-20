@@ -37,8 +37,8 @@ def process_get_target_symbols_dynamic(num_wave:int) -> tuple:
             plot_reference(symbol_1, symbol_2, num_wave)
             return symbol_1, symbol_2, hedge_ratio
         else:
-            logger.critical(f"Tradable symbols NOT found. Wait for 5 minutes and search again")
+            logger.critical(f"Tradable symbols NOT found. Wait for {WAIT_SEARCH_BEST_PAIR}s and search again")
             time.sleep(WAIT_SEARCH_BEST_PAIR)
 
-print(process_get_target_symbols_dynamic(0))
+# print(process_get_target_symbols_dynamic(0))
     

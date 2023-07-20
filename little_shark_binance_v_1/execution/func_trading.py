@@ -1,5 +1,5 @@
 from config import (Z_SCORE_WINDOW, INTERVAL, NUM_INTERVAL_LIMIT, STOP_LOSS_VALUE, TAKE_PROFIT_VALUE, TOTAL_INVESTABLE_VALUE, 
-                    INVESTIBLE_CAPITAL_EACH_TIME, INVESTED_VALUE_BIAS_RATIO, INTERVAL_INT, WAITING_INTERVAL, 
+                    INVESTIBLE_CAPITAL_EACH_TIME, INVESTED_VALUE_BIAS_RATIO, INTERVAL_INT, WAITING_INTERVAL, TRIGGER_Z_SCORE_THRESHOD,
                     SECONDS_WAIT_LIMIT_CLOSE, SECONDS_WAIT_MARKET_CLOSE, SECONDS_WAIT_LIMIT_OPEN, SECONDS_WAIT_MARKET_OPEN)
 from func_calculation_static import calculate_spread_static, calculate_z_score_window, check_cointegration_quick
 from binance_market_observer import binance_get_recent_close_price, binance_get_min_trading_qty
@@ -55,16 +55,6 @@ def check_trading_status(symbol_1, symbol_2, hedge_ratio, original_z_score, limi
     """
     logger.critical("Checking trading status...")
     
-    series_1 = binance_get_recent_close_price(symbol=symbol_1, interval=INTERVAL, limit=NUM_INTERVAL_LIMIT)
-    series_2 = binance_get_recent_close_price(symbol=symbol_2, interval=INTERVAL, limit=NUM_INTERVAL_LIMIT)
-    
-    # check cointegration
-    coint_flag, _, _, _ = calculate_cointegration_static(series_1, series_2)
-    
-    if coint_flag != 1:
-        logger.info("This pair is not cointergrated. Close all the positions and exit the market.")
-        return "exit"
-    
     (symbol_1_position_qty, 
      symbol_1_position_unrealized_profit, 
      symbol_1_invested_value,
@@ -101,12 +91,22 @@ def check_trading_status(symbol_1, symbol_2, hedge_ratio, original_z_score, limi
         return "exit"
     
     # WAIT
+    # check cointegration
+    if not check_cointegration_quick(symbol_1, symbol_2):
+        logger.info("This pair is not cointergrated. Close all the positions and exit the market.")
+        return "wait"
+    
     # check invested value (need update)
     if INVESTIBLE_CAPITAL_EACH_TIME * INVESTED_VALUE_BIAS_RATIO > TOTAL_INVESTABLE_VALUE - total_invested_value:
         logger.info(f"Current invested value is {total_invested_value}, threshod reached. Waiting for exit oppotunity.")
         return "wait"
     
-    return "enter"
+    # ENTER
+    if abs(current_z_score) > TRIGGER_Z_SCORE_THRESHOD:
+        return "enter"
+    
+    return "wait"
+    
 
 # print(check_trading_status("XRPUSDT", "EOSUSDT", 1, -1, datetime.datetime.now()+ datetime.timedelta(hours=1)))
 

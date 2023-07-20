@@ -1,0 +1,2 @@
+wave_num,symbol_1,symbol_2,wave_start_balance,wave_end_balance,wave_profit,total_invested_value,hedge_ratio,original_z_score,exit_z_score,wave_start_time,wave_end_time
+1,EOSUSDT,1INCHUSDT,669.84421905,604.03427878,-65.80994026999997,4319.201000000058,0.04262835675537204,0.9206630838889471,2.567704774576566,2023-07-20 13:42:12.470198,2023-07-20 15:31:13.111735

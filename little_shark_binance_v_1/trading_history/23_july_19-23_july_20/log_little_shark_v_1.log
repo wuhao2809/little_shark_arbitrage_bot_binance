@@ -1,0 +1,664 @@
+2023-07-20 00:36:35,298 - log_little_shark_v_1 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-20 00:36:36,162 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-20 00:36:36,673 - log_little_shark_v_1 - CRITICAL - Initialization complete!
+2023-07-20 00:36:36,674 - log_little_shark_v_1 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-20 00:36:36,674 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 00:36:53,978 - log_little_shark_v_1 - INFO - 32 pairs found
+2023-07-20 00:36:53,980 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 00:37:05,519 - log_little_shark_v_1 - INFO - 32 items stored, 0items not stored
+2023-07-20 00:37:05,533 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 00:37:05,533 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 00:37:27,170 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 00:37:27,170 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 00:37:27,171 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-20 00:39:27,340 - log_little_shark_v_1 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-20 00:39:27,782 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-20 00:39:28,430 - log_little_shark_v_1 - CRITICAL - Initialization complete!
+2023-07-20 00:39:28,430 - log_little_shark_v_1 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-20 00:39:28,430 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 00:39:45,384 - log_little_shark_v_1 - INFO - 32 pairs found
+2023-07-20 00:39:45,386 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 00:39:54,876 - log_little_shark_v_1 - INFO - 32 items stored, 0items not stored
+2023-07-20 00:39:54,889 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 00:39:54,889 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 00:40:15,504 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 00:40:15,504 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 00:40:15,505 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-20 00:43:51,692 - log_little_shark_v_1 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-20 00:43:56,584 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-20 00:43:56,921 - log_little_shark_v_1 - CRITICAL - Initialization complete!
+2023-07-20 00:43:56,921 - log_little_shark_v_1 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-20 00:43:56,921 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 00:44:15,293 - log_little_shark_v_1 - INFO - 32 pairs found
+2023-07-20 00:44:15,294 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 00:44:25,133 - log_little_shark_v_1 - INFO - 32 items stored, 0items not stored
+2023-07-20 00:44:25,143 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 00:44:25,143 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 00:44:44,807 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 00:44:44,807 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 00:44:44,808 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-20 00:49:44,811 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 00:49:59,953 - log_little_shark_v_1 - INFO - 32 pairs found
+2023-07-20 00:49:59,953 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 00:50:05,024 - log_little_shark_v_1 - INFO - 32 items stored, 0items not stored
+2023-07-20 00:50:05,047 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 00:50:05,048 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 00:50:21,509 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 00:50:21,509 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 00:50:21,510 - log_little_shark_v_1 - CRITICAL - Tradable symbols found EOSUSDT and LDOUSDT
+2023-07-20 00:50:21,709 - log_little_shark_v_1 - CRITICAL - Best trading pairs found, EOSUSDT and LDOUSDT with the hedge ratio of 0.052191516510936176
+2023-07-20 00:50:21,841 - log_little_shark_v_1 - INFO - Setting leverage.
+2023-07-20 00:50:22,272 - log_little_shark_v_1 - INFO - {'symbol': 'EOSUSDT', 'leverage': 5, 'maxNotionalValue': '5000000'}
+2023-07-20 00:50:22,373 - log_little_shark_v_1 - INFO - {'symbol': 'LDOUSDT', 'leverage': 5, 'maxNotionalValue': '2000000'}
+2023-07-20 00:50:22,373 - log_little_shark_v_1 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 LDOUSDT with the hedge ratio of 0.052191516510936176
+2023-07-20 00:50:22,373 - log_little_shark_v_1 - CRITICAL - Original z_score is -1.378680427231173
+2023-07-20 00:50:22,446 - log_little_shark_v_1 - INFO - The limit time for this wave is 2023-07-20 13:20:22.445976
+2023-07-20 00:50:22,446 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 00:50:22,809 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 0, profit 0
+2023-07-20 00:50:22,809 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0, profit 0
+2023-07-20 00:50:22,809 - log_little_shark_v_1 - INFO - Total profit is 0
+2023-07-20 00:50:22,809 - log_little_shark_v_1 - INFO - Total invested value is 0
+2023-07-20 00:50:24,169 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 00:50:24,247 - log_little_shark_v_1 - INFO - {'orderId': 24162095998, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'y8iDVpy5TIG905q6jTpGsr', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '365.6', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689785424254}
+2023-07-20 00:50:24,247 - log_little_shark_v_1 - INFO - Placing market open order for LDOUSDT
+2023-07-20 00:50:24,329 - log_little_shark_v_1 - INFO - {'orderId': 2393494022, 'symbol': 'LDOUSDT', 'status': 'NEW', 'clientOrderId': 'OXuVmocbgn3MzUT1hz5wcI', 'price': '0.000000', 'avgPrice': '0.00', 'origQty': '19', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689785424333}
+2023-07-20 00:50:54,403 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 00:50:54,578 - log_little_shark_v_1 - INFO - Current z score is -1.1997479834166422, original_z_score is -1.378680427231173.
+2023-07-20 00:50:54,578 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 300s.
+2023-07-20 00:55:55,155 - log_little_shark_v_1 - INFO - Current z score is -1.136665698642498, original_z_score is -1.378680427231173.
+2023-07-20 00:55:55,156 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 300s.
+2023-07-20 01:00:55,737 - log_little_shark_v_1 - INFO - Current z score is -0.9525012429969894, original_z_score is -1.378680427231173.
+2023-07-20 01:00:55,738 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 300s.
+2023-07-20 01:05:55,743 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 01:05:56,949 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 365.6, profit 0.7312
+2023-07-20 01:05:56,950 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 19.0, profit 0.02603855
+2023-07-20 01:05:56,950 - log_little_shark_v_1 - INFO - Total profit is 0.75723855
+2023-07-20 01:05:56,950 - log_little_shark_v_1 - INFO - Total invested value is 314.8214
+2023-07-20 01:05:58,329 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 01:05:58,406 - log_little_shark_v_1 - INFO - {'orderId': 24162480409, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'C2HY7yDB95WhlGvizhaBGp', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '364.8', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689786358369}
+2023-07-20 01:05:58,406 - log_little_shark_v_1 - INFO - Placing market open order for LDOUSDT
+2023-07-20 01:05:58,483 - log_little_shark_v_1 - INFO - {'orderId': 2393593960, 'symbol': 'LDOUSDT', 'status': 'NEW', 'clientOrderId': 'dOLHH7ux55VWGzB4Ayczcg', 'price': '0.000000', 'avgPrice': '0.00', 'origQty': '19', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689786358448}
+2023-07-20 01:06:28,555 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 01:06:28,716 - log_little_shark_v_1 - INFO - Current z score is -0.5851850899426335, original_z_score is -1.378680427231173.
+2023-07-20 01:06:28,717 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 300s.
+2023-07-20 01:11:29,315 - log_little_shark_v_1 - INFO - Current z score is -0.4243193384513373, original_z_score is -1.378680427231173.
+2023-07-20 01:11:29,315 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 300s.
+2023-07-20 01:16:29,893 - log_little_shark_v_1 - INFO - Current z score is -0.1555867611525672, original_z_score is -1.378680427231173.
+2023-07-20 01:16:29,894 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 300s.
+2023-07-20 01:21:29,898 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 01:21:31,111 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 730.4, profit 2.05777052
+2023-07-20 01:21:31,112 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 38.0, profit 0.0579994
+2023-07-20 01:21:31,112 - log_little_shark_v_1 - INFO - Total profit is 2.11576992
+2023-07-20 01:21:31,112 - log_little_shark_v_1 - INFO - Total invested value is 629.7368999999649
+2023-07-20 01:21:32,477 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 01:21:32,556 - log_little_shark_v_1 - INFO - {'orderId': 24162917662, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': '50XcomyFhMvZ814ezMrhrG', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '364.0', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689787292511}
+2023-07-20 01:21:32,557 - log_little_shark_v_1 - INFO - Placing market open order for LDOUSDT
+2023-07-20 01:21:32,632 - log_little_shark_v_1 - INFO - {'orderId': 2393721997, 'symbol': 'LDOUSDT', 'status': 'NEW', 'clientOrderId': 'EKKwe31HROweNJIBtUYkMD', 'price': '0.000000', 'avgPrice': '0.00', 'origQty': '19', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689787292586}
+2023-07-20 01:22:02,979 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 01:22:03,395 - log_little_shark_v_1 - INFO - Current z score is -0.3251770357164026, original_z_score is -1.378680427231173.
+2023-07-20 01:22:03,395 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 300s.
+2023-07-20 01:36:34,195 - log_little_shark_v_1 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-20 01:36:34,649 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-20 01:36:34,987 - log_little_shark_v_1 - CRITICAL - Initialization complete!
+2023-07-20 01:36:34,988 - log_little_shark_v_1 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-20 01:36:34,988 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 01:36:49,012 - log_little_shark_v_1 - INFO - 32 pairs found
+2023-07-20 01:36:49,013 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 01:36:52,969 - log_little_shark_v_1 - INFO - 32 items stored, 0items not stored
+2023-07-20 01:36:52,987 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 01:36:52,987 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 01:37:09,643 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 01:37:09,643 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 01:37:09,644 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-20 01:42:09,649 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 01:42:24,658 - log_little_shark_v_1 - INFO - 32 pairs found
+2023-07-20 01:42:24,659 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 01:42:27,998 - log_little_shark_v_1 - INFO - 32 items stored, 0items not stored
+2023-07-20 01:42:28,014 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 01:42:28,015 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 01:42:47,389 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 01:42:47,389 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 01:42:47,390 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-20 01:45:18,668 - log_little_shark_v_1 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-20 01:45:19,225 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-20 01:45:19,578 - log_little_shark_v_1 - CRITICAL - Initialization complete!
+2023-07-20 01:45:19,578 - log_little_shark_v_1 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-20 01:45:19,578 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 01:45:33,160 - log_little_shark_v_1 - INFO - 32 pairs found
+2023-07-20 01:45:33,162 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 01:45:35,866 - log_little_shark_v_1 - INFO - 32 items stored, 0items not stored
+2023-07-20 01:45:35,877 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 01:45:35,877 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 01:45:51,800 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 01:45:51,800 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 01:45:51,801 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 5 minutes and search again
+2023-07-20 01:51:23,005 - log_little_shark_v_1 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-20 01:51:23,731 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-20 01:51:24,153 - log_little_shark_v_1 - CRITICAL - Initialization complete!
+2023-07-20 01:51:24,154 - log_little_shark_v_1 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-20 01:51:24,154 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 01:51:37,823 - log_little_shark_v_1 - INFO - 32 pairs found
+2023-07-20 01:51:37,824 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 01:51:41,865 - log_little_shark_v_1 - INFO - 32 items stored, 0items not stored
+2023-07-20 01:51:41,878 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 01:51:41,878 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 01:51:58,874 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 01:51:58,874 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 01:51:58,875 - log_little_shark_v_1 - CRITICAL - Tradable symbols found EOSUSDT and MKRUSDT
+2023-07-20 01:51:59,043 - log_little_shark_v_1 - CRITICAL - Best trading pairs found, EOSUSDT and MKRUSDT with the hedge ratio of 2.992111538105732e-05
+2023-07-20 01:51:59,181 - log_little_shark_v_1 - INFO - Setting leverage.
+2023-07-20 01:51:59,251 - log_little_shark_v_1 - INFO - {'symbol': 'EOSUSDT', 'leverage': 5, 'maxNotionalValue': '5000000'}
+2023-07-20 01:51:59,325 - log_little_shark_v_1 - INFO - {'symbol': 'MKRUSDT', 'leverage': 5, 'maxNotionalValue': '2400000'}
+2023-07-20 01:51:59,325 - log_little_shark_v_1 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 MKRUSDT with the hedge ratio of 2.992111538105732e-05
+2023-07-20 01:51:59,325 - log_little_shark_v_1 - CRITICAL - Original z_score is 1.3165600353619127
+2023-07-20 01:51:59,393 - log_little_shark_v_1 - INFO - The limit time for this wave is 2023-07-20 14:21:59.393704
+2023-07-20 01:51:59,393 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 01:51:59,686 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 0, profit 0
+2023-07-20 01:51:59,686 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0, profit 0
+2023-07-20 01:51:59,686 - log_little_shark_v_1 - INFO - Total profit is 0
+2023-07-20 01:51:59,686 - log_little_shark_v_1 - INFO - Total invested value is 0
+2023-07-20 01:52:01,031 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 01:52:01,109 - log_little_shark_v_1 - INFO - {'orderId': 24163823106, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'AoVhG54SgmwAvzX4ue49D0', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '397.4', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689789121096}
+2023-07-20 01:52:01,110 - log_little_shark_v_1 - INFO - Placing market open order for MKRUSDT
+2023-07-20 01:52:01,188 - log_little_shark_v_1 - INFO - {'orderId': 5138132031, 'symbol': 'MKRUSDT', 'status': 'NEW', 'clientOrderId': 'CiF1Y0lCnQhjfn2szSesso', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.012', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689789121171}
+2023-07-20 01:52:31,259 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 01:52:31,404 - log_little_shark_v_1 - INFO - Current z score is 1.5495014207099813, original_z_score is 1.3165600353619127.
+2023-07-20 01:52:31,404 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 01:57:32,916 - log_little_shark_v_1 - INFO - Current z score is 1.0733106426628367, original_z_score is 1.3165600353619127.
+2023-07-20 01:57:32,917 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:02:34,438 - log_little_shark_v_1 - INFO - Current z score is 1.8139337270041382, original_z_score is 1.3165600353619127.
+2023-07-20 02:02:34,438 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:07:35,437 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 02:07:36,648 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 397.4, profit 0.0
+2023-07-20 02:07:36,649 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.012, profit -0.0204
+2023-07-20 02:07:36,649 - log_little_shark_v_1 - INFO - Total profit is -0.0204
+2023-07-20 02:07:36,649 - log_little_shark_v_1 - INFO - Total invested value is 315.09020000000004
+2023-07-20 02:07:38,046 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 02:07:38,133 - log_little_shark_v_1 - INFO - {'orderId': 24164307731, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'YfYcrvhJxEDyZA5Pr0ijM9', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '398.0', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689790058156}
+2023-07-20 02:07:38,133 - log_little_shark_v_1 - INFO - Placing market open order for MKRUSDT
+2023-07-20 02:07:38,264 - log_little_shark_v_1 - INFO - {'orderId': 5138249295, 'symbol': 'MKRUSDT', 'status': 'NEW', 'clientOrderId': 'InJlaz8uW6yaK13dTcJwow', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.012', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689790058290}
+2023-07-20 02:08:08,334 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 02:08:08,502 - log_little_shark_v_1 - INFO - Current z score is 1.3429992763271883, original_z_score is 1.3165600353619127.
+2023-07-20 02:08:08,502 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:13:10,153 - log_little_shark_v_1 - INFO - Current z score is 0.8619429815466149, original_z_score is 1.3165600353619127.
+2023-07-20 02:13:10,154 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:18:11,933 - log_little_shark_v_1 - INFO - Current z score is 0.6298990262734205, original_z_score is 1.3165600353619127.
+2023-07-20 02:18:11,934 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:23:12,933 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 02:23:14,978 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 795.4, profit -1.10022909
+2023-07-20 02:23:14,978 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.024, profit -0.07850899
+2023-07-20 02:23:14,979 - log_little_shark_v_1 - INFO - Total profit is -1.17873808
+2023-07-20 02:23:14,979 - log_little_shark_v_1 - INFO - Total invested value is 630.217400000016
+2023-07-20 02:23:16,359 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 02:23:16,758 - log_little_shark_v_1 - INFO - {'orderId': 24164751900, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'j0NseaMKDKtbQEq3Bq9mAy', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '397.5', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689790996473}
+2023-07-20 02:23:16,758 - log_little_shark_v_1 - INFO - Placing market open order for MKRUSDT
+2023-07-20 02:23:16,858 - log_little_shark_v_1 - INFO - {'orderId': 5138378108, 'symbol': 'MKRUSDT', 'status': 'NEW', 'clientOrderId': 'QajSEROMRlrmfvtnOXXusF', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.012', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689790996869}
+2023-07-20 02:23:47,071 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 02:23:47,276 - log_little_shark_v_1 - INFO - Current z score is 1.834200004576633, original_z_score is 1.3165600353619127.
+2023-07-20 02:23:47,276 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:28:49,085 - log_little_shark_v_1 - INFO - Current z score is 2.0488639189991127, original_z_score is 1.3165600353619127.
+2023-07-20 02:28:49,085 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:33:50,704 - log_little_shark_v_1 - INFO - Current z score is 1.559141007030887, original_z_score is 1.3165600353619127.
+2023-07-20 02:33:50,705 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:38:51,706 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 02:38:52,907 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 1192.9, profit -0.39801108
+2023-07-20 02:38:52,907 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.036, profit 0.11588825
+2023-07-20 02:38:52,907 - log_little_shark_v_1 - INFO - Total profit is -0.28212283000000005
+2023-07-20 02:38:52,907 - log_little_shark_v_1 - INFO - Total invested value is 945.3491000000233
+2023-07-20 02:38:54,257 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 02:38:54,335 - log_little_shark_v_1 - INFO - {'orderId': 24165187323, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'op6E3JxzA53tx0sn5hzj4k', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '397.9', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689791934343}
+2023-07-20 02:38:54,336 - log_little_shark_v_1 - INFO - Placing market open order for MKRUSDT
+2023-07-20 02:38:54,412 - log_little_shark_v_1 - INFO - {'orderId': 5138555696, 'symbol': 'MKRUSDT', 'status': 'NEW', 'clientOrderId': 'qW07MmgFEfUIGiGftgZEbe', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.012', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689791934422}
+2023-07-20 02:39:24,488 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 02:39:24,627 - log_little_shark_v_1 - INFO - Current z score is 1.3253527875778819, original_z_score is 1.3165600353619127.
+2023-07-20 02:39:24,627 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:44:26,242 - log_little_shark_v_1 - INFO - Current z score is 1.1168010803810466, original_z_score is 1.3165600353619127.
+2023-07-20 02:44:26,242 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:49:27,733 - log_little_shark_v_1 - INFO - Current z score is 1.5279271990241108, original_z_score is 1.3165600353619127.
+2023-07-20 02:49:27,734 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 02:54:28,737 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 02:54:30,450 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 1590.8, profit -4.27544998
+2023-07-20 02:54:30,450 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.048, profit -0.17377705
+2023-07-20 02:54:30,450 - log_little_shark_v_1 - INFO - Total profit is -4.44922703
+2023-07-20 02:54:30,450 - log_little_shark_v_1 - INFO - Total invested value is 1260.451699999947
+2023-07-20 02:54:31,815 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 02:54:31,892 - log_little_shark_v_1 - INFO - {'orderId': 24165661862, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'LpTls6zLSyB2Y765hGejcU', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '397.0', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689792871904}
+2023-07-20 02:54:31,892 - log_little_shark_v_1 - INFO - Placing market open order for MKRUSDT
+2023-07-20 02:54:31,970 - log_little_shark_v_1 - INFO - {'orderId': 5138688787, 'symbol': 'MKRUSDT', 'status': 'NEW', 'clientOrderId': 'chQdBxNeAQtSbDg3qt3gt1', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.012', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689792871982}
+2023-07-20 02:55:02,047 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 02:55:02,197 - log_little_shark_v_1 - INFO - Current z score is 2.0013588115416363, original_z_score is 1.3165600353619127.
+2023-07-20 02:55:02,198 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:00:03,997 - log_little_shark_v_1 - INFO - Current z score is 1.9556432977014215, original_z_score is 1.3165600353619127.
+2023-07-20 03:00:03,997 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:05:05,683 - log_little_shark_v_1 - INFO - Current z score is 1.9650877126698105, original_z_score is 1.3165600353619127.
+2023-07-20 03:05:05,683 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:10:06,687 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 03:10:07,770 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 1987.8, profit -4.3745117
+2023-07-20 03:10:07,770 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.06, profit -0.15054869
+2023-07-20 03:10:07,770 - log_little_shark_v_1 - INFO - Total profit is -4.52506039
+2023-07-20 03:10:07,770 - log_little_shark_v_1 - INFO - Total invested value is 1575.5940999999675
+2023-07-20 03:10:07,914 - log_little_shark_v_1 - INFO - Current invested value is 1575.5940999999675, threshod reached. Waiting for exit oppotunity.
+2023-07-20 03:10:09,071 - log_little_shark_v_1 - INFO - Current z score is 1.9480265612308887, original_z_score is 1.3165600353619127.
+2023-07-20 03:10:09,071 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:15:10,635 - log_little_shark_v_1 - INFO - Current z score is 2.3513543218916895, original_z_score is 1.3165600353619127.
+2023-07-20 03:15:10,636 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:20:12,335 - log_little_shark_v_1 - INFO - Current z score is 2.3317561977855563, original_z_score is 1.3165600353619127.
+2023-07-20 03:20:12,335 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:25:13,338 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 03:25:14,624 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 1987.8, profit -8.50836046
+2023-07-20 03:25:14,624 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.06, profit 0.01484171
+2023-07-20 03:25:14,624 - log_little_shark_v_1 - INFO - Total profit is -8.49351875
+2023-07-20 03:25:14,624 - log_little_shark_v_1 - INFO - Total invested value is 1575.5940999999675
+2023-07-20 03:25:14,865 - log_little_shark_v_1 - INFO - Current invested value is 1575.5940999999675, threshod reached. Waiting for exit oppotunity.
+2023-07-20 03:25:16,013 - log_little_shark_v_1 - INFO - Current z score is 2.12030936063047, original_z_score is 1.3165600353619127.
+2023-07-20 03:25:16,014 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:30:17,863 - log_little_shark_v_1 - INFO - Current z score is 1.7864450961394132, original_z_score is 1.3165600353619127.
+2023-07-20 03:30:17,864 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:35:19,560 - log_little_shark_v_1 - INFO - Current z score is 2.0147211193633767, original_z_score is 1.3165600353619127.
+2023-07-20 03:35:19,561 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:40:20,564 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 03:40:22,299 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 1987.8, profit -8.87310188
+2023-07-20 03:40:22,299 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.06, profit 0.12273117
+2023-07-20 03:40:22,299 - log_little_shark_v_1 - INFO - Total profit is -8.75037071
+2023-07-20 03:40:22,299 - log_little_shark_v_1 - INFO - Total invested value is 1575.5940999999675
+2023-07-20 03:40:22,449 - log_little_shark_v_1 - INFO - Current invested value is 1575.5940999999675, threshod reached. Waiting for exit oppotunity.
+2023-07-20 03:40:23,614 - log_little_shark_v_1 - INFO - Current z score is 2.213045709762279, original_z_score is 1.3165600353619127.
+2023-07-20 03:40:23,615 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:45:25,370 - log_little_shark_v_1 - INFO - Current z score is 2.087268904511646, original_z_score is 1.3165600353619127.
+2023-07-20 03:45:25,370 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:50:27,106 - log_little_shark_v_1 - INFO - Current z score is 1.6715278618589353, original_z_score is 1.3165600353619127.
+2023-07-20 03:50:27,107 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 03:55:28,110 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 03:55:29,473 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 1987.8, profit -5.72879984
+2023-07-20 03:55:29,474 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.06, profit 0.16224764
+2023-07-20 03:55:29,474 - log_little_shark_v_1 - INFO - Total profit is -5.566552199999999
+2023-07-20 03:55:29,474 - log_little_shark_v_1 - INFO - Total invested value is 1575.5940999999675
+2023-07-20 03:55:29,740 - log_little_shark_v_1 - INFO - Current invested value is 1575.5940999999675, threshod reached. Waiting for exit oppotunity.
+2023-07-20 03:55:30,944 - log_little_shark_v_1 - INFO - Current z score is 1.8779338646338675, original_z_score is 1.3165600353619127.
+2023-07-20 03:55:30,944 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:00:32,783 - log_little_shark_v_1 - INFO - Current z score is 1.5927606942960393, original_z_score is 1.3165600353619127.
+2023-07-20 04:00:32,784 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:05:34,644 - log_little_shark_v_1 - INFO - Current z score is 1.1511169640184948, original_z_score is 1.3165600353619127.
+2023-07-20 04:05:34,645 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:10:35,624 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 04:10:36,997 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 1987.8, profit -2.3867117
+2023-07-20 04:10:36,998 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.06, profit 0.14252971
+2023-07-20 04:10:36,998 - log_little_shark_v_1 - INFO - Total profit is -2.2441819900000004
+2023-07-20 04:10:36,998 - log_little_shark_v_1 - INFO - Total invested value is 1575.5940999999675
+2023-07-20 04:10:37,274 - log_little_shark_v_1 - INFO - Current invested value is 1575.5940999999675, threshod reached. Waiting for exit oppotunity.
+2023-07-20 04:10:38,465 - log_little_shark_v_1 - INFO - Current z score is 1.3624889688316233, original_z_score is 1.3165600353619127.
+2023-07-20 04:10:38,466 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:15:39,966 - log_little_shark_v_1 - INFO - Current z score is 1.0936003256837916, original_z_score is 1.3165600353619127.
+2023-07-20 04:15:39,967 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:20:41,943 - log_little_shark_v_1 - INFO - Current z score is 0.8708014155808418, original_z_score is 1.3165600353619127.
+2023-07-20 04:20:41,943 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:25:42,945 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 04:25:47,971 - log_little_shark_v_1 - CRITICAL - Errors occur!!!
+2023-07-20 04:25:47,971 - log_little_shark_v_1 - CRITICAL - Error messages: HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v1/klines?symbol=EOSUSDT&interval=15m&limit=400 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2023-07-20 04:25:47,971 - log_little_shark_v_1 - INFO - Wait for one minute and try to resume the process.
+2023-07-20 04:26:47,979 - log_little_shark_v_1 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 MKRUSDT with the hedge ratio of 2.992111538105732e-05
+2023-07-20 04:26:47,979 - log_little_shark_v_1 - CRITICAL - Original z_score is 1.3165600353619127
+2023-07-20 04:26:52,993 - log_little_shark_v_1 - CRITICAL - Errors occur!!!
+2023-07-20 04:26:52,993 - log_little_shark_v_1 - CRITICAL - Error messages: HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v2/balance?recvWindow=3000&timestamp=1689798407979&signature=ffe6316384ccd1c2857fb60ead9f612212a5b816d8cc15a3fac63eaabd7accc5 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2023-07-20 04:26:52,993 - log_little_shark_v_1 - INFO - Wait for one minute and try to resume the process.
+2023-07-20 04:27:52,998 - log_little_shark_v_1 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 MKRUSDT with the hedge ratio of 2.992111538105732e-05
+2023-07-20 04:27:52,998 - log_little_shark_v_1 - CRITICAL - Original z_score is 1.3165600353619127
+2023-07-20 04:27:58,005 - log_little_shark_v_1 - CRITICAL - Errors occur!!!
+2023-07-20 04:27:58,005 - log_little_shark_v_1 - CRITICAL - Error messages: HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v2/balance?recvWindow=3000&timestamp=1689798472998&signature=61c653c67f3835a49a0ee91ca131472f627d5845bdef5fa5a048b42d716b535b (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2023-07-20 04:27:58,005 - log_little_shark_v_1 - INFO - Wait for one minute and try to resume the process.
+2023-07-20 04:28:58,013 - log_little_shark_v_1 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 MKRUSDT with the hedge ratio of 2.992111538105732e-05
+2023-07-20 04:28:58,013 - log_little_shark_v_1 - CRITICAL - Original z_score is 1.3165600353619127
+2023-07-20 04:29:03,022 - log_little_shark_v_1 - CRITICAL - Errors occur!!!
+2023-07-20 04:29:03,022 - log_little_shark_v_1 - CRITICAL - Error messages: HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v2/balance?recvWindow=3000&timestamp=1689798538013&signature=56f708f30b48aa2311fa0652141ad8ae8750abab4affffc437a8aae07bd7ae00 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2023-07-20 04:29:03,022 - log_little_shark_v_1 - INFO - Wait for one minute and try to resume the process.
+2023-07-20 04:30:03,030 - log_little_shark_v_1 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 MKRUSDT with the hedge ratio of 2.992111538105732e-05
+2023-07-20 04:30:03,030 - log_little_shark_v_1 - CRITICAL - Original z_score is 1.3165600353619127
+2023-07-20 04:30:08,038 - log_little_shark_v_1 - CRITICAL - Errors occur!!!
+2023-07-20 04:30:08,038 - log_little_shark_v_1 - CRITICAL - Error messages: HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v2/balance?recvWindow=3000&timestamp=1689798603030&signature=737385f5aaa69caa02913b6fc5d48863ee34bf7d03ca34d342e1e72dc2df9e23 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2023-07-20 04:30:08,038 - log_little_shark_v_1 - INFO - Wait for one minute and try to resume the process.
+2023-07-20 04:31:08,046 - log_little_shark_v_1 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 MKRUSDT with the hedge ratio of 2.992111538105732e-05
+2023-07-20 04:31:08,046 - log_little_shark_v_1 - CRITICAL - Original z_score is 1.3165600353619127
+2023-07-20 04:31:08,793 - log_little_shark_v_1 - INFO - The limit time for this wave is 2023-07-20 17:01:08.793071
+2023-07-20 04:31:08,793 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 04:31:10,192 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 1987.8, profit 3.59696385
+2023-07-20 04:31:10,193 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.06, profit 0.14785809
+2023-07-20 04:31:10,193 - log_little_shark_v_1 - INFO - Total profit is 3.74482194
+2023-07-20 04:31:10,193 - log_little_shark_v_1 - INFO - Total invested value is 1575.5940999999675
+2023-07-20 04:31:10,689 - log_little_shark_v_1 - INFO - Current invested value is 1575.5940999999675, threshod reached. Waiting for exit oppotunity.
+2023-07-20 04:31:12,191 - log_little_shark_v_1 - INFO - Current z score is 0.6001997536306627, original_z_score is 1.3165600353619127.
+2023-07-20 04:31:12,191 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:36:15,177 - log_little_shark_v_1 - INFO - Current z score is 1.0477448004212906, original_z_score is 1.3165600353619127.
+2023-07-20 04:36:15,177 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:41:17,646 - log_little_shark_v_1 - INFO - Current z score is 0.8160336340267661, original_z_score is 1.3165600353619127.
+2023-07-20 04:41:17,646 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:46:18,650 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 04:46:21,612 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 1987.8, profit -4.3745117
+2023-07-20 04:46:21,613 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.06, profit 0.30577627
+2023-07-20 04:46:21,613 - log_little_shark_v_1 - INFO - Total profit is -4.06873543
+2023-07-20 04:46:21,613 - log_little_shark_v_1 - INFO - Total invested value is 1575.5940999999675
+2023-07-20 04:46:21,772 - log_little_shark_v_1 - INFO - Current invested value is 1575.5940999999675, threshod reached. Waiting for exit oppotunity.
+2023-07-20 04:46:22,990 - log_little_shark_v_1 - INFO - Current z score is 1.433917692144568, original_z_score is 1.3165600353619127.
+2023-07-20 04:46:22,990 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:51:24,486 - log_little_shark_v_1 - INFO - Current z score is 1.459925414620806, original_z_score is 1.3165600353619127.
+2023-07-20 04:51:24,486 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 04:56:26,045 - log_little_shark_v_1 - INFO - Current z score is 0.8033012723565464, original_z_score is 1.3165600353619127.
+2023-07-20 04:56:26,045 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 05:01:27,049 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 05:01:28,107 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 1987.8, profit 3.57668829
+2023-07-20 05:01:28,107 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.06, profit -0.0276
+2023-07-20 05:01:28,107 - log_little_shark_v_1 - INFO - Total profit is 3.54908829
+2023-07-20 05:01:28,107 - log_little_shark_v_1 - INFO - Total invested value is 1575.5940999999675
+2023-07-20 05:01:28,252 - log_little_shark_v_1 - INFO - Current invested value is 1575.5940999999675, threshod reached. Waiting for exit oppotunity.
+2023-07-20 05:01:29,406 - log_little_shark_v_1 - INFO - Current z score is 0.5558613195530546, original_z_score is 1.3165600353619127.
+2023-07-20 05:01:29,406 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 05:06:30,910 - log_little_shark_v_1 - INFO - Z score crossed. Current z score is -0.5918045419217646, original_z_score is 1.3165600353619127.
+2023-07-20 05:06:31,422 - log_little_shark_v_1 - INFO - Placing market orders to close positions
+2023-07-20 05:06:31,582 - log_little_shark_v_1 - INFO - {'orderId': 24168974892, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'DkkXHFUgRT84Dgd7ARMMFW', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '1987.8', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': True, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689800791582}
+2023-07-20 05:06:31,660 - log_little_shark_v_1 - INFO - {'orderId': 5139877626, 'symbol': 'MKRUSDT', 'status': 'NEW', 'clientOrderId': 'UERlsUFAOPuC2hPA1vxuJQ', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.060', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689800791659}
+2023-07-20 05:06:31,661 - log_little_shark_v_1 - INFO - Waiting for market orders to be filled
+2023-07-20 05:07:01,823 - log_little_shark_v_1 - INFO - All positions have been closed.
+2023-07-20 05:07:01,978 - log_little_shark_v_1 - CRITICAL - Trading process complete.
+2023-07-20 05:07:01,979 - log_little_shark_v_1 - CRITICAL - Start summarize the trading result for symbol_1 EOSUSDT and symbol_2 MKRUSDT
+2023-07-20 05:07:02,054 - log_little_shark_v_1 - INFO - Summary as follows: 
+2023-07-20 05:07:02,055 - log_little_shark_v_1 - INFO - {'wave_num': 1, 'symbol_1': 'EOSUSDT', 'symbol_2': 'MKRUSDT', 'wave_start_balance': 65.93132688, 'wave_end_balance': 387.37669592, 'wave_profit': 321.44536903999995, 'total_invested_value': 1575.5940999999675, 'hedge_ratio': 2.992111538105732e-05, 'original_z_score': 1.3165600353619127, 'exit_z_score': -0.5869516713287739, 'wave_start_time': datetime.datetime(2023, 7, 20, 4, 31, 8, 793038), 'wave_end_time': datetime.datetime(2023, 7, 20, 5, 7, 2, 53487)}
+2023-07-20 05:07:02,055 - log_little_shark_v_1 - CRITICAL - Wave process complete.
+2023-07-20 05:07:02,056 - log_little_shark_v_1 - CRITICAL - Starting to search best trading pairs for wave 2
+2023-07-20 05:07:02,056 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:07:16,418 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:07:16,420 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:07:19,540 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:07:19,566 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:07:19,566 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:07:37,859 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:07:37,859 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:07:37,860 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:08:37,862 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:08:52,145 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:08:52,147 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:08:55,379 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:08:55,398 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:08:55,398 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:09:12,734 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:09:12,734 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:09:12,735 - log_little_shark_v_1 - CRITICAL - Tradable symbols found EOSUSDT and LDOUSDT
+2023-07-20 05:09:12,892 - log_little_shark_v_1 - CRITICAL - Best trading pairs found, EOSUSDT and LDOUSDT with the hedge ratio of 0.05357192074244212
+2023-07-20 05:09:13,041 - log_little_shark_v_1 - INFO - Setting leverage.
+2023-07-20 05:09:13,388 - log_little_shark_v_1 - INFO - {'symbol': 'EOSUSDT', 'leverage': 5, 'maxNotionalValue': '5000000'}
+2023-07-20 05:09:13,461 - log_little_shark_v_1 - INFO - {'symbol': 'LDOUSDT', 'leverage': 5, 'maxNotionalValue': '2000000'}
+2023-07-20 05:09:13,462 - log_little_shark_v_1 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 LDOUSDT with the hedge ratio of 0.05357192074244212
+2023-07-20 05:09:13,462 - log_little_shark_v_1 - CRITICAL - Original z_score is -1.2457188385316784
+2023-07-20 05:09:13,539 - log_little_shark_v_1 - INFO - The limit time for this wave is 2023-07-20 17:39:13.539746
+2023-07-20 05:09:13,540 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 05:09:13,905 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 0, profit 0
+2023-07-20 05:09:13,906 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0, profit 0
+2023-07-20 05:09:13,906 - log_little_shark_v_1 - INFO - Total profit is 0
+2023-07-20 05:09:13,906 - log_little_shark_v_1 - INFO - Total invested value is 0
+2023-07-20 05:09:15,285 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 05:09:15,365 - log_little_shark_v_1 - INFO - {'orderId': 24169048975, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'iOJKdYLmZ9ab2DpWuxeq84', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '362.8', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689800955359}
+2023-07-20 05:09:15,366 - log_little_shark_v_1 - INFO - Placing market open order for LDOUSDT
+2023-07-20 05:09:15,451 - log_little_shark_v_1 - INFO - {'orderId': 2395654779, 'symbol': 'LDOUSDT', 'status': 'NEW', 'clientOrderId': 'eLxTflss7PyNVBp1dQVtuq', 'price': '0.000000', 'avgPrice': '0.00', 'origQty': '19', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689800955449}
+2023-07-20 05:09:45,526 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 05:09:45,671 - log_little_shark_v_1 - INFO - Current z score is -0.9204089983895878, original_z_score is -1.2457188385316784.
+2023-07-20 05:09:45,671 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 05:14:47,213 - log_little_shark_v_1 - INFO - Current z score is -1.3137423327648068, original_z_score is -1.2457188385316784.
+2023-07-20 05:14:47,214 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 05:19:48,676 - log_little_shark_v_1 - INFO - Current z score is -1.757172346535286, original_z_score is -1.2457188385316784.
+2023-07-20 05:19:48,676 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 05:24:49,680 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 05:24:50,680 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 362.8, profit -0.3628
+2023-07-20 05:24:50,681 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 19.0, profit 0.01848016
+2023-07-20 05:24:50,681 - log_little_shark_v_1 - INFO - Total profit is -0.34431984
+2023-07-20 05:24:50,681 - log_little_shark_v_1 - INFO - Total invested value is 314.0855
+2023-07-20 05:24:52,046 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 05:24:52,123 - log_little_shark_v_1 - INFO - {'orderId': 24169419782, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'F0pSJKZrvGk1nIvfQYbI5t', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '363.2', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689801892121}
+2023-07-20 05:24:52,124 - log_little_shark_v_1 - INFO - Placing market open order for LDOUSDT
+2023-07-20 05:24:52,201 - log_little_shark_v_1 - INFO - {'orderId': 2395794150, 'symbol': 'LDOUSDT', 'status': 'NEW', 'clientOrderId': 'q1XwUYwwmk0JwjVenqGC9M', 'price': '0.000000', 'avgPrice': '0.00', 'origQty': '19', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689801892198}
+2023-07-20 05:25:22,277 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 05:25:22,428 - log_little_shark_v_1 - INFO - Current z score is -1.1644670869655316, original_z_score is -1.2457188385316784.
+2023-07-20 05:25:22,429 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 05:30:23,930 - log_little_shark_v_1 - INFO - Current z score is -0.7079249535971395, original_z_score is -1.2457188385316784.
+2023-07-20 05:30:23,931 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 05:35:25,725 - log_little_shark_v_1 - INFO - Current z score is -0.35451987941552887, original_z_score is -1.2457188385316784.
+2023-07-20 05:35:25,725 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 05:40:26,739 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 05:40:27,777 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 726.0, profit 2.85019614
+2023-07-20 05:40:27,777 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 38.0, profit -0.28439618
+2023-07-20 05:40:27,777 - log_little_shark_v_1 - INFO - Total profit is 2.56579996
+2023-07-20 05:40:27,778 - log_little_shark_v_1 - INFO - Total invested value is 628.0991999999954
+2023-07-20 05:40:27,917 - log_little_shark_v_1 - INFO - Z score crossed. Current z score is 0.2931486586890506, original_z_score is -1.2457188385316784.
+2023-07-20 05:40:29,149 - log_little_shark_v_1 - INFO - Placing market orders to close positions
+2023-07-20 05:40:29,302 - log_little_shark_v_1 - INFO - {'orderId': 2395906903, 'symbol': 'LDOUSDT', 'status': 'NEW', 'clientOrderId': 'UQRn8lqRxkhyoSvGAaiE7U', 'price': '0.000000', 'avgPrice': '0.00', 'origQty': '38', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': True, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689802829285}
+2023-07-20 05:40:29,375 - log_little_shark_v_1 - INFO - {'orderId': 24169959622, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': '7JG12XkScSwjqqHbNiz72x', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '726.0', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689802829360}
+2023-07-20 05:40:29,376 - log_little_shark_v_1 - INFO - Waiting for market orders to be filled
+2023-07-20 05:40:59,527 - log_little_shark_v_1 - INFO - All positions have been closed.
+2023-07-20 05:40:59,674 - log_little_shark_v_1 - CRITICAL - Trading process complete.
+2023-07-20 05:40:59,674 - log_little_shark_v_1 - CRITICAL - Start summarize the trading result for symbol_1 EOSUSDT and symbol_2 LDOUSDT
+2023-07-20 05:40:59,749 - log_little_shark_v_1 - INFO - Summary as follows: 
+2023-07-20 05:40:59,750 - log_little_shark_v_1 - INFO - {'wave_num': 2, 'symbol_1': 'EOSUSDT', 'symbol_2': 'LDOUSDT', 'wave_start_balance': 387.37669592, 'wave_end_balance': 389.21200688, 'wave_profit': 1.8353109600000153, 'total_invested_value': 628.0991999999954, 'hedge_ratio': 0.05357192074244212, 'original_z_score': -1.2457188385316784, 'exit_z_score': -0.006457385526714967, 'wave_start_time': datetime.datetime(2023, 7, 20, 5, 9, 13, 539733), 'wave_end_time': datetime.datetime(2023, 7, 20, 5, 40, 59, 749180)}
+2023-07-20 05:40:59,750 - log_little_shark_v_1 - CRITICAL - Wave process complete.
+2023-07-20 05:40:59,750 - log_little_shark_v_1 - CRITICAL - Starting to search best trading pairs for wave 3
+2023-07-20 05:40:59,751 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:41:13,546 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:41:13,547 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:41:16,490 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:41:16,511 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:41:16,511 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:41:33,447 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:41:33,447 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:41:33,448 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:42:33,451 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:42:48,400 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:42:48,401 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:42:51,664 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:42:51,688 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:42:51,688 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:43:09,471 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:43:09,472 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:43:09,473 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:44:09,475 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:44:23,969 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:44:23,970 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:44:26,963 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:44:26,986 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:44:26,987 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:44:44,166 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:44:44,166 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:44:44,167 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:45:44,170 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:45:58,336 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:45:58,338 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:46:02,590 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:46:02,614 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:46:02,615 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:46:19,380 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:46:19,380 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:46:19,381 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:47:19,384 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:47:34,086 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:47:34,087 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:47:37,133 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:47:37,152 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:47:37,152 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:47:54,127 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:47:54,127 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:47:54,128 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:48:54,131 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:49:08,679 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:49:08,681 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:49:11,740 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:49:11,763 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:49:11,763 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:49:28,767 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:49:28,767 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:49:28,768 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:50:28,771 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:50:42,840 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:50:42,842 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:50:45,820 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:50:45,844 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:50:45,845 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:51:02,462 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:51:02,462 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:51:02,463 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:52:02,466 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:52:16,708 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:52:16,710 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:52:19,620 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:52:19,642 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:52:19,643 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:52:36,390 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:52:36,390 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:52:36,391 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:53:36,393 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:53:50,651 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:53:50,653 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:53:53,667 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:53:53,691 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:53:53,692 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:54:10,239 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:54:10,239 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:54:10,240 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:55:10,243 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:55:24,868 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:55:24,870 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:55:27,895 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:55:27,920 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:55:27,920 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:55:45,227 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:55:45,227 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:55:45,228 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:56:45,230 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:56:59,409 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:56:59,410 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:57:02,418 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:57:02,445 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:57:02,445 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:57:19,908 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:57:19,908 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:57:19,909 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 05:58:19,912 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 05:58:34,114 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 05:58:34,116 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 05:58:37,124 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 05:58:37,149 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 05:58:37,149 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 05:58:54,321 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 05:58:54,321 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 05:58:54,322 - log_little_shark_v_1 - CRITICAL - Tradable symbols found EOSUSDT and COMPUSDT
+2023-07-20 05:58:54,431 - log_little_shark_v_1 - CRITICAL - Best trading pairs found, EOSUSDT and COMPUSDT with the hedge ratio of 0.0018494924894929777
+2023-07-20 05:58:54,571 - log_little_shark_v_1 - INFO - Setting leverage.
+2023-07-20 05:58:54,917 - log_little_shark_v_1 - INFO - {'symbol': 'EOSUSDT', 'leverage': 5, 'maxNotionalValue': '5000000'}
+2023-07-20 05:58:55,002 - log_little_shark_v_1 - INFO - {'symbol': 'COMPUSDT', 'leverage': 5, 'maxNotionalValue': '500000'}
+2023-07-20 05:58:55,003 - log_little_shark_v_1 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 COMPUSDT with the hedge ratio of 0.0018494924894929777
+2023-07-20 05:58:55,003 - log_little_shark_v_1 - CRITICAL - Original z_score is 1.1701480207202986
+2023-07-20 05:58:55,095 - log_little_shark_v_1 - INFO - The limit time for this wave is 2023-07-20 18:28:55.095707
+2023-07-20 05:58:55,096 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 05:58:55,457 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 0, profit 0
+2023-07-20 05:58:55,457 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0, profit 0
+2023-07-20 05:58:55,457 - log_little_shark_v_1 - INFO - Total profit is 0
+2023-07-20 05:58:55,457 - log_little_shark_v_1 - INFO - Total invested value is 0
+2023-07-20 05:58:56,833 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 05:58:56,915 - log_little_shark_v_1 - INFO - {'orderId': 24170514146, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'NLAp03gxt3qdYnNze0tf8h', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '354.1', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689803936894}
+2023-07-20 05:58:56,916 - log_little_shark_v_1 - INFO - Placing market open order for COMPUSDT
+2023-07-20 05:58:56,995 - log_little_shark_v_1 - INFO - {'orderId': 7734836332, 'symbol': 'COMPUSDT', 'status': 'NEW', 'clientOrderId': '6sM8GagwM1Iz2mgfv6E0mr', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.655', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689803936975}
+2023-07-20 05:59:27,073 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 05:59:27,224 - log_little_shark_v_1 - INFO - Current z score is 1.1567583424946228, original_z_score is 1.1701480207202986.
+2023-07-20 05:59:27,224 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:04:28,721 - log_little_shark_v_1 - INFO - Current z score is 1.030353371069484, original_z_score is 1.1701480207202986.
+2023-07-20 06:04:28,722 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:09:30,433 - log_little_shark_v_1 - INFO - Current z score is 1.053936193720293, original_z_score is 1.1701480207202986.
+2023-07-20 06:09:30,433 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:14:31,441 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 06:14:32,804 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 354.1, profit 0.7082
+2023-07-20 06:14:32,804 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.655, profit -0.26855
+2023-07-20 06:14:32,804 - log_little_shark_v_1 - INFO - Total profit is 0.43965000000000004
+2023-07-20 06:14:32,804 - log_little_shark_v_1 - INFO - Total invested value is 315.01225
+2023-07-20 06:14:34,100 - log_little_shark_v_1 - INFO - Current z score is 0.7130921557131039, original_z_score is 1.1701480207202986.
+2023-07-20 06:14:34,101 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:19:35,594 - log_little_shark_v_1 - INFO - Current z score is 0.5368481755717598, original_z_score is 1.1701480207202986.
+2023-07-20 06:19:35,595 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:24:37,256 - log_little_shark_v_1 - INFO - Current z score is 0.8559997345335895, original_z_score is 1.1701480207202986.
+2023-07-20 06:24:37,256 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:29:38,262 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 06:29:39,195 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 354.1, profit 0.7082
+2023-07-20 06:29:39,195 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.655, profit -0.20305
+2023-07-20 06:29:39,196 - log_little_shark_v_1 - INFO - Total profit is 0.50515
+2023-07-20 06:29:39,196 - log_little_shark_v_1 - INFO - Total invested value is 315.01225
+2023-07-20 06:29:40,504 - log_little_shark_v_1 - INFO - Current z score is 0.6554168454823706, original_z_score is 1.1701480207202986.
+2023-07-20 06:29:40,505 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:34:42,077 - log_little_shark_v_1 - INFO - Current z score is 0.4748598339620321, original_z_score is 1.1701480207202986.
+2023-07-20 06:34:42,077 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:39:43,734 - log_little_shark_v_1 - INFO - Current z score is 0.26238204574178564, original_z_score is 1.1701480207202986.
+2023-07-20 06:39:43,735 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:44:44,731 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 06:44:45,679 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 354.1, profit 1.4164
+2023-07-20 06:44:45,680 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0.655, profit -0.22045502
+2023-07-20 06:44:45,680 - log_little_shark_v_1 - INFO - Total profit is 1.1959449800000002
+2023-07-20 06:44:45,680 - log_little_shark_v_1 - INFO - Total invested value is 315.01225
+2023-07-20 06:44:46,978 - log_little_shark_v_1 - INFO - Current z score is 0.07041507195056018, original_z_score is 1.1701480207202986.
+2023-07-20 06:44:46,978 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:49:48,626 - log_little_shark_v_1 - INFO - Z score crossed. Current z score is -0.14439821664013358, original_z_score is 1.1701480207202986.
+2023-07-20 06:49:49,151 - log_little_shark_v_1 - INFO - Placing market orders to close positions
+2023-07-20 06:49:49,313 - log_little_shark_v_1 - INFO - {'orderId': 24171843874, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'CXDLb2A0amjXyR6E3GU1Bu', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '354.1', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': True, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689806989274}
+2023-07-20 06:49:49,391 - log_little_shark_v_1 - INFO - {'orderId': 7735606586, 'symbol': 'COMPUSDT', 'status': 'NEW', 'clientOrderId': 'SA58vYZiiXv0vfFPIC8VzK', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.655', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689806989357}
+2023-07-20 06:49:49,392 - log_little_shark_v_1 - INFO - Waiting for market orders to be filled
+2023-07-20 06:50:19,560 - log_little_shark_v_1 - INFO - All positions have been closed.
+2023-07-20 06:50:19,704 - log_little_shark_v_1 - CRITICAL - Trading process complete.
+2023-07-20 06:50:19,705 - log_little_shark_v_1 - CRITICAL - Start summarize the trading result for symbol_1 EOSUSDT and symbol_2 COMPUSDT
+2023-07-20 06:50:19,782 - log_little_shark_v_1 - INFO - Summary as follows: 
+2023-07-20 06:50:19,782 - log_little_shark_v_1 - INFO - {'wave_num': 3, 'symbol_1': 'EOSUSDT', 'symbol_2': 'COMPUSDT', 'wave_start_balance': 389.22456743, 'wave_end_balance': 390.90668637, 'wave_profit': 1.6821189400000094, 'total_invested_value': 315.01225, 'hedge_ratio': 0.0018494924894929777, 'original_z_score': 1.1701480207202986, 'exit_z_score': -0.14439821664013358, 'wave_start_time': datetime.datetime(2023, 7, 20, 5, 58, 55, 95693), 'wave_end_time': datetime.datetime(2023, 7, 20, 6, 50, 19, 781321)}
+2023-07-20 06:50:19,782 - log_little_shark_v_1 - CRITICAL - Wave process complete.
+2023-07-20 06:50:19,782 - log_little_shark_v_1 - CRITICAL - Starting to search best trading pairs for wave 4
+2023-07-20 06:50:19,782 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 06:50:33,330 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 06:50:33,331 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 06:50:37,137 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 06:50:37,154 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 06:50:37,154 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 06:50:53,434 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 06:50:53,434 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 06:50:53,435 - log_little_shark_v_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
+2023-07-20 06:51:53,438 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-20 06:52:07,792 - log_little_shark_v_1 - INFO - 34 pairs found
+2023-07-20 06:52:07,793 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-20 06:52:10,747 - log_little_shark_v_1 - INFO - 34 items stored, 0items not stored
+2023-07-20 06:52:10,771 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-20 06:52:10,772 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-20 06:52:27,537 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-20 06:52:27,537 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-20 06:52:27,538 - log_little_shark_v_1 - CRITICAL - Tradable symbols found EOSUSDT and LDOUSDT
+2023-07-20 06:52:27,646 - log_little_shark_v_1 - CRITICAL - Best trading pairs found, EOSUSDT and LDOUSDT with the hedge ratio of 0.05549995209721165
+2023-07-20 06:52:27,793 - log_little_shark_v_1 - INFO - Setting leverage.
+2023-07-20 06:52:28,118 - log_little_shark_v_1 - INFO - {'symbol': 'EOSUSDT', 'leverage': 5, 'maxNotionalValue': '5000000'}
+2023-07-20 06:52:28,193 - log_little_shark_v_1 - INFO - {'symbol': 'LDOUSDT', 'leverage': 5, 'maxNotionalValue': '2000000'}
+2023-07-20 06:52:28,194 - log_little_shark_v_1 - CRITICAL - Start trading with symbol_1 EOSUSDT and symbol_2 LDOUSDT with the hedge ratio of 0.05549995209721165
+2023-07-20 06:52:28,194 - log_little_shark_v_1 - CRITICAL - Original z_score is -1.1915087508336228
+2023-07-20 06:52:28,268 - log_little_shark_v_1 - INFO - The limit time for this wave is 2023-07-20 19:22:28.268378
+2023-07-20 06:52:28,268 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 06:52:28,579 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 0, profit 0
+2023-07-20 06:52:28,579 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 0, profit 0
+2023-07-20 06:52:28,580 - log_little_shark_v_1 - INFO - Total profit is 0
+2023-07-20 06:52:28,580 - log_little_shark_v_1 - INFO - Total invested value is 0
+2023-07-20 06:52:29,956 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 06:52:30,030 - log_little_shark_v_1 - INFO - {'orderId': 24171916590, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'C3hoiyNpt5vJG69NeLbFlR', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '361.9', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689807149998}
+2023-07-20 06:52:30,030 - log_little_shark_v_1 - INFO - Placing market open order for LDOUSDT
+2023-07-20 06:52:30,104 - log_little_shark_v_1 - INFO - {'orderId': 2396357682, 'symbol': 'LDOUSDT', 'status': 'NEW', 'clientOrderId': 'FzLa1z7FPbLmSdIu4zg0EX', 'price': '0.000000', 'avgPrice': '0.00', 'origQty': '20', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689807150070}
+2023-07-20 06:53:00,178 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 06:53:00,330 - log_little_shark_v_1 - INFO - Current z score is -1.2013780080086627, original_z_score is -1.1915087508336228.
+2023-07-20 06:53:00,330 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 06:58:01,813 - log_little_shark_v_1 - INFO - Current z score is -0.9352662104343394, original_z_score is -1.1915087508336228.
+2023-07-20 06:58:01,814 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 07:03:03,324 - log_little_shark_v_1 - INFO - Current z score is -0.8962417561051162, original_z_score is -1.1915087508336228.
+2023-07-20 07:03:03,324 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.
+2023-07-20 07:08:04,329 - log_little_shark_v_1 - CRITICAL - Checking trading status...
+2023-07-20 07:08:05,319 - log_little_shark_v_1 - INFO - Current symbol_1 qty is 361.9, profit -0.25862821
+2023-07-20 07:08:05,319 - log_little_shark_v_1 - INFO - Current symbol_2 qty is 20.0, profit -0.032
+2023-07-20 07:08:05,319 - log_little_shark_v_1 - INFO - Total profit is -0.29062821000000005
+2023-07-20 07:08:05,319 - log_little_shark_v_1 - INFO - Total invested value is 314.84639999999996
+2023-07-20 07:08:06,930 - log_little_shark_v_1 - INFO - Placing market open order for EOSUSDT
+2023-07-20 07:08:07,004 - log_little_shark_v_1 - INFO - {'orderId': 24172266634, 'symbol': 'EOSUSDT', 'status': 'NEW', 'clientOrderId': 'cTfgYJ3irGPOY6pcVksdP9', 'price': '0.000', 'avgPrice': '0.00', 'origQty': '361.9', 'executedQty': '0.0', 'cumQty': '0.0', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689808086965}
+2023-07-20 07:08:07,005 - log_little_shark_v_1 - INFO - Placing market open order for LDOUSDT
+2023-07-20 07:08:07,079 - log_little_shark_v_1 - INFO - {'orderId': 2396461221, 'symbol': 'LDOUSDT', 'status': 'NEW', 'clientOrderId': 'y24grigT0zHRse3B1pwXzZ', 'price': '0.000000', 'avgPrice': '0.00', 'origQty': '20', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.000000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1689808087038}
+2023-07-20 07:08:37,161 - log_little_shark_v_1 - INFO - All positions have been opened.
+2023-07-20 07:08:37,315 - log_little_shark_v_1 - INFO - Current z score is -1.2227851263146283, original_z_score is -1.1915087508336228.
+2023-07-20 07:08:37,315 - log_little_shark_v_1 - INFO - Waiting for next inspection time for 301s.

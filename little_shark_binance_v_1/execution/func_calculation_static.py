@@ -118,7 +118,7 @@ def calculate_cointegration_static(series_1, series_2):
     initial_intercept = model.params[0]
     hedge_ratio = model.params[1]
 
-    if (p_value < 0.05) and (coint_t < critical_value):
+    if (p_value < 0.03) and (coint_t < critical_value):
         coint_flag = 1
     return coint_flag, p_value, hedge_ratio, initial_intercept
 
