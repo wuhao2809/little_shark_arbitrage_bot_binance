@@ -1,0 +1,53 @@
+2023-07-22 10:59:01,001 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-22 10:59:35,413 - log_little_shark_v_1 - INFO - 4 pairs found
+2023-07-22 10:59:35,416 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-22 10:59:37,270 - log_little_shark_v_1 - INFO - 4 items stored, 0items not stored
+2023-07-22 10:59:37,275 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-22 10:59:37,277 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-22 11:01:17,929 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-22 11:01:17,932 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-22 11:01:40,839 - log_little_shark_v_1 - INFO - 4 pairs found
+2023-07-22 11:01:40,841 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-22 11:01:43,043 - log_little_shark_v_1 - INFO - 4 items stored, 0items not stored
+2023-07-22 11:01:43,048 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-22 11:01:43,049 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-22 11:01:46,314 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-22 11:02:44,788 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-22 11:02:44,790 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-22 11:03:06,937 - log_little_shark_v_1 - INFO - 4 pairs found
+2023-07-22 11:03:06,941 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-22 11:03:07,806 - log_little_shark_v_1 - INFO - 4 items stored, 0items not stored
+2023-07-22 11:03:07,811 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-22 11:03:07,813 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-22 11:03:09,173 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-22 11:03:39,129 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-22 11:03:39,131 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-22 11:04:06,649 - log_little_shark_v_1 - INFO - 4 pairs found
+2023-07-22 11:04:06,651 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-22 11:04:07,463 - log_little_shark_v_1 - INFO - 4 items stored, 0items not stored
+2023-07-22 11:04:07,467 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-22 11:04:07,469 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-22 11:04:09,010 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-22 11:05:34,973 - log_little_shark_v_1 - INFO - 4 pairs found
+2023-07-22 11:06:22,184 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-22 11:06:22,186 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-22 11:06:40,982 - log_little_shark_v_1 - INFO - 4 pairs found
+2023-07-22 11:06:40,985 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-22 11:06:41,879 - log_little_shark_v_1 - INFO - 4 items stored, 0items not stored
+2023-07-22 11:06:41,884 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-22 11:06:41,885 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-22 11:06:43,244 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-22 11:08:40,839 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-22 11:08:40,841 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-22 11:09:19,396 - log_little_shark_v_1 - INFO - 4 pairs found
+2023-07-22 11:09:19,399 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-22 11:09:21,096 - log_little_shark_v_1 - INFO - 4 items stored, 0items not stored
+2023-07-22 11:09:21,102 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-22 11:09:21,103 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-22 11:09:24,113 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-22 11:21:28,392 - log_little_shark_v_1 - INFO - 13 items stored, 0items not stored
+2023-07-22 11:21:28,398 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-22 11:21:28,399 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-22 11:21:50,026 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-22 11:44:37,612 - log_little_shark_v_1 - INFO - 7 items stored, 0items not stored
+2023-07-22 11:44:37,621 - log_little_shark_v_1 - INFO - Prices saved successfully.

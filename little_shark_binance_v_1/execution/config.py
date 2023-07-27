@@ -5,7 +5,7 @@ import datetime
 ##### IMPORTANT!!!!!!!!!!!
 ##### ARE YOU SURE YOU ARE GOING TO TRADE?
 ##### CHECK LEVERAGE
-mode = "test"
+mode = "real"
 
 
 # API KEY REAL
@@ -90,7 +90,7 @@ elif mode == "real":
 
     TRADING_TIMES_THRESHOD = 10
     
-    ACCOUNT_BALANCE_INVESTABLE = 580
+    ACCOUNT_BALANCE_INVESTABLE = 200
     TOTAL_INVESTABLE_VALUE = ACCOUNT_BALANCE_INVESTABLE * LEVERAGE * 0.9
     INVESTIBLE_CAPITAL_EACH_TIME = TOTAL_INVESTABLE_VALUE / TRADING_TIMES_THRESHOD
 
@@ -103,7 +103,7 @@ elif mode == "real":
     # threshod for get target symbols
     ONBOARD_TIME_THRESHOD = datetime.datetime(2023, 1, 6) # the coins being traded should not be onboard later than this date
 
-    TRADING_VOLUME_THRESHOD_RATE = 1 / 100 # trading volume threshod, representeed as percentage of BTCUSDT 24h trading volume in USDT
+    TRADING_VOLUME_THRESHOD_RATE = (1 / 200) # trading volume threshod, representeed as percentage of BTCUSDT 24h trading volume in USDT
 
     WAIT_SEARCH_BEST_PAIR = 60
     

@@ -16,3 +16,6 @@
 - [ ] Build a function that can derive the initial balance of the account dynamic
 
 - [ ] Do the experiment again.
+- [ ] Deal with kalmen filter
+- [ ] Write email to mahya
+- [ ] CBSA ICSA notes
