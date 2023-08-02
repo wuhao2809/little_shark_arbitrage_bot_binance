@@ -17,3 +17,7 @@
 2023-07-29 18:46:10,417 - log_little_shark_v_1 - INFO - Chooing the best trading pair
 2023-07-29 18:47:11,334 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
 2023-07-29 18:47:19,418 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-08-03 03:08:31,755 - log_little_shark_v_2_1 - INFO - Getting tradable symbols from Binance.
+2023-08-03 03:09:02,669 - log_little_shark_v_2_1 - INFO - 41 pairs found
+2023-08-03 03:09:02,671 - log_little_shark_v_2_1 - INFO - Deriving recent price, with the interval of 5m and num of interval limit 300
+2023-08-03 03:09:16,011 - log_little_shark_v_2_1 - INFO - 0 items stored, 41items not stored

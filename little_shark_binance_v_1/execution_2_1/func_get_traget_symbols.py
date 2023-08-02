@@ -63,8 +63,8 @@ def store_price_history_static(symbols: list) -> str:
     counts = 0
     price_history_dict = {}
     for sym in symbols:
-        price_history = binance_get_recent_close_price(sym, interval=INTERVAL, limit=NUM_INTERVAL_LIMIT + 3 * Z_SCORE_WINDOW)
-        if len(price_history) == NUM_INTERVAL_LIMIT + 3 * Z_SCORE_WINDOW: # make sure that each symbol has the same amount of data
+        price_history = binance_get_recent_close_price(sym, interval=INTERVAL, limit=NUM_INTERVAL_LIMIT + 3 * Z_SCORE_WINDOW + BACKTEST_INTERVAL)
+        if len(price_history) == NUM_INTERVAL_LIMIT + 3 * Z_SCORE_WINDOW + BACKTEST_INTERVAL: # make sure that each symbol has the same amount of data
             price_history_dict[sym] = price_history
             counts += 1
     logger.info (f"{counts} items stored, {len(symbols)-counts}items not stored")
@@ -443,9 +443,6 @@ def choose_best_trading_pair_dynamic(df_coint: pd.DataFrame) ->pd.DataFrame:
     
     # choose win rate
     df_coint = df_coint[df_coint["backtest_win_rate"] >= WIN_RATE_THRESHOD]
-    
-    # choose expected return
-    df_coint = df_coint[abs(df_coint["expected_return"]) >= 5]
     
     # rank trading oppotunities
     df_coint = df_coint.sort_values("backtest_trading_oppotunities", ascending=False)

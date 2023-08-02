@@ -1,7 +1,7 @@
 from func_calculation_static import calculate_cointegration_static, calculate_spread_static, calculate_z_score_window, calculate_spread_hedge_ratio_window
 from binance_market_observer import binance_get_recent_close_price
 import pandas as pd
-from config import TRIGGER_Z_SCORE_THRESHOD, Z_SCORE_WINDOW, INTERVAL, TRADING_TIME_LIMIT_INTERVALS
+from config import TRIGGER_Z_SCORE_THRESHOD, Z_SCORE_WINDOW, INTERVAL, TRADING_TIME_LIMIT_INTERVALS, BACKTEST_INTERVAL
 import matplotlib.pyplot as plt
 import json
 
@@ -15,7 +15,14 @@ def plot_reference(sym_1, sym_2, num_wave=0):
     spread, hedge_ratio_list = calculate_spread_hedge_ratio_window(price_symbol_1, price_symbol_2, Z_SCORE_WINDOW)
     z_score = calculate_z_score_window(spread, Z_SCORE_WINDOW)
     
-        # Calculate percentage changes
+    # Make the starting point of the graph 2*Z_Score_Window
+    price_symbol_1 = price_symbol_1
+    price_symbol_2 = price_symbol_2
+    
+    spread[:2 * Z_SCORE_WINDOW] = [0] * 2 * Z_SCORE_WINDOW
+    z_score[:2 * Z_SCORE_WINDOW] = [0] * 2 * Z_SCORE_WINDOW
+    
+    # Calculate percentage changes
     df = pd.DataFrame(columns=[sym_1, sym_2])
     df[sym_1] = price_symbol_1
     df[sym_2] = price_symbol_2
@@ -39,20 +46,23 @@ def plot_reference(sym_1, sym_2, num_wave=0):
     axs[2].title.set_text("Z score")
     plt.savefig(f"{num_wave}_wave_trading_pair_history_graph.png")
 
-# plot_reference("ZILUSDT", "1000XECUSDT")
+# plot_reference("FILUSDT", "CRVUSDT")
 # with open("15m_price_list.json", "r")as price_data:
 #     print(price_data["BTCUSDT"])
 
 
 def plot_reference_trading(symbol_1, symbol_2, num_wave=0):
 
-    price_symbol_1 = binance_get_recent_close_price(symbol_1, INTERVAL, 3 * Z_SCORE_WINDOW + TRADING_TIME_LIMIT_INTERVALS)
-    price_symbol_2 = binance_get_recent_close_price(symbol_2, INTERVAL, 3 * Z_SCORE_WINDOW + TRADING_TIME_LIMIT_INTERVALS)
+    price_symbol_1 = binance_get_recent_close_price(symbol_1, INTERVAL, 3 * Z_SCORE_WINDOW + BACKTEST_INTERVAL)
+    price_symbol_2 = binance_get_recent_close_price(symbol_2, INTERVAL, 3 * Z_SCORE_WINDOW + BACKTEST_INTERVAL)
     
     spread, hedge_ratio_list = calculate_spread_hedge_ratio_window(price_symbol_1, price_symbol_2, Z_SCORE_WINDOW)
     z_score = calculate_z_score_window(spread, Z_SCORE_WINDOW)
     
-    z_score[:2 * Z_SCORE_WINDOW -1] = [0]*(2 * Z_SCORE_WINDOW -1)
+    spread = spread[-BACKTEST_INTERVAL:]
+    z_score = z_score[-BACKTEST_INTERVAL:]
+    price_symbol_1 = price_symbol_1[-BACKTEST_INTERVAL:]
+    price_symbol_2 = price_symbol_2[-BACKTEST_INTERVAL:]
     
     # Calculate percentage changes
     df = pd.DataFrame(columns=[symbol_1, symbol_2])
@@ -78,4 +88,4 @@ def plot_reference_trading(symbol_1, symbol_2, num_wave=0):
     axs[2].title.set_text("Z score")
     plt.savefig(f"{num_wave}_wave_trading_pair_trading_graph.png")
 
-# plot_reference_trading("AXSUSDT", "SANDUSDT", num_wave=0)
+# plot_reference_trading("FILUSDT", "CRVUSDT", num_wave=0)
