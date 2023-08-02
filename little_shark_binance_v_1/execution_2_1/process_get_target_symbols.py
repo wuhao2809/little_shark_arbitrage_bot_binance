@@ -31,9 +31,6 @@ def process_get_target_symbols_dynamic(num_wave:int) -> tuple:
         logger.info("Filtering trading pairs based on static hedge-ratio backtesting")
         df_coint_static = choose_best_trading_pair_static(df_coint)
 
-        df_coint_static = pd.read_csv("0_static_backtesting_cointegrated_pairs.csv")
-        with open("30m_price_list.json") as json_file:
-            price_data = json.load(json_file)
         # Step 5: Filtering trading pairs based on dynamic hedge-ratio backtesting
         logger.info("Get trading pairs based on dynamic hedge-ratio backtesting")
         df_coint_dynamic = get_cointegrated_pairs_dynamic(price_data, df_coint_static, num_wave)

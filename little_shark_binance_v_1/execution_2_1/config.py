@@ -96,7 +96,7 @@ elif mode == "real":
 
     WAVE_LIMIT = 3
 
-    Z_SCORE_WINDOW = 80
+    Z_SCORE_WINDOW = 46
 
     """Configurations in Process"""
 
