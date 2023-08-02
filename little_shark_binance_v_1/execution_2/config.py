@@ -5,7 +5,7 @@ import datetime
 ##### IMPORTANT!!!!!!!!!!!
 ##### ARE YOU SURE YOU ARE GOING TO TRADE?
 ##### CHECK LEVERAGE
-mode = "test"
+mode = "real"
 
 
 # API KEY REAL
@@ -80,23 +80,23 @@ elif mode == "real":
     session_public = UMFutures()
 
     # Overall configurations
-    INTERVAL = "15m" # 1m 3m 5m 15m 30m 1h 2h 4h 6h 8h 12h 1d 3d 1w 1M
-    INTERVAL_INT = 15
+    INTERVAL = "30m" # 1m 3m 5m 15m 30m 1h 2h 4h 6h 8h 12h 1d 3d 1w 1M
+    INTERVAL_INT = 30
 
-    LEVERAGE = 8
+    LEVERAGE = 1
 
     NUM_INTERVAL_LIMIT = 400
-    TRIGGER_Z_SCORE_THRESHOD = 0.8
+    TRIGGER_Z_SCORE_THRESHOD = 1.6
 
-    TRADING_TIMES_THRESHOD = 10
+    TRADING_TIMES_THRESHOD = 4
     
-    ACCOUNT_BALANCE_INVESTABLE = 200
+    ACCOUNT_BALANCE_INVESTABLE = 400
     TOTAL_INVESTABLE_VALUE = ACCOUNT_BALANCE_INVESTABLE * LEVERAGE * 0.9
     INVESTIBLE_CAPITAL_EACH_TIME = TOTAL_INVESTABLE_VALUE / TRADING_TIMES_THRESHOD
 
-    WAVE_LIMIT = 5
+    WAVE_LIMIT = 3
 
-    Z_SCORE_WINDOW = 46
+    Z_SCORE_WINDOW = 180
 
     """Configurations in Process"""
 
@@ -107,7 +107,7 @@ elif mode == "real":
 
     WAIT_SEARCH_BEST_PAIR = 60
     
-    WIN_RATE_THRESHOD = 0.90
+    WIN_RATE_THRESHOD = 0.8
     TRADING_FEE_RATE = 0.0004
     EXTREME_VALUE_MEAN_RATE_THRESHOD = 15
 
@@ -115,14 +115,14 @@ elif mode == "real":
     TRADING_TIME_LIMIT_INTERVALS = 50
 
     TAKE_PROFIT_RATIO = 0.01 * LEVERAGE
-    STOP_LOSS_RATIO = 0.03 * LEVERAGE
+    STOP_LOSS_RATIO = 0.05 * LEVERAGE
 
     TAKE_PROFIT_VALUE = TAKE_PROFIT_RATIO * TOTAL_INVESTABLE_VALUE
     STOP_LOSS_VALUE = STOP_LOSS_RATIO * TOTAL_INVESTABLE_VALUE
 
     INVESTED_VALUE_BIAS_RATIO = 0.90
 
-    WAITING_INTERVAL = 301 # seconds to wait for the z-score cross the zero line
+    WAITING_INTERVAL = 601 # seconds to wait for the z-score cross the zero line
 
     SECONDS_WAIT_LIMIT_CLOSE = 60 # seconds to wait for the closing limit order
     SECONDS_WAIT_MARKET_CLOSE = 30 # seconds to wait for the closing market order

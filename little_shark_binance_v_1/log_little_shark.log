@@ -1,0 +1,6 @@
+2023-08-02 10:14:11,520 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-08-02 10:14:30,023 - log_little_shark_v_1 - INFO - 45 pairs found
+2023-08-02 10:14:30,025 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 30m and num of interval limit 400
+2023-08-02 10:14:35,945 - log_little_shark_v_1 - INFO - 45 items stored, 0items not stored
+2023-08-02 10:14:35,979 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-08-02 10:14:35,979 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs

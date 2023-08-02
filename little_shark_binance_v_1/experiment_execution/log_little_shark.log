@@ -1,0 +1,19 @@
+2023-07-29 04:23:36,101 - log_little_shark_v_1 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-29 04:23:37,004 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-29 04:24:31,122 - log_little_shark_v_1 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-29 04:24:31,851 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-29 04:25:05,798 - log_little_shark_v_1 - CRITICAL - Little Shark v1.0 start!!!
+2023-07-29 04:25:07,119 - log_little_shark_v_1 - INFO - The trading_min_qty.json file has been completed.
+2023-07-29 04:25:07,979 - log_little_shark_v_1 - CRITICAL - Initialization complete!
+2023-07-29 04:25:07,979 - log_little_shark_v_1 - CRITICAL - Starting to search best trading pairs for wave 1
+2023-07-29 04:25:07,979 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-29 18:45:32,369 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
+2023-07-29 18:46:08,523 - log_little_shark_v_1 - INFO - 4 pairs found
+2023-07-29 18:46:08,524 - log_little_shark_v_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 400
+2023-07-29 18:46:09,259 - log_little_shark_v_1 - INFO - 4 items stored, 0items not stored
+2023-07-29 18:46:09,263 - log_little_shark_v_1 - INFO - Prices saved successfully.
+2023-07-29 18:46:09,263 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-29 18:46:10,417 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs complete.
+2023-07-29 18:46:10,417 - log_little_shark_v_1 - INFO - Chooing the best trading pair
+2023-07-29 18:47:11,334 - log_little_shark_v_1 - INFO - Obtaining co-integrated pairs
+2023-07-29 18:47:19,418 - log_little_shark_v_1 - INFO - Getting tradable symbols from Binance.
