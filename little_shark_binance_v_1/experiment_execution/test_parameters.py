@@ -11,11 +11,11 @@ import json
 
 
 # Set config
-SET_INTERVALS = ["30m"]
-SET_INTERVALS_INT_MINS = [1, 3, 5, 15, 30, 60, 120]
-SET_TRAINNING_PERIODS = [200, 300, 400]
-SET_Z_SCORE_WINDOW = [20, 40, 80, 120, 180]
-SET_TRIGGER_Z_SCORE_THRESHOD = [1.2, 1.6]
+SET_INTERVALS = ["5m", "15m", "30m"]
+
+SET_TRAINNING_PERIODS = [200, 300, 400, 500, 600, 800]
+SET_Z_SCORE_WINDOW = [20, 40, 60, 80, 120, 160, 200]
+SET_TRIGGER_Z_SCORE_THRESHOD = [0.8, 1.2, 1.6]
 TRADING_TIMES_THRESHOD = 50
 
 ONBOARD_TIME_THRESHOD = datetime.datetime(2023, 1, 6)
@@ -427,7 +427,7 @@ def calculate_pairs_trading_result_dynamic(series_1, series_2, num_window: int, 
     # Get recent z score
     recent_z_score = zscore_series[-1]
     
-    trade_oppotunities, cumulative_return, win_rate, recent_trade_qty, peak_loss = get_backtesting_properties(series_1, series_2, hedge_ratio_list, zscore_series, z_score_threshod)
+    trade_oppotunities, cumulative_return, win_rate, recent_trade_qty, peak_loss = get_backtesting_properties(series_1[-50:], series_2[-50:], hedge_ratio_list[-50:], zscore_series[-50:], z_score_threshod)
         
     return trade_oppotunities, cumulative_return, win_rate, recent_trade_qty, recent_z_score, peak_loss, std
 
@@ -536,13 +536,16 @@ def get_cointegrated_pairs(prices, interval, trainning_period, z_score_window, z
         # Check each coin against the first (sym_1)
         for sym_2 in found_pair_list[loop_count:]:
             
-            # Get close prices
+            # Get close prices not the last 50 intervals
             series_1 = prices[sym_1]
             series_2 = prices[sym_2]
             
+            series_1 = series_1[:len(series_1) - 50]
+            series_2 = series_2[:len(series_2) - 50]
+            
             # Get recent NUM_LIMITS prices.
-            series_1_coint_test = series_1[1499 - 50 - (trainning_period):1499 - 50]
-            series_2_coint_test = series_2[1499 - 50 - (trainning_period):1499 - 50]
+            series_1_coint_test = series_1[len(series_1) - trainning_period:]
+            series_2_coint_test = series_2[len(series_2) - trainning_period:]
 
             # Check for cointegration and add cointegrated pair
             coint_flag, p_value, hedge_ratio, initial_intercept = calculate_cointegration_static(series_1_coint_test, series_2_coint_test)
@@ -550,24 +553,26 @@ def get_cointegrated_pairs(prices, interval, trainning_period, z_score_window, z
 
             
             if (coint_flag == 1) and (hedge_ratio > 0.001) and (hedge_ratio < 1000):
-                series_1_train_test = series_1[1499 - 50 - (50 + 2 * z_score_window):1499 - 50]
-                series_2_train_test = series_2[1499 - 50 - (50 + 2 * z_score_window):1499 - 50]
                 
-                series_1_real_test = series_1[1499 - (2 * z_score_window):]
-                series_2_real_test = series_2[1499 - (2 * z_score_window):]
-                trade_oppotunities, cumulative_returns, win_rate, recent_trade_qty, recent_z_score, peak_loss, std = calculate_pairs_trading_result_static(series_1_coint_test,
-                                                                                                                                              series_2_coint_test,
+                series_1_train_test = series_1[-(trainning_period + z_score_window):]
+                series_2_train_test = series_2[-(trainning_period + z_score_window):]
+                trade_oppotunities, cumulative_returns, win_rate, recent_trade_qty, recent_z_score, peak_loss, std = calculate_pairs_trading_result_static(series_1_train_test,
+                                                                                                                                              series_2_train_test,
                                                                                                                                               hedge_ratio,
                                                                                                                                               z_score_window,
                                                                                                                                               z_score_threshod)
-                if cumulative_returns > 0 and win_rate > 0.8:
-                
-                    trade_oppotunities_performance, cumulative_returns_performance, win_rate_performance, _, _, peak_loss_performace, _ = calculate_pairs_trading_result_dynamic(series_1_train_test,
-                                                                                                                                                series_2_train_test,
+                if cumulative_returns > 0 and win_rate > 0.8 and abs(peak_loss) < 100:
+                    series_1_real_test = series_1[-(50 + 3 * z_score_window):]
+                    series_2_real_test = series_2[-(50 + 3 * z_score_window):]
+                    
+                    trade_oppotunities_performance, cumulative_returns_performance, win_rate_performance, _, _, peak_loss_performace, _ = calculate_pairs_trading_result_dynamic(series_1_real_test,
+                                                                                                                                                series_2_real_test,
                                                                                                                                                 z_score_window,
                                                                                                                                                 z_score_threshod)
                     
-                    one_time_trade_oppotunities, one_time_returns, one_time_peak_loss = calculate_pairs_one_time_trading_result(series_1_real_test, series_2_real_test, z_score_window, z_score_threshod)
+                    series_1_examine_test = prices[sym_1][-(50 + 3 * z_score_window):]
+                    series_2_examine_test = prices[sym_2][-(50 + 3 * z_score_window):]
+                    examine_trade_oppotunities, examine_returns, examine_win_rate, _, _, examine_peak_loss, _ = calculate_pairs_trading_result_dynamic(series_1_examine_test, series_2_examine_test, z_score_window, z_score_threshod)
                     
                     coint_pair_list.append({
                         "sym_1": sym_1,
@@ -580,19 +585,20 @@ def get_cointegrated_pairs(prices, interval, trainning_period, z_score_window, z
                         "win_rate_performance": win_rate_performance,
                         "peak_loss_performace": peak_loss_performace,
                         "recent_z_score": recent_z_score,
-                        "one_time_trade_oppotunities": one_time_trade_oppotunities,
-                        "one_time_returns": one_time_returns,
-                        "one_time_peak_loss": one_time_peak_loss,
+                        "examine_trade_oppotunities": examine_trade_oppotunities,
+                        "examine_returns": examine_returns,
+                        "examine_win_rate": examine_win_rate,
+                        "examine_peak_loss": examine_peak_loss,
                     })
 
     # Output results and rank all the trading pairs
     df_coint = pd.DataFrame(coint_pair_list)
     # add the total score column
-    df_coint = df_coint.sort_values("one_time_returns", ascending=False)
+    df_coint = df_coint.sort_values("examine_returns", ascending=False)
     filename = f"{interval}_{trainning_period}_{z_score_window}_{z_score_threshod}_cointegrated_pairs.csv"
     # choose positive hedge ratio
     df_coint = df_coint[df_coint["hedge_ratio"] > 0]
-    # df_coint.to_csv(filename)
+    df_coint.to_csv(filename)
     
     print(f"{interval}_{trainning_period}_{z_score_window}_cointegrated_pairs.csv has been completed")
     return df_coint
@@ -607,30 +613,39 @@ def test_parameters(interval, trainning_period, z_score_window, z_score_threshod
 def get_trainning_result(df_coint: pd.DataFrame):
     df_coint = df_coint[df_coint["cumulative_returns_performance"] > 0].head(10)
     df_coint = df_coint[abs(df_coint["peak_loss_performace"]) < 0.25 * INVESTIBLE_CAPITAL_EACH_TIME]
-    average_return = df_coint["one_time_returns"].mean()
-    average_loss = df_coint[df_coint["one_time_returns"] < 0]["one_time_returns"].mean()
-    if df_coint.shape[0] != 0:
-        win_rate = (df_coint[df_coint["one_time_returns"] > 0].shape[0] / df_coint.shape[0])
-    else: win_rate = 0
+    df_coint = df_coint[df_coint["win_rate_performance"] > 0.7]
+    
+    average_return = df_coint["examine_returns"].mean()
+    average_loss = df_coint[df_coint["examine_returns"] < 0]["examine_returns"].mean()
+    average_win_rate = df_coint["examine_win_rate"].mean()
+    
+    # if df_coint.shape[0] != 0:
+    #     win_rate = (df_coint[df_coint["examine_returns"] > 0].shape[0] / df_coint.shape[0])
+    # else: win_rate = 0
 
-    if df_coint[df_coint["one_time_returns"] > 0].shape[0] > 0:
-        tradeable_num = df_coint[df_coint["one_time_returns"] > 0].shape[0]
+    if df_coint[df_coint["examine_returns"] > 0].shape[0] > 0:
+        tradeable_num = df_coint[df_coint["examine_returns"] > 0].shape[0]
     else: tradeable_num = 0
-    return average_return, win_rate, average_loss, tradeable_num
+    return average_return, average_win_rate, average_loss, tradeable_num
 
 
 
 def main():
     tradeable_symbols = get_tradeable_symbols_dynamic()
-    store_price_history_static(tradeable_symbols, "30m")
+    for interval in SET_INTERVALS:
+        store_price_history_static(tradeable_symbols, interval)
     print("price saved")
+    
     result_list = []
+    
     for interval in SET_INTERVALS:
         for trainning_period in SET_TRAINNING_PERIODS:
             for z_score_window in SET_Z_SCORE_WINDOW:
                 for z_score_threshod in SET_TRIGGER_Z_SCORE_THRESHOD:
                     df_coint = test_parameters(interval, trainning_period, z_score_window, z_score_threshod)
                     average_return, win_rate, average_loss, tradeable_num = get_trainning_result(df_coint)
+                    
+                    print(average_return, win_rate, average_loss, tradeable_num)
                     temp_dict = {"interval":interval, "trainning_period": trainning_period, "z_score_window": z_score_window,
                                 "z_score_threshod": z_score_threshod, "test_average_returns": average_return, "test_win_rate":win_rate,
                                 "test_ave_loss": average_loss, "tradeable_num": tradeable_num}

@@ -70,3 +70,13 @@
 2023-08-02 11:53:46,813 - log_little_shark_v_2_1 - INFO - Get trading pairs based on dynamic hedge-ratio backtesting
 2023-08-02 11:53:46,827 - log_little_shark_v_2_1 - INFO - Filtering trading pairs based on dynamic hedge-ratio backtesting
 2023-08-02 11:53:46,828 - log_little_shark_v_2_1 - CRITICAL - Tradable symbols found TOMOUSDT and 1000SHIBUSDT
+2023-08-03 01:09:10,750 - log_little_shark_v_2_1 - CRITICAL - Starting to select parameters for trading
+2023-08-03 01:09:10,750 - log_little_shark_v_2_1 - INFO - Getting tradable symbols from Binance.
+2023-08-03 01:09:42,186 - log_little_shark_v_2_1 - INFO - 41 pairs found
+2023-08-03 01:09:42,188 - log_little_shark_v_2_1 - INFO - Getting price history with different intervals
+2023-08-03 01:10:01,479 - log_little_shark_v_2_1 - INFO - 41 items stored, 0items not stored
+2023-08-03 01:10:01,526 - log_little_shark_v_2_1 - INFO - Prices saved successfully.
+2023-08-03 01:10:25,434 - log_little_shark_v_2_1 - INFO - 41 items stored, 0items not stored
+2023-08-03 01:10:25,467 - log_little_shark_v_2_1 - INFO - Prices saved successfully.
+2023-08-03 01:10:51,387 - log_little_shark_v_2_1 - INFO - 41 items stored, 0items not stored
+2023-08-03 01:10:51,436 - log_little_shark_v_2_1 - INFO - Prices saved successfully.

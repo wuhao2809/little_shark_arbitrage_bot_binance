@@ -200,8 +200,8 @@ def get_cointegrated_pairs(prices, num_wave=0) -> str:
             series_2 = prices[sym_2]
             
             # Get recent NUM_LIMITS prices.
-            series_1_coint_test = prices[sym_1][Z_SCORE_WINDOW:]
-            series_2_coint_test = prices[sym_2][Z_SCORE_WINDOW:]
+            series_1_coint_test = series_1[- NUM_INTERVAL_LIMIT:]
+            series_2_coint_test = series_2[- NUM_INTERVAL_LIMIT:]
 
             # Check for cointegration and add cointegrated pair
             coint_flag, p_value, hedge_ratio, initial_intercept = calculate_cointegration_static(series_1_coint_test, series_2_coint_test)
@@ -209,8 +209,10 @@ def get_cointegrated_pairs(prices, num_wave=0) -> str:
 
             
             if (coint_flag == 1) and (hedge_ratio > 0):
-                trade_oppotunities, cumulative_returns, win_rate, recent_trade_qty, recent_z_score, peak_loss, std = calculate_pairs_trading_result(series_1,
-                                                                                                                                              series_2,
+                series_1_train_test = series_1[-(NUM_INTERVAL_LIMIT + Z_SCORE_WINDOW):]
+                series_2_train_test = series_2[-(NUM_INTERVAL_LIMIT + Z_SCORE_WINDOW):]
+                trade_oppotunities, cumulative_returns, win_rate, recent_trade_qty, recent_z_score, peak_loss, std = calculate_pairs_trading_result(series_1_train_test,
+                                                                                                                                              series_2_train_test,
                                                                                                                                               hedge_ratio,
                                                                                                                                               Z_SCORE_WINDOW)
                 min_trading_qty_symbol_1 = binance_get_min_trading_qty(sym_1)
@@ -380,22 +382,23 @@ def get_cointegrated_pairs_dynamic(prices, df_coint_static, num_wave=0):
         series_2 = prices[sym_2_list[i]]
         
         
-        # Get recent prices for spread test, the length should be 3 times the z-score window
-        series_1_spread_test = series_1[len(series_1) - (3 * Z_SCORE_WINDOW):]
-        series_2_spread_test = series_2[len(series_2) - (3 * Z_SCORE_WINDOW):]
+        # Get recent prices for spread test, the length should be BACKTEST_INTERVAL + 3 * Z_SCORE_WINDOW
+        series_1_spread_test = series_1[- (BACKTEST_INTERVAL + 3 * Z_SCORE_WINDOW):]
+        series_2_spread_test = series_2[- (BACKTEST_INTERVAL + 3 * Z_SCORE_WINDOW):]
 
-        # derive the dynamic_hedge_ratio_spread length is 2 * z_score_window
+        # derive the dynamic_hedge_ratio_spread length is 2 * z_score_window + BACKTEST_INTERVAL
         spread_list, hedge_ratio_list = calculate_spread_hedge_ratio_window(series_1_spread_test, series_2_spread_test, Z_SCORE_WINDOW)
         
         # derive the dynamic_z_score list, length is z_score_window
         z_score_list = calculate_z_score_window(spread_list, Z_SCORE_WINDOW)
-        z_score_list = z_score_list[len(z_score_list) - (BACKTEST_INTERVAL):]
-        spread_list = spread_list[len(spread_list) - (BACKTEST_INTERVAL):]
-        hedge_ratio_list = hedge_ratio_list[len(hedge_ratio_list) - (BACKTEST_INTERVAL):]
+        z_score_list = z_score_list[-(BACKTEST_INTERVAL):]
+        
+        spread_list = spread_list[-(BACKTEST_INTERVAL):]
+        hedge_ratio_list = hedge_ratio_list[-(BACKTEST_INTERVAL):]
         
         # Get recent prices for backtesting, the length should be equal to z-score window
-        series_1_backtest = series_1[len(series_1) - (BACKTEST_INTERVAL):]
-        series_2_backtest = series_2[len(series_2) - (BACKTEST_INTERVAL):]
+        series_1_backtest = series_1[ -(BACKTEST_INTERVAL):]
+        series_2_backtest = series_2[ -(BACKTEST_INTERVAL):]
         
         # backtesting the result for 50 intervals
         trade_oppotunities, cumulative_return, win_rate, expected_return, peak_loss = get_backtesting_properties_dynamic(series_1_backtest, series_2_backtest, hedge_ratio_list, z_score_list)

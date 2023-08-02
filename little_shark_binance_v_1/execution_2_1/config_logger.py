@@ -10,9 +10,9 @@ def config_logging():
     logger = logging.getLogger('log_little_shark_v_2_1')
     logger.setLevel(logging.INFO)
     
-    google_client = google.cloud.logging.Client()
-    google_handler = CloudLoggingHandler(google_client)
-    google.cloud.logging.handlers.setup_logging(google_handler)
+    # google_client = google.cloud.logging.Client()
+    # google_handler = CloudLoggingHandler(google_client)
+    # google.cloud.logging.handlers.setup_logging(google_handler)
 
     fh = logging.FileHandler('log_little_shark.log')
     fh.setLevel(logging.INFO)
@@ -29,7 +29,7 @@ def config_logging():
     logger.addHandler(fh)
     logger.addHandler(ch)
     
-    logger.addHandler(google_handler)
+    # logger.addHandler(google_handler)
 
     return logger
 
