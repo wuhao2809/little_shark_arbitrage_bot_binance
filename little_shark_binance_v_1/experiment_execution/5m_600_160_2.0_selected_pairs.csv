@@ -1,0 +1,3 @@
+,sym_1,sym_2,hedge_ratio,std,p_value,trade_oppotunities_performance,cumulative_returns_performance,win_rate_performance,peak_loss_performace,recent_z_score,examine_trade_oppotunities,examine_returns,examine_win_rate,examine_peak_loss
+1,APTUSDT,XLMUSDT,18.764515199634108,0.028724112442522882,0.006474121298426258,1,6.7432179278474225,1.0,-4.162102438160845,-0.5974753559720991,0,0.0,0.0,0.0
+3,LINAUSDT,FILUSDT,0.004361361439635892,0.00018864159210902167,0.02102219039828169,1,6.592623987900936,1.0,0.0,0.07886266805218,1,18.188486383516395,1.0,-4.223347316017406

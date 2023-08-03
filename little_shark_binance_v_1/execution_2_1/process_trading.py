@@ -7,6 +7,35 @@ import datetime
 import time
 
 def process_trading(symbol_1: str, symbol_2: str, original_z_score: float, num_wave: int):
+    """
+    Process the trading wave for a given pair of symbols.
+
+    This function follows a step-by-step process to execute the trading wave for a specified pair of symbols.
+    It checks the trading status, enters the market, waits for trading opportunities, and closes the positions
+    when appropriate. The function also plots the reference graph for the trading pair.
+
+    Parameters:
+        symbol_1 (str): The first trading symbol in the pair.
+        symbol_2 (str): The second trading symbol in the pair.
+        original_z_score (float): The Z-score at the start of the trading wave.
+        num_wave (int): The number of the trading wave.
+
+    Returns:
+        tuple: A tuple containing the total invested value and the exit Z-score for the trading wave.
+
+    Note:
+        - The function expects the configuration parameters to be set before execution.
+        - It uses external functions for checking trading status, opening and closing positions,
+          waiting for trading opportunities, and getting dynamic Z-score and hedge ratio.
+        - The function logs the execution progress using the configured logger.
+        - The function may enter a loop until the trading wave is complete, based on trading opportunities.
+          The limit time for the wave is calculated based on the configuration parameters and the
+          initial start time.
+          Make sure to set a reasonable value for the TRADING_TIME_LIMIT_INTERVALS parameter in the config file.
+        - The function also plots the reference graph using the plot_reference_trading function from
+          the plot_trading_pair module.
+    """
+    
     # Initialization
     start_time = datetime.datetime.now()
     

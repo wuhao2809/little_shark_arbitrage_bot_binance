@@ -11,17 +11,21 @@ import json
 
 
 # Set config
-SET_INTERVALS = ["5m", "15m", "30m"]
+SET_INTERVALS = ["5m", "15m", "30m", "1h"]
 
-SET_TRAINNING_PERIODS = [200, 300, 400, 500, 600, 800]
+# SET_TRAINNING_PERIODS = [200, 300, 400, 500, 600, 800]
+# SET_Z_SCORE_WINDOW = [20, 40, 60, 80, 120, 160, 200]
+# SET_TRIGGER_Z_SCORE_THRESHOD = [0.8, 1.2, 1.6, 2.0]
+
+SET_TRAINNING_PERIODS = [200, 300, 400, 600]
 SET_Z_SCORE_WINDOW = [20, 40, 60, 80, 120, 160, 200]
-SET_TRIGGER_Z_SCORE_THRESHOD = [0.8, 1.2, 1.6]
-TRADING_TIMES_THRESHOD = 50
+SET_TRIGGER_Z_SCORE_THRESHOD = [0.8, 1.2, 1.6, 2.0]
+TRADING_TIMES_THRESHOD = 5
 
 ONBOARD_TIME_THRESHOD = datetime.datetime(2023, 1, 6)
 TRADING_VOLUME_THRESHOD_RATE = 1 / 150
 
-INVESTIBLE_CAPITAL_EACH_TIME = 200
+INVESTIBLE_CAPITAL_EACH_TIME = 400
 
 TRADING_FEE_RATE = 0.0004
 
@@ -611,10 +615,19 @@ def test_parameters(interval, trainning_period, z_score_window, z_score_threshod
         return df_coint
 
 def get_trainning_result(df_coint: pd.DataFrame):
+    # pick the best pair
     df_coint = df_coint[df_coint["cumulative_returns_performance"] > 0].head(10)
-    df_coint = df_coint[abs(df_coint["peak_loss_performace"]) < 0.25 * INVESTIBLE_CAPITAL_EACH_TIME]
+    df_coint = df_coint[abs(df_coint["peak_loss_performace"]) < 0.12 * INVESTIBLE_CAPITAL_EACH_TIME * TRADING_TIMES_THRESHOD]
     df_coint = df_coint[df_coint["win_rate_performance"] > 0.7]
     
+    # pick smallest 2/3 based on peak loss
+    df_coint = df_coint.sort_values("peak_loss_performace", ascending=True).head(int(df_coint.shape[0] * (2/3)) + 1)
+    # pick top 2/3 based on win rate
+    df_coint = df_coint.sort_values("win_rate_performance", ascending=False).head(int(df_coint.shape[0] * (2/3)) + 1)
+    # pick top 2/3 based on trade oppotunities
+    df_coint = df_coint.sort_values("trade_oppotunities_performance", ascending=False).head(int(df_coint.shape[0] * (2/3)) + 1)
+
+    # examine the trading pair
     average_return = df_coint["examine_returns"].mean()
     average_loss = df_coint[df_coint["examine_returns"] < 0]["examine_returns"].mean()
     average_win_rate = df_coint["examine_win_rate"].mean()
@@ -626,7 +639,7 @@ def get_trainning_result(df_coint: pd.DataFrame):
     if df_coint[df_coint["examine_returns"] > 0].shape[0] > 0:
         tradeable_num = df_coint[df_coint["examine_returns"] > 0].shape[0]
     else: tradeable_num = 0
-    return average_return, average_win_rate, average_loss, tradeable_num
+    return average_return, average_win_rate, average_loss, tradeable_num, df_coint
 
 
 
@@ -643,12 +656,13 @@ def main():
             for z_score_window in SET_Z_SCORE_WINDOW:
                 for z_score_threshod in SET_TRIGGER_Z_SCORE_THRESHOD:
                     df_coint = test_parameters(interval, trainning_period, z_score_window, z_score_threshod)
-                    average_return, win_rate, average_loss, tradeable_num = get_trainning_result(df_coint)
+                    average_return, win_rate, average_loss, tradeable_num, selected_pairs_pd = get_trainning_result(df_coint)
                     
-                    print(average_return, win_rate, average_loss, tradeable_num)
+                    # print(average_return, win_rate, average_loss, tradeable_num)
                     temp_dict = {"interval":interval, "trainning_period": trainning_period, "z_score_window": z_score_window,
                                 "z_score_threshod": z_score_threshod, "test_average_returns": average_return, "test_win_rate":win_rate,
                                 "test_ave_loss": average_loss, "tradeable_num": tradeable_num}
+                    selected_pairs_pd.to_csv(f"{interval}_{trainning_period}_{z_score_window}_{z_score_threshod}_selected_pairs.csv")
                     result_list.append(temp_dict)
                     df_result = pd.DataFrame(result_list)
                     df_result.to_csv("analysis.csv")

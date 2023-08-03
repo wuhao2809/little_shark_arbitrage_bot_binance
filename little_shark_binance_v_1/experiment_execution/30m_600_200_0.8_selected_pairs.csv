@@ -1,0 +1,3 @@
+,sym_1,sym_2,hedge_ratio,std,p_value,trade_oppotunities_performance,cumulative_returns_performance,win_rate_performance,peak_loss_performace,recent_z_score,examine_trade_oppotunities,examine_returns,examine_win_rate,examine_peak_loss
+23,DYDXUSDT,MATICUSDT,1.80572291842254,0.040148031021525726,0.028706162379052075,1,10.286018645778169,1.0,-1.860540437951359,-1.450985139840044,0,0.0,0.0,-10.356528155097251
+1,LTCUSDT,ETCUSDT,5.550691689035824,1.1963382316388314,0.022328226965033997,1,17.080549201914582,1.0,0.0,-0.21264287513982397,0,0.0,0.0,-10.70260033502055

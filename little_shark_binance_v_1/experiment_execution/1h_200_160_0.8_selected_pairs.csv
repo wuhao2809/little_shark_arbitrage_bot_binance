@@ -1,0 +1,3 @@
+,sym_1,sym_2,hedge_ratio,std,p_value,trade_oppotunities_performance,cumulative_returns_performance,win_rate_performance,peak_loss_performace,recent_z_score,examine_trade_oppotunities,examine_returns,examine_win_rate,examine_peak_loss
+14,DYDXUSDT,SUSHIUSDT,1.0535886867904767,0.04370693629354898,0.022296195506495267,1,1.7905467350609847,1.0,-80.6408542706099,-1.6182411342008771,0,0.0,0.0,-21.838979803562747
+27,ETCUSDT,ADAUSDT,55.86998684627338,0.2173451683809148,0.005349424691145291,1,2.9468806565003094,1.0,-1.4859197292474704,0.3643991558579207,0,0.0,0.0,-14.934897401356274

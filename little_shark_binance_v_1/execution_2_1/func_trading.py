@@ -34,6 +34,16 @@ def get_current_z_score_dynamic(symbol_1: str, symbol_2: str):
     return float(current_z_score)
 
 def get_current_hedge_ratio_dynamic(symbol_1: str, symbol_2: str):
+    """
+    Calculates the current hedge ratio for a pair of symbols based on recent close prices.
+    
+    Parameters:
+        symbol_1 (str): The first symbol of the pair.
+        symbol_2 (str): The second symbol of the pair.
+    
+    Returns:
+        float: The current hedge ratio for the symbol pair.
+    """
     series_1 = binance_get_recent_close_price(symbol=symbol_1, interval=INTERVAL, limit=Z_SCORE_WINDOW * 2)
     series_2 = binance_get_recent_close_price(symbol=symbol_2, interval=INTERVAL, limit=Z_SCORE_WINDOW * 2)
     
@@ -87,7 +97,7 @@ def check_trading_status(symbol_1, symbol_2, original_z_score, limit_end_trading
         return "exit"
     
     # check z score
-    if check_differnet_signal(original_z_score, current_z_score:=get_current_z_score_dynamic(symbol_1, symbol_2)) and (total_unrealized_profit > 0):
+    if check_differnet_signal(original_z_score, current_z_score:=get_current_z_score_dynamic(symbol_1, symbol_2)):
         logger.info(f"Z score crossed. Current z score is {current_z_score}, original_z_score is {original_z_score}.")
         return "exit"
     logger.info(f"Current z-score is {current_z_score}")
@@ -110,7 +120,7 @@ def check_trading_status(symbol_1, symbol_2, original_z_score, limit_end_trading
         return "wait"
     
     # ENTER
-    if abs(current_z_score) > TRIGGER_Z_SCORE_THRESHOD:
+    if (abs(current_z_score) > TRIGGER_Z_SCORE_THRESHOD) and (abs(current_z_score + original_z_score) == abs(current_z_score) + abs(original_z_score)):
         return "enter"
     
     return "wait"
@@ -159,7 +169,14 @@ def wait_trade_oppotunity(symbol_1: str, symbol_2: str, original_z_score: float)
         
 # print(process_wait_trade_oppotunity("XRPUSDT", "EOSUSDT", 1, -1))
 def close_position_limit_order(symbol: str, qty: float, position_direction: str):
+    """
+    Closes a position using a limit order.
     
+    Args:
+        symbol (str): The trading symbol.
+        qty (float): The quantity to be closed.
+        position_direction (str): The direction of the position ("LONG" or "SHORT").
+    """
     if position_direction == "LONG":
         order_direction = "SHORT"
         price = get_order_book_best_price(symbol, order_direction)
@@ -175,7 +192,15 @@ def close_position_limit_order(symbol: str, qty: float, position_direction: str)
         raise KeyError("No such direction when conducting close_position_limit_order")
 
 def open_position_limit_order(symbol: str, qty: float, price: float, order_direction: str):
+    """
+    Opens a position using a limit order.
     
+    Args:
+        symbol (str): The trading symbol.
+        qty (float): The quantity to be opened.
+        price (float): The price at which the order will be placed.
+        order_direction (str): The direction of the order ("LONG" or "SHORT").
+    """
     if order_direction == "LONG":
         place_limit_order(symbol=symbol, qty=qty, price=price, direction="BUY")
     
@@ -188,7 +213,14 @@ def open_position_limit_order(symbol: str, qty: float, price: float, order_direc
 
 
 def close_position_market_order(symbol: str, qty: float, position_direction: str):
+    """
+    Closes a position using a market order.
     
+    Args:
+        symbol (str): The trading symbol.
+        qty (float): The quantity to be closed.
+        position_direction (str): The direction of the position ("LONG" or "SHORT").
+    """
     if position_direction == "LONG":
         place_market_order(symbol=symbol, qty=qty, direction="SELL", reduceOnly="TRUE")
     
@@ -200,7 +232,14 @@ def close_position_market_order(symbol: str, qty: float, position_direction: str
         raise KeyError("No such direction when conducting close_position_market_order")
 
 def open_position_market_order(symbol: str, qty: float, order_direction: str):
+    """
+    Opens a position using a market order.
     
+    Args:
+        symbol (str): The trading symbol.
+        qty (float): The quantity to be opened.
+        order_direction (str): The direction of the order ("LONG" or "SHORT").
+    """
     if order_direction == "LONG":
         place_market_order(symbol=symbol, qty=qty, direction="BUY")
     
@@ -212,6 +251,9 @@ def open_position_market_order(symbol: str, qty: float, order_direction: str):
         raise KeyError("No such direction when conducting open_position_market_order")
 
 def close_all_positions_limit_dynamic():
+    """
+    Closes all positions using limit orders.
+    """
     positions = get_current_positions_dynamic()
     
     if len(positions) == 0:
@@ -231,7 +273,9 @@ def close_all_positions_limit_dynamic():
 # cancel_all_orders_dynamic()
 
 def close_all_positions_market_dynamic():
-    
+    """
+    Closes all positions using market orders.
+    """
     positions = get_current_positions_dynamic()
     
     if len(positions) == 0:
@@ -248,7 +292,9 @@ def close_all_positions_market_dynamic():
         close_position_market_order(symbol=symbol, qty=qty, position_direction=position_side)
 
 def close_all_positions_dynamic():
-    
+    """
+    Closes all positions dynamically using a combination of limit and market orders.
+    """
     # cancel all orders
     cancel_all_orders_dynamic()
     
@@ -290,6 +336,15 @@ def close_all_positions_dynamic():
 # print(get_order_book_best_price("BCHUSDT", "SHORT"))
 
 def get_float_precision(num: float):
+    """
+    Gets the precision of a floating-point number.
+    
+    Args:
+        num (float): The floating-point number.
+    
+    Returns:
+        int: The precision of the number.
+    """
     if num % 1 != 0:
         str_num = str(num)
         return int(str_num[::-1].find("."))
@@ -298,6 +353,7 @@ def get_float_precision(num: float):
         
 # NOTE: Currently not used
 def quick_open_positions(symbol_1: str, symbol_2: str, hedge_ratio: float, original_z_score: float):
+
     # get the direction for each symbol
     if original_z_score < 0:
         symbol_1_order_direction = "LONG"
@@ -363,6 +419,15 @@ def quick_open_positions(symbol_1: str, symbol_2: str, hedge_ratio: float, origi
 # quick_open_positions("BCHUSDT", "LTCUSDT", 0.1, -1)
 
 def match_open_position_qty_market(symbol_1, symbol_2, hedge_ratio, original_z_score):
+    """
+    Matches the open position quantities for a symbol pair using market orders.
+    
+    Args:
+        symbol_1 (str): The first symbol in the trading pair.
+        symbol_2 (str): The second symbol in the trading pair.
+        hedge_ratio (float): The hedge ratio between the symbols.
+        original_z_score (float): The original z-score for the pair.
+    """
     if original_z_score < 0:
         symbol_1_order_direction = "LONG"
         symbol_2_order_direction = "SHORT"
@@ -400,6 +465,15 @@ def match_open_position_qty_market(symbol_1, symbol_2, hedge_ratio, original_z_s
     
 
 def quick_open_positions_market(symbol_1: str, symbol_2: str, hedge_ratio: float, original_z_score: float):
+    """
+    Quickly opens positions for a symbol pair using market orders.
+    
+    Args:
+        symbol_1 (str): The first symbol in the trading pair.
+        symbol_2 (str): The second symbol in the trading pair.
+        hedge_ratio (float): The hedge ratio between the symbols.
+        original_z_score (float): The original z-score for the pair.
+    """
     # get the direction for each symbol
     
     # In the market order case, when you go long, you are buying the ask price.

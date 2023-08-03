@@ -1,0 +1,3 @@
+,sym_1,sym_2,hedge_ratio,std,p_value,trade_oppotunities_performance,cumulative_returns_performance,win_rate_performance,peak_loss_performace,recent_z_score,examine_trade_oppotunities,examine_returns,examine_win_rate,examine_peak_loss
+18,MASKUSDT,SOLUSDT,0.05364674536006428,0.04221576030336368,0.002192022250175068,1,5.3015158855379125,1.0,-4.9382740059045265,-0.814291299483183,0,0.0,0.0,0.0
+12,MASKUSDT,XRPUSDT,3.7550298388991843,0.03883869545721279,0.0029566651308742782,1,0.5667663702981098,1.0,-0.74861965045831,0.17107997373028516,0,0.0,0.0,-6.503482850515137

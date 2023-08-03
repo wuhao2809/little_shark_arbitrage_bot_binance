@@ -21,3 +21,4 @@
 2023-08-03 03:09:02,669 - log_little_shark_v_2_1 - INFO - 41 pairs found
 2023-08-03 03:09:02,671 - log_little_shark_v_2_1 - INFO - Deriving recent price, with the interval of 5m and num of interval limit 300
 2023-08-03 03:09:16,011 - log_little_shark_v_2_1 - INFO - 0 items stored, 41items not stored
+2023-08-03 22:57:21,018 - log_little_shark_v_2_1 - INFO - test

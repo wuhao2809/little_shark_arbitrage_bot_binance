@@ -6,6 +6,14 @@ import matplotlib.pyplot as plt
 import json
 
 def plot_reference(sym_1, sym_2, num_wave=0):
+    """
+    Plot the price, spread, and Z-score of two given symbols against each other.
+
+    Parameters:
+        sym_1 (str): The first trading symbol.
+        sym_2 (str): The second trading symbol.
+        num_wave (int, optional): The number of waves (used for saving the graph with a unique name). Default is 0.
+    """
     with open(f"{INTERVAL}_price_list.json", "r")as price_data:
         data = json.load(price_data)
         price_symbol_1 = data[sym_1]
@@ -52,7 +60,14 @@ def plot_reference(sym_1, sym_2, num_wave=0):
 
 
 def plot_reference_trading(symbol_1, symbol_2, num_wave=0):
+    """
+    Plot the price, spread, and Z-score of two given symbols against each other for trading data.
 
+    Parameters:
+        symbol_1 (str): The first trading symbol.
+        symbol_2 (str): The second trading symbol.
+        num_wave (int, optional): The number of waves (used for saving the graph with a unique name). Default is 0.
+    """
     price_symbol_1 = binance_get_recent_close_price(symbol_1, INTERVAL, 3 * Z_SCORE_WINDOW + BACKTEST_INTERVAL)
     price_symbol_2 = binance_get_recent_close_price(symbol_2, INTERVAL, 3 * Z_SCORE_WINDOW + BACKTEST_INTERVAL)
     

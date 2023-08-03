@@ -26,10 +26,11 @@ def calculate_zscore_static(spread: list) -> list:
 
 def calculate_z_score_window(spread: list, window: int) -> list:
     """
-    Calculates the Z-Score of a given spread.
+    Calculates the Z-Score of a given spread using a rolling window.
 
     Args:
         spread (list): A list of values representing the spread.
+        window (int): The size of the rolling window.
 
     Returns:
         list: A list containing the Z-Score values.
@@ -88,25 +89,17 @@ def calculate_std_spread(spread: list):
 def calculate_cointegration_static(series_1, series_2):
     """
     Calculate the cointegration between two series and return cointegration flag,
-    hedge ratio, and initial intercept.
+    p-value, hedge ratio, and initial intercept.
 
     Args:
         series_1 (array like): First series for cointegration analysis.
         series_2 (array like): Second series for cointegration analysis.
 
     Returns:
-        tuple: A tuple containing cointegration flag, hedge ratio, and initial intercept.
-
-    Notes:
-        - The series should have the same length.
-        - Cointegration tests the long-term relationship between two time series.
-        - The cointegration flag indicates if the two series are cointegrated.
-        - The hedge ratio represents the relationship between the two series.
-        - The initial intercept is the intercept of the linear regression model.
+        tuple: A tuple containing cointegration flag, p-value, hedge ratio, and initial intercept.
 
     Raises:
         ValueError: If the input series have different lengths.
-
     """
     
     coint_flag = 0
@@ -129,24 +122,14 @@ def calculate_cointegration_static(series_1, series_2):
 # Calculate co-integration
 def check_cointegration_quick(symbol_1: str, symbol_2: str):
     """
-    Calculate the cointegration between two series and return cointegration flag,
-    hedge ratio, and initial intercept.
+    Check if two trading pairs have cointegration.
 
     Args:
-        series_1 (array like): First series for cointegration analysis.
-        series_2 (array like): Second series for cointegration analysis.
+        symbol_1 (str): The first trading pair symbol.
+        symbol_2 (str): The second trading pair symbol.
 
     Returns:
-        True or False
-
-    Notes:
-        - The series should have the same length.
-        - Cointegration tests the long-term relationship between two time series.
-        - The cointegration flag indicates if the two series are cointegrated.
-
-    Raises:
-        ValueError: If the input series have different lengths.
-
+        bool: True if cointegrated, False otherwise.
     """
     series_1 = binance_get_recent_close_price(symbol_1, INTERVAL, NUM_INTERVAL_LIMIT)
     series_2 = binance_get_recent_close_price(symbol_2, INTERVAL, NUM_INTERVAL_LIMIT)

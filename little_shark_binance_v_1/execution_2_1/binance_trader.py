@@ -38,7 +38,12 @@ def get_order_book_best_price(symbol: str, direction: str):
 
 """EXIT"""
 def get_all_order_symbols_dynamic():
-    """Get all the symbols with an open order in Binance"""
+    """
+    Get all the symbols with an open order in Binance.
+
+    Returns:
+        list: A list of symbols with open orders.
+    """
     symbol_list = []
     orders = session_private.get_orders()
     for order in orders:
@@ -63,6 +68,16 @@ def cancel_all_orders_dynamic():
 
 
 def place_limit_order(symbol: str, qty: float, price: float, direction: str, reduceOnly="False"):
+    """
+    Places a limit order on Binance.
+
+    Args:
+        symbol (str): The trading pair symbol.
+        qty (float): The quantity of the asset to trade.
+        price (float): The limit price for the order.
+        direction (str): The direction of the order, either "buy"/"LONG" or "sell"/"SHORT".
+        reduceOnly (str, optional): Whether the order is reduce-only. Defaults to "False".
+    """
     response = session_private.new_order(
         symbol=symbol,
         side=direction,
@@ -76,6 +91,15 @@ def place_limit_order(symbol: str, qty: float, price: float, direction: str, red
 
 
 def place_market_order(symbol: str, qty: float, direction: str, reduceOnly="False"):
+    """
+    Places a market order on Binance.
+
+    Args:
+        symbol (str): The trading pair symbol.
+        qty (float): The quantity of the asset to trade.
+        direction (str): The direction of the order, either "buy"/"LONG" or "sell"/"SHORT".
+        reduceOnly (str, optional): Whether the order is reduce-only. Defaults to "False".
+    """
     response = session_private.new_order(
         symbol=symbol,
         side=direction,
@@ -86,18 +110,16 @@ def place_market_order(symbol: str, qty: float, direction: str, reduceOnly="Fals
     logger.info(response)
 
 def set_leverage(symbol: str, leverage: int):
+    """
+    Sets the leverage for a trading pair on Binance.
+
+    Args:
+        symbol (str): The trading pair symbol.
+        leverage (int): The leverage value to set.
+    """
     response = session_private.change_leverage(
         symbol=symbol,
         leverage=leverage,
         recvWindow=5000,
     )
     logger.info(response)
-
-
-
-
-    
-    
-        
-    
-    

@@ -1,0 +1,3 @@
+,sym_1,sym_2,hedge_ratio,std,p_value,trade_oppotunities_performance,cumulative_returns_performance,win_rate_performance,peak_loss_performace,recent_z_score,examine_trade_oppotunities,examine_returns,examine_win_rate,examine_peak_loss
+6,CELOUSDT,COMPUSDT,0.0011010204392784377,0.010861488354997175,0.02757845779939141,1,52.965400850142984,1.0,-66.29223679576616,5.419694236470076,0,0.0,0.0,-13.825705428894942
+4,CELOUSDT,SNXUSDT,0.07493932381349358,0.0134648783359821,0.02163936830064644,1,70.59312115028546,1.0,-37.69692589870169,5.53220837965452,0,0.0,0.0,0.0

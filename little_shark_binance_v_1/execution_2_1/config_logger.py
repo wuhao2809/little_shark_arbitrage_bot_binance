@@ -34,6 +34,7 @@ def config_logging():
     return logger
 
 logger = config_logging()
+logger.info("test")
 
 
         

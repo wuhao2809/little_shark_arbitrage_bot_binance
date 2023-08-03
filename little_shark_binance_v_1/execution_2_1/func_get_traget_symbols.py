@@ -1,6 +1,6 @@
 """This is the file used to store all the functions related to get target symbols"""
 
-from config import ONBOARD_TIME_THRESHOD, TRADING_VOLUME_THRESHOD_RATE, INTERVAL, NUM_INTERVAL_LIMIT, TRIGGER_Z_SCORE_THRESHOD, Z_SCORE_WINDOW, TRADING_TIMES_THRESHOD, INVESTIBLE_CAPITAL_EACH_TIME, TRADING_FEE_RATE, WIN_RATE_THRESHOD, EXTREME_VALUE_MEAN_RATE_THRESHOD, STOP_LOSS_RATIO, LEVERAGE, BACKTEST_INTERVAL
+from config import ONBOARD_TIME_THRESHOD, TRADING_VOLUME_THRESHOD_RATE, INTERVAL, NUM_INTERVAL_LIMIT, TRIGGER_Z_SCORE_THRESHOD, Z_SCORE_WINDOW, TRADING_TIMES_THRESHOD, INVESTIBLE_CAPITAL_EACH_TIME, TRADING_FEE_RATE, WIN_RATE_THRESHOD, EXTREME_VALUE_MEAN_RATE_THRESHOD, STOP_LOSS_RATIO, LEVERAGE, BACKTEST_INTERVAL, WIN_RATE_THRESHOD_DYNAMIC
 from binance_market_observer import binance_get_exchange_symbols, binance_get_24h_trading_volume_usdt, binance_get_recent_close_price, binance_get_latest_price, binance_get_min_trading_qty
 from time_binance import transform_timestamp_to_datetime
 from func_calculation_static import calculate_cointegration_static, calculate_spread_static, calculate_z_score_window, calculate_std_spread, calculate_spread_hedge_ratio_window
@@ -12,18 +12,14 @@ import time
 
 # get all the tradeable symbols from binance
 def get_tradeable_symbols_dynamic() -> list:
-    """Get tradeable symbols from the Binance, and return the list of 
-    symbols and the number of tradeable pairs
+    """
+    Get tradeable symbols from Binance and return the list of symbols and the number of tradeable pairs.
     
-    Only trade on USDT
-    Only trade the coins that are on board for a certain time period
-
-    Args:
-       None
+    Only trade on USDT.
+    Only trade the coins that are onboard for a certain time period.
 
     Returns:
-        sym_list(list): the list contains all the tradeable symbols
-        count(int): the size of the list
+        sym_list (list): The list contains all the tradeable symbols.
     """
     count = 0
     sym_list = []
@@ -56,7 +52,7 @@ def store_price_history_static(symbols: list) -> str:
         symbols (list): List of symbols for which price history needs to be stored.
 
     Returns:
-        str: Filename of the stored data.
+        filename (str): Filename of the stored data.
     """
     
     # Get prices and store in DataFrame
@@ -80,9 +76,35 @@ def store_price_history_static(symbols: list) -> str:
     return filename
 
 def check_differnet_signal(a,b):
+    """
+    Check if the two values have different signs.
+
+    Args:
+        a, b: Numeric values to check for different signs.
+
+    Returns:
+        bool: True if the two values have different signs, False otherwise.
+    """
     return abs(a + b) != abs(a) + abs(b)
 
 def get_backtesting_properties(series_1: list, series_2: list, hedge_ratio: float, zscore_series: list):
+    """
+    Calculate backtesting properties for the given series and z-score values.
+
+    Args:
+        series_1 (list): Time series data for the first symbol.
+        series_2 (list): Time series data for the second symbol.
+        hedge_ratio (float): The hedge ratio between the two symbols.
+        zscore_series (list): The z-score values.
+
+    Returns:
+        tuple: A tuple containing the following properties:
+        - trade_oppotunities (int): Number of trade opportunities found during backtesting.
+        - cumulative_return (float): Cumulative returns from all trades during backtesting.
+        - win_rate (float): Win rate of trades during backtesting.
+        - recent_trade_qty (float): Recent trade quantity based on investible capital and latest prices.
+        - peak_loss (float): The minimum revenue observed during the trade.
+    """
     trade_oppotunities = 0
     last_value = 0.00
     enter_market_signal = False
@@ -165,7 +187,25 @@ def get_backtesting_properties(series_1: list, series_2: list, hedge_ratio: floa
     
 
 def calculate_pairs_trading_result(series_1, series_2, hedge_ratio: float, num_window: int) -> tuple:
-    
+    """
+    Calculate pairs trading results for the given series and hedge ratio.
+
+    Args:
+        series_1 (list): Time series data for the first symbol.
+        series_2 (list): Time series data for the second symbol.
+        hedge_ratio (float): The hedge ratio between the two symbols.
+        num_window (int): The window size for calculating spread and z-score.
+
+    Returns:
+        tuple: A tuple containing the following results:
+        - trade_oppotunities (int): Number of trade opportunities found during backtesting.
+        - cumulative_return (float): Cumulative returns from all trades during backtesting.
+        - win_rate (float): Win rate of trades during backtesting.
+        - recent_trade_qty (float): Recent trade quantity based on investible capital and latest prices.
+        - recent_z_score (float): The z-score value of the most recent interval.
+        - peak_loss (float): The minimum revenue observed during the trade.
+        - std (float): Standard deviation of the spread.
+    """
     spread = calculate_spread_static(series_1, series_2, hedge_ratio)
     zscore_series = calculate_z_score_window(spread, window=num_window)
     std = calculate_std_spread(spread)
@@ -178,13 +218,35 @@ def calculate_pairs_trading_result(series_1, series_2, hedge_ratio: float, num_w
     return trade_oppotunities, cumulative_return, win_rate, recent_trade_qty, recent_z_score, peak_loss, std
 
 def get_trade_qty_each_time(symbol_1: str, symbol_2: str, hedge_ratio):
+    """
+    Calculate the estimated trade quantity for each symbol based on investible capital and latest prices.
+
+    Args:
+        symbol_1 (str): Symbol of the first asset.
+        symbol_2 (str): Symbol of the second asset.
+        hedge_ratio (float): The hedge ratio between the two symbols.
+
+    Returns:
+        tuple: A tuple containing the estimated trade quantity for each symbol:
+        - estimated_trade_qty_symbol_1 (float): Estimated trade quantity for the first symbol.
+        - estimated_trade_qty_symbol_2 (float): Estimated trade quantity for the second symbol.
+    """
     estimated_trade_qty_symbol_1 = INVESTIBLE_CAPITAL_EACH_TIME / (binance_get_latest_price(symbol_1) + hedge_ratio * binance_get_latest_price(symbol_2))
     estimated_trade_qty_symbol_2 = (estimated_trade_qty_symbol_1 * hedge_ratio)
     
     return estimated_trade_qty_symbol_1, estimated_trade_qty_symbol_2
     
 def get_cointegrated_pairs(prices, num_wave=0) -> str:
+    """
+    Find cointegrated pairs from the given prices and backtest them.
 
+    Args:
+        prices: Dictionary containing price series for different symbols.
+        num_wave (int): Wave number for categorizing backtesting results.
+
+    Returns:
+        str: Filename of the stored backtesting results.
+    """
     # Loop through coins and check for co-integration
     coint_pair_list = []
     
@@ -259,6 +321,15 @@ def get_cointegrated_pairs(prices, num_wave=0) -> str:
     return df_coint
 
 def choose_best_trading_pair_static(df_coint: pd.DataFrame) ->pd.DataFrame:
+    """
+    Choose the best trading pairs from the static backtesting results.
+
+    Args:
+        df_coint (pd.DataFrame): DataFrame containing static backtesting results.
+
+    Returns:
+        pd.DataFrame: DataFrame containing the best trading pairs based on defined criteria.
+    """
     # filter out pairs based on min_trading_value
     df_coint = df_coint.loc[df_coint["estimated_trade_qty_symbol_1"] > df_coint["min_trading_qty_symbol_1"]]
     df_coint = df_coint.loc[df_coint["estimated_trade_qty_symbol_2"] > df_coint["min_trading_qty_symbol_2"]]
@@ -286,6 +357,18 @@ def choose_best_trading_pair_static(df_coint: pd.DataFrame) ->pd.DataFrame:
 """V2: Dynamic hedge-ratio backtesting"""
 
 def get_backtesting_properties_dynamic(series_1: list, series_2: list, hedge_ratio_list: list, zscore_series: list):
+    """
+    Calculate backtesting properties for a dynamic hedge-ratio pairs trading strategy.
+
+    Args:
+        series_1 (list): Time series data for the first symbol.
+        series_2 (list): Time series data for the second symbol.
+        hedge_ratio_list (list): List of dynamic hedge ratios.
+        zscore_series (list): Z-score series calculated from the spread of the two symbols.
+
+    Returns:
+        tuple: Trade opportunities, cumulative return, win rate, expected return, peak loss.
+    """
     trade_oppotunities = 0
     last_value = 0.00
     enter_market_signal = False
@@ -368,7 +451,17 @@ def get_backtesting_properties_dynamic(series_1: list, series_2: list, hedge_rat
     return trade_oppotunities, cumulative_return, win_rate, expected_return, peak_loss
 
 def get_cointegrated_pairs_dynamic(prices, df_coint_static, num_wave=0):
-    
+    """
+    Find and analyze cointegrated pairs for dynamic hedge-ratio pairs trading strategy.
+
+    Args:
+        prices: Dictionary containing time series data for different symbols.
+        df_coint_static (pd.DataFrame): DataFrame containing cointegration analysis results for static strategy.
+        num_wave (int, optional): Wave number for labeling results.
+
+    Returns:
+        pd.DataFrame: DataFrame containing cointegration analysis results for dynamic strategy.
+    """
     result_list = []
 
     # Loop through coins and check for co-integration
@@ -435,6 +528,15 @@ def get_cointegrated_pairs_dynamic(prices, df_coint_static, num_wave=0):
     return df_coint
 
 def choose_best_trading_pair_dynamic(df_coint: pd.DataFrame) ->pd.DataFrame:
+    """
+    Choose the best trading pair based on dynamic hedge-ratio pairs trading strategy.
+
+    Args:
+        df_coint (pd.DataFrame): DataFrame containing cointegration analysis results for dynamic strategy.
+
+    Returns:
+        tuple: True if a suitable trading pair is found, False otherwise. If True, also returns the symbols of the best trading pair.
+    """
     # choose positive returns
     df_coint = df_coint[df_coint["backtest_returns"] > 0]
     
@@ -442,10 +544,15 @@ def choose_best_trading_pair_dynamic(df_coint: pd.DataFrame) ->pd.DataFrame:
     df_coint = df_coint[df_coint["backtest_peak_loss"] > -INVESTIBLE_CAPITAL_EACH_TIME * TRADING_TIMES_THRESHOD * STOP_LOSS_RATIO]
     
     # choose win rate
-    df_coint = df_coint[df_coint["backtest_win_rate"] >= WIN_RATE_THRESHOD]
+    df_coint = df_coint[df_coint["backtest_win_rate"] >= WIN_RATE_THRESHOD_DYNAMIC]
     
-    # rank trading oppotunities
-    df_coint = df_coint.sort_values("backtest_trading_oppotunities", ascending=False)
+        # pick smallest 2/3 based on peak loss
+    df_coint = df_coint.sort_values("backtest_peak_loss", ascending=True).head(int(df_coint.shape[0] * (2/3)) + 1)
+    # pick top 2/3 based on win rate
+    df_coint = df_coint.sort_values("backtest_win_rate", ascending=False).head(int(df_coint.shape[0] * (2/3)) + 1)
+    # pick top 2/3 based on trade oppotunities
+    df_coint = df_coint.sort_values("backtest_trading_oppotunities", ascending=False).head(int(df_coint.shape[0] * (2/3)) + 1)
+
 
     # choose the one with a tradeable z-score
     for i in range(df_coint.shape[0]):
@@ -455,5 +562,5 @@ def choose_best_trading_pair_dynamic(df_coint: pd.DataFrame) ->pd.DataFrame:
             return True, symbol_1, symbol_2
     
     return False, 0, 0
-    
+
     
