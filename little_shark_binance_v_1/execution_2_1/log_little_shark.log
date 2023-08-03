@@ -206,3 +206,15 @@
 2023-08-03 03:29:33,611 - log_little_shark_v_2_1 - INFO - Get trading pairs based on dynamic hedge-ratio backtesting
 2023-08-03 03:29:33,660 - log_little_shark_v_2_1 - INFO - Filtering trading pairs based on dynamic hedge-ratio backtesting
 2023-08-03 03:29:33,660 - log_little_shark_v_2_1 - CRITICAL - Tradable symbols found FILUSDT and CRVUSDT
+2023-08-03 23:14:36,079 - log_little_shark_v_2_1 - INFO - test
+2023-08-03 23:14:36,857 - log_little_shark_v_2_1 - INFO - Getting tradable symbols from Binance.
+2023-08-03 23:15:25,696 - log_little_shark_v_2_1 - INFO - 48 pairs found
+2023-08-03 23:15:25,699 - log_little_shark_v_2_1 - INFO - Deriving recent price, with the interval of 15m and num of interval limit 200
+2023-08-03 23:15:51,986 - log_little_shark_v_2_1 - INFO - 48 items stored, 0items not stored
+2023-08-03 23:15:52,015 - log_little_shark_v_2_1 - INFO - Prices saved successfully.
+2023-08-03 23:15:52,016 - log_little_shark_v_2_1 - INFO - Obtaining co-integrated pairs
+2023-08-03 23:16:37,004 - log_little_shark_v_2_1 - INFO - Obtaining co-integrated pairs complete.
+2023-08-03 23:16:37,005 - log_little_shark_v_2_1 - INFO - Filtering trading pairs based on static hedge-ratio backtesting
+2023-08-03 23:16:37,009 - log_little_shark_v_2_1 - INFO - Get trading pairs based on dynamic hedge-ratio backtesting
+2023-08-03 23:16:37,057 - log_little_shark_v_2_1 - INFO - Filtering trading pairs based on dynamic hedge-ratio backtesting
+2023-08-03 23:16:37,058 - log_little_shark_v_2_1 - CRITICAL - Tradable symbols NOT found. Wait for 60s and search again
