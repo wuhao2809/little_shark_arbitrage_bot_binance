@@ -339,8 +339,8 @@ def choose_best_trading_pair_static(df_coint: pd.DataFrame) ->pd.DataFrame:
     # filter based on win rate
     df_coint = df_coint[df_coint["win_rate"] >= WIN_RATE_THRESHOD]
     
-    # filter the top 1/3 based on returns
-    df_coint = df_coint.sort_values("estimated_returns", ascending=False).head(int(df_coint.shape[0]/3))
+    # filter the top 1/2 based on returns
+    df_coint = df_coint.sort_values("estimated_returns", ascending=False).head(int(df_coint.shape[0]/2))
     
     
     # filter out pairs have a high loss during the trade
@@ -349,7 +349,6 @@ def choose_best_trading_pair_static(df_coint: pd.DataFrame) ->pd.DataFrame:
     
     # rank them based on returns
     df_coint = df_coint.sort_values("estimated_returns", ascending=False)
-    
     
     # return the pandaDataframe
     return df_coint
@@ -515,16 +514,6 @@ def get_cointegrated_pairs_dynamic(prices, df_coint_static, num_wave=0):
     # choose positive returns
     df_coint = df_coint[df_coint["backtest_returns"] > 0]
     
-    # choose stable loss
-    df_coint = df_coint[df_coint["backtest_peak_loss"] > -INVESTIBLE_CAPITAL_EACH_TIME * TRADING_TIMES_THRESHOD * STOP_LOSS_RATIO]
-    
-    # choose win rate
-    df_coint = df_coint[df_coint["backtest_win_rate"] >= WIN_RATE_THRESHOD]
-    
-    # rank trading oppotunities
-    df_coint = df_coint.sort_values("backtest_trading_oppotunities", ascending=False)
-    
-    
     return df_coint
 
 def choose_best_trading_pair_dynamic(df_coint: pd.DataFrame) ->pd.DataFrame:
@@ -537,16 +526,16 @@ def choose_best_trading_pair_dynamic(df_coint: pd.DataFrame) ->pd.DataFrame:
     Returns:
         tuple: True if a suitable trading pair is found, False otherwise. If True, also returns the symbols of the best trading pair.
     """
-    # choose positive returns
+    # select positive returns
     df_coint = df_coint[df_coint["backtest_returns"] > 0]
     
-    # choose stable loss
+    # select stable loss
     df_coint = df_coint[df_coint["backtest_peak_loss"] > -INVESTIBLE_CAPITAL_EACH_TIME * TRADING_TIMES_THRESHOD * STOP_LOSS_RATIO]
     
-    # choose win rate
+    # select win rate
     df_coint = df_coint[df_coint["backtest_win_rate"] >= WIN_RATE_THRESHOD_DYNAMIC]
     
-        # pick smallest 2/3 based on peak loss
+    # pick smallest 2/3 based on peak loss
     df_coint = df_coint.sort_values("backtest_peak_loss", ascending=True).head(int(df_coint.shape[0] * (2/3)) + 1)
     # pick top 2/3 based on win rate
     df_coint = df_coint.sort_values("backtest_win_rate", ascending=False).head(int(df_coint.shape[0] * (2/3)) + 1)

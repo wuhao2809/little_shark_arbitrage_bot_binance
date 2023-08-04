@@ -105,9 +105,9 @@ elif mode == "real":
 
     TRADING_VOLUME_THRESHOD_RATE = (1 / 200) # trading volume threshod, representeed as percentage of BTCUSDT 24h trading volume in USDT
 
-    WAIT_SEARCH_BEST_PAIR = 60
+    WAIT_SEARCH_BEST_PAIR = 120
     
-    WIN_RATE_THRESHOD = 0.88
+    WIN_RATE_THRESHOD = 0.85
     WIN_RATE_THRESHOD_DYNAMIC = 0.7
     
     TRADING_FEE_RATE = 0.0004
