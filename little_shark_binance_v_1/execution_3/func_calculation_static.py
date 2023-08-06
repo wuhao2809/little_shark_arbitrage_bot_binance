@@ -46,7 +46,7 @@ def calculate_z_score_window(spread: list, window: int) -> list:
     
     z_score_list = z_score[0].tolist()
 
-    return z_score_list
+    return z_score_list[window-1:]
 
 # test
 # random_normal = np.random.normal(0, 0.1, 100)
@@ -173,7 +173,7 @@ def calculate_spread_hedge_ratio_window(series_1: list, series_2: list, window: 
     
     spread = pd.Series(series_1) - (pd.Series(series_2) * hedge_ratio)
     spread[:window-1] = 0
-    return spread.tolist(), hedge_ratio
+    return spread.tolist()[window-1:], hedge_ratio[window-1:]
 # test
 # a = np.random.normal(0.1,0.1, 50)
 # b = np.random.normal(2,0.1, 50)

@@ -1,0 +1,6 @@
+{
+    "trainning_period": 200,
+    "spread_window": 20,
+    "z_score_window": 40,
+    "z_score_threshod": 1.6
+}
