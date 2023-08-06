@@ -74,4 +74,4 @@ def process_get_target_symbols_dynamic(num_wave:int) -> tuple:
             logger.critical(f"Tradable symbols NOT found. Wait for {WAIT_SEARCH_BEST_PAIR}s and search again")
             time.sleep(WAIT_SEARCH_BEST_PAIR)
 
-print(process_get_target_symbols_dynamic(0))
+# print(process_get_target_symbols_dynamic(0))
