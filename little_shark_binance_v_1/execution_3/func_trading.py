@@ -463,7 +463,6 @@ def match_open_position_qty_market(symbol_1, symbol_2, hedge_ratio, original_z_s
     cancel_all_orders_dynamic()
     
 # print(get_current_position_qty("BTCUSDT"))
-    
 
 def quick_open_positions_market(symbol_1: str, symbol_2: str, hedge_ratio: float, original_z_score: float):
     """
@@ -508,14 +507,15 @@ def quick_open_positions_market(symbol_1: str, symbol_2: str, hedge_ratio: float
     
     cancel_all_orders_dynamic()
     # place market order for the rest
-    if symbol_1_qty > symbol_1_min_qty:
+    if (symbol_1_qty > symbol_1_min_qty) and (symbol_2_qty > symbol_2_min_qty):
         logger.info(f"Placing market open order for {symbol_1}")
         open_position_market_order(symbol_1, symbol_1_qty, symbol_1_order_direction)
-        
-    if symbol_2_qty > symbol_2_min_qty:
+    
         logger.info(f"Placing market open order for {symbol_2}")
         open_position_market_order(symbol_2, symbol_2_qty, symbol_2_order_direction)
-    time.sleep(SECONDS_WAIT_MARKET_OPEN)
+        time.sleep(SECONDS_WAIT_MARKET_OPEN)
+    else:
+        logger.critical(f"Cannot place market order, the qty of sym1 and sym2 don't exceed the min.")
     cancel_all_orders_dynamic()
     
     # NOTE

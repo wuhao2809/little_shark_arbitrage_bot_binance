@@ -57,7 +57,7 @@ def process_trading(symbol_1: str, symbol_2: str, original_z_score: float, num_w
         # wait for trading oppotunities
         if trading_flag == "wait":
             trading_flag = wait_trade_oppotunity(symbol_1, symbol_2, original_z_score)
-        
+
         # close the positions
         if trading_flag == "exit":
             _, _, symbol_1_invested_value, _, _, symbol_2_invested_value = get_current_positions_info(symbol_1, symbol_2)

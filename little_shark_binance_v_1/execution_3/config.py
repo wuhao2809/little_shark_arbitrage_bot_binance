@@ -97,9 +97,10 @@ elif mode == "real":
         SPREAD_WINDOW = parameters_data["spread_window"]
         Z_SCORE_WINDOW = parameters_data["z_score_window"]
         TRIGGER_Z_SCORE_THRESHOD = parameters_data["z_score_threshod"]
+        ACCOUNT_BALANCE_INVESTABLE = int(parameters_data["current_balance"]) * 0.8
     
     
-    ACCOUNT_BALANCE_INVESTABLE = 500
+    # ACCOUNT_BALANCE_INVESTABLE = 500
     TOTAL_INVESTABLE_VALUE = ACCOUNT_BALANCE_INVESTABLE * LEVERAGE * 0.9
     INVESTIBLE_CAPITAL_EACH_TIME = TOTAL_INVESTABLE_VALUE / TRADING_TIMES_THRESHOD
 

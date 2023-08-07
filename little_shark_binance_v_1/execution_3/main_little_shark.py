@@ -50,6 +50,8 @@ def main():
             if status == "Selecting Parameters":
                 logger.critical(f"Starting to select best parameters for wave {num_wave}")
                 process_get_parameters()
+                # update status
+                status = "Searching Trading Pairs"
             
             # Step 1: Find the best trading pairs
             if status == "Searching Trading Pairs":

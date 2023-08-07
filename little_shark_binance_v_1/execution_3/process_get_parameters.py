@@ -14,10 +14,11 @@ from config_logger import logger
 from func_get_traget_symbols import get_tradeable_symbols_dynamic, get_trade_qty_each_time, check_differnet_signal
 from func_calculation_static import calculate_cointegration_static, calculate_spread_hedge_ratio_window, calculate_z_score_window, calculate_std_spread, calculate_spread_static, calculate_zscore_static
 from binance_market_observer import binance_get_24h_trading_volume_usdt, binance_get_exchange_symbols, binance_get_recent_close_price, binance_get_latest_price
+from binance_account_observer import get_current_balance_USDT_dynamic
 from time_binance import transform_timestamp_to_datetime
 
 # Set config
-SET_INTERVALS = ["15m"]
+SET_INTERVALS = ["15m", "30m"]
 
 # SET_TRAINNING_PERIODS = [200, 300, 400, 500, 600, 800]
 # SET_Z_SCORE_WINDOW = [20, 40, 60, 80, 120, 160, 200]
@@ -396,8 +397,10 @@ def select_parameters(df: pd.DataFrame):
     spread_window = int(df["spread_window"].values[0])
     z_score_window = int(df["z_score_window"].values[0])
     z_score_threshod = float(df["z_score_threshod"].values[0])
+    current_balance = get_current_balance_USDT_dynamic()
     
-    dict = {"trainning_period": trainning_period, "spread_window": spread_window, "z_score_window": z_score_window, "z_score_threshod": z_score_threshod}
+    dict = {"trainning_period": trainning_period, "spread_window": spread_window, "z_score_window": z_score_window, "z_score_threshod": z_score_threshod,
+            "current_balance": current_balance}
     logger.critical(f"Parameters found, {dict}")
     with open ("parameters.json", "w") as json_file:
         json.dump(dict, json_file, indent=4)

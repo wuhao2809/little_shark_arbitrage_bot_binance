@@ -34,14 +34,13 @@ def process_get_target_symbols_dynamic(num_wave:int) -> tuple:
         # STEP 1: Get all the tradable symbols
         logger.info("Getting tradable symbols from Binance.")
         tradeable_symbols = get_tradeable_symbols_dynamic()
-        
+
         # STEP 2: Store the prices in Json
         logger.info(f"Deriving recent price, with the interval of {INTERVAL} and num of interval limit {NUM_INTERVAL_LIMIT}")
-        
+
         # Get the price data used for trainning, the number of data would be NUM_INTERVAL_LIMIT +Z_SCORE_WINDOW
         price_filename = store_price_history_static(tradeable_symbols)
 
-            
         # STEP 3: Get cointegrated pairs and rank them
         logger.info("Obtaining co-integrated pairs")
         with open(f"{price_filename}") as json_file:
@@ -51,10 +50,9 @@ def process_get_target_symbols_dynamic(num_wave:int) -> tuple:
         logger.info("Obtaining co-integrated pairs complete.")
 
         # Step 4: Filtering trading pairs based on static hedge-ratio backtesting
-        df_coint = pd.read_csv("0_static_backtesting_cointegrated_pairs.csv")
         logger.info("Filtering trading pairs based on static hedge-ratio backtesting")
         df_coint_static = choose_best_trading_pair_static(df_coint)
-        
+
         # Step 5: Filtering trading pairs based on dynamic hedge-ratio backtesting
         logger.info("Get trading pairs based on dynamic hedge-ratio backtesting")
         df_coint_dynamic = get_cointegrated_pairs_dynamic(price_data, df_coint_static, num_wave)
