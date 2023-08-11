@@ -435,6 +435,6 @@ def process_get_parameters():
     analysis_result = pd.read_csv("parameters_result_list.csv")
     result = select_parameters(analysis_result)
 
-# process_get_parameters()
+process_get_parameters()
     
 

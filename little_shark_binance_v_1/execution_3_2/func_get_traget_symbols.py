@@ -1,6 +1,6 @@
 """This is the file used to store all the functions related to get target symbols"""
 
-from config import ONBOARD_TIME_THRESHOD, TRADING_VOLUME_THRESHOD_RATE, INTERVAL, NUM_INTERVAL_LIMIT, TRIGGER_Z_SCORE_THRESHOD, Z_SCORE_WINDOW, TRADING_TIMES_THRESHOD, INVESTIBLE_CAPITAL_EACH_TIME, TRADING_FEE_RATE, WIN_RATE_THRESHOD, EXTREME_VALUE_MEAN_RATE_THRESHOD, STOP_LOSS_RATIO, LEVERAGE, BACKTEST_INTERVAL, WIN_RATE_THRESHOD_DYNAMIC, SPREAD_WINDOW
+from config import ONBOARD_TIME_THRESHOD, TRADING_VOLUME_THRESHOD_RATE, INTERVAL, NUM_INTERVAL_LIMIT, TRIGGER_Z_SCORE_THRESHOD, Z_SCORE_WINDOW, TRADING_TIMES_THRESHOD, INVESTIBLE_CAPITAL_EACH_TIME, TRADING_FEE_RATE, WIN_RATE_THRESHOD, EXTREME_VALUE_MEAN_RATE_THRESHOD, STOP_LOSS_RATIO, LEVERAGE, BACKTEST_INTERVAL, WIN_RATE_THRESHOD_DYNAMIC, SPREAD_WINDOW, STOP_LOSS_VALUE
 from binance_market_observer import binance_get_exchange_symbols, binance_get_24h_trading_volume_usdt, binance_get_recent_close_price, binance_get_latest_price, binance_get_min_trading_qty
 from time_binance import transform_timestamp_to_datetime
 from func_calculation_static import calculate_cointegration_static, calculate_spread_static, calculate_z_score_window, calculate_std_spread, calculate_spread_hedge_ratio_window
@@ -333,8 +333,8 @@ def choose_best_trading_pair_static(df_coint: pd.DataFrame) ->pd.DataFrame:
     # filter out pairs based on min_trading_value
     df_coint = df_coint.loc[df_coint["estimated_trade_qty_symbol_1"] > df_coint["min_trading_qty_symbol_1"]]
     df_coint = df_coint.loc[df_coint["estimated_trade_qty_symbol_2"] > df_coint["min_trading_qty_symbol_2"]]
-    df_coint = df_coint[df_coint["estimated_trade_value_symbol_1"] > 6]
-    df_coint = df_coint[df_coint["estimated_trade_value_symbol_2"] > 6]
+    df_coint = df_coint[df_coint["estimated_trade_value_symbol_1"] > 7]
+    df_coint = df_coint[df_coint["estimated_trade_value_symbol_2"] > 7]
     
     # filter based on win rate
     # UPDATE: 3_2 no need to judge the win_rate
@@ -346,7 +346,7 @@ def choose_best_trading_pair_static(df_coint: pd.DataFrame) ->pd.DataFrame:
     
     
     # filter out pairs have a high loss during the trade
-    df_coint = df_coint[df_coint["peak_loss"] > -INVESTIBLE_CAPITAL_EACH_TIME * TRADING_TIMES_THRESHOD * STOP_LOSS_RATIO]
+    df_coint = df_coint[df_coint["peak_loss"] > -STOP_LOSS_VALUE]
     
     
     # rank them based on returns
@@ -518,6 +518,7 @@ def get_cointegrated_pairs_dynamic(prices, df_coint_static, num_wave=0):
     df_coint.to_csv(filename)
     # choose positive returns
     df_coint = df_coint[df_coint["backtest_returns"] > 0]
+    df_coint.to_csv(filename)
     
     return df_coint
 
@@ -535,16 +536,16 @@ def choose_best_trading_pair_dynamic(df_coint: pd.DataFrame) ->pd.DataFrame:
     df_coint = df_coint[df_coint["backtest_returns"] > 0]
     
     # select stable loss
-    df_coint = df_coint[df_coint["backtest_peak_loss"] > -INVESTIBLE_CAPITAL_EACH_TIME * TRADING_TIMES_THRESHOD * STOP_LOSS_RATIO]
+    df_coint = df_coint[df_coint["backtest_peak_loss"] > -STOP_LOSS_VALUE]
     
     # select win rate
     df_coint = df_coint[df_coint["backtest_win_rate"] >= WIN_RATE_THRESHOD_DYNAMIC]
     
-    # pick smallest 2/3 based on peak loss
+    # pick smallest 3/4 based on peak loss
     df_coint = df_coint.sort_values("backtest_peak_loss", ascending=True).head(int(df_coint.shape[0] * (3/4)) + 1)
-    # pick top 2/3 based on win rate
+    # pick top 3/4 based on win rate
     df_coint = df_coint.sort_values("backtest_win_rate", ascending=False).head(int(df_coint.shape[0] * (3/4)) + 1)
-    # pick top 2/3 based on trade oppotunities
+    # pick top 3/4 based on trade oppotunities
     df_coint = df_coint.sort_values("backtest_trading_oppotunities", ascending=False).head(int(df_coint.shape[0] * (3/4)) + 1)
 
 

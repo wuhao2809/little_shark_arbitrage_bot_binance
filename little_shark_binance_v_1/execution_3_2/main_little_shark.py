@@ -14,9 +14,9 @@ import datetime
 
 def main():
     """
-    Little Shark v2.1 - Automated Trading Strategy Main Function.
+    Little Shark v3.2 - Automated Trading Strategy Main Function.
 
-    This function is the entry point for running the Little Shark v2.1 automated trading strategy.
+    This function is the entry point for running the Little Shark v3.2 automated trading strategy.
     It manages the process of searching for the best trading pairs, executing the trading waves, and summarizing
     the results for each wave. The function runs in a loop for a specified number of waves (WAVE_LIMIT).
 
@@ -24,9 +24,10 @@ def main():
         - The function imports necessary configurations, modules, and helper functions.
         - It initializes the logger and sets up necessary configurations before starting the trading process.
         - The trading process includes the following steps for each wave:
-            - Step 1: Searching for the best trading pairs (process_get_target_symbols_dynamic).
-            - Step 2: Executing the trading wave (process_trading).
-            - Step 3: Summarizing the results of the trading wave (process_summarize).
+            - Step 1: Searching for the best parameters based on the recent market(process_get_parameters())
+            - Step 2: Searching for the best trading pairs (process_get_target_symbols_dynamic).
+            - Step 3: Executing the trading wave (process_trading).
+            - Step 4: Summarizing the results of the trading wave (process_summarize).
         - The process may encounter errors, and it logs any exceptions that occur during the execution.
         - If an error occurs, the process waits for one minute and attempts to resume the execution.
 

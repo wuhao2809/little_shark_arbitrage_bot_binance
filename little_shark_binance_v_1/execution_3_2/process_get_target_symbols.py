@@ -30,7 +30,7 @@ def process_get_target_symbols_dynamic(num_wave:int) -> tuple:
           The WAIT_SEARCH_BEST_PAIR parameter controls the waiting time between attempts.
           Make sure to set a reasonable value for this parameter in the config file.
     """
-    for i in range(TIMES_SEARCH_BEST_PAIR):
+    for _ in range(TIMES_SEARCH_BEST_PAIR):
         # STEP 1: Get all the tradable symbols
         logger.info("Getting tradable symbols from Binance.")
         tradeable_symbols = get_tradeable_symbols_dynamic()
@@ -73,4 +73,4 @@ def process_get_target_symbols_dynamic(num_wave:int) -> tuple:
             time.sleep(WAIT_SEARCH_BEST_PAIR)
     return False, 0, 0
 
-print(process_get_target_symbols_dynamic(0))
+# print(process_get_target_symbols_dynamic(0))
