@@ -89,7 +89,7 @@ elif mode == "real":
     # NUM_INTERVAL_LIMIT = 200
     # TRIGGER_Z_SCORE_THRESHOD = 1.6
 
-    TRADING_TIMES_THRESHOD = 5
+    TRADING_TIMES_THRESHOD = 8
     
     with open ("parameters.json") as json_file:
         parameters_data = json.load(json_file)
@@ -121,9 +121,10 @@ elif mode == "real":
     # threshod for get target symbols
     ONBOARD_TIME_THRESHOD = datetime.datetime(2023, 1, 6) # the coins being traded should not be onboard later than this date
 
-    TRADING_VOLUME_THRESHOD_RATE = (1 / 100) # trading volume threshod, representeed as percentage of BTCUSDT 24h trading volume in USDT
+    TRADING_VOLUME_THRESHOD_RATE = (1 / 150) # trading volume threshod, representeed as percentage of BTCUSDT 24h trading volume in USDT
 
-    WAIT_SEARCH_BEST_PAIR = 120
+    WAIT_SEARCH_BEST_PAIR = 300
+    TIMES_SEARCH_BEST_PAIR = 5
     
     WIN_RATE_THRESHOD = 0.70
     WIN_RATE_THRESHOD_DYNAMIC = 0.7
@@ -137,7 +138,7 @@ elif mode == "real":
     TRADING_TIME_LIMIT_INTERVALS = 50
 
     TAKE_PROFIT_RATIO = 0.015 * LEVERAGE
-    STOP_LOSS_RATIO = 0.04 * LEVERAGE
+    STOP_LOSS_RATIO = 0.03 * LEVERAGE
 
     TAKE_PROFIT_VALUE = TAKE_PROFIT_RATIO * ACCOUNT_BALANCE_INVESTABLE
     STOP_LOSS_VALUE = STOP_LOSS_RATIO * ACCOUNT_BALANCE_INVESTABLE
@@ -145,6 +146,8 @@ elif mode == "real":
     INVESTED_VALUE_BIAS_RATIO = 0.90
 
     WAITING_INTERVAL = int(INTERVAL_INT * 10) + 1 # seconds to wait for the z-score cross the zero line
+    
+    NOT_INVESTING_TRADING_INTERVAL_LIMIT = 4 # The maximum number of intervals for the program to wait to have a trading oppotunities
 
     SECONDS_WAIT_LIMIT_CLOSE = 60 # seconds to wait for the closing limit order
     SECONDS_WAIT_MARKET_CLOSE = 30 # seconds to wait for the closing market order

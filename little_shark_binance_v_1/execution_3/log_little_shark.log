@@ -276,3 +276,72 @@
 2023-08-06 17:54:24,350 - log_little_shark_v_2_1 - INFO - test
 2023-08-06 17:55:18,103 - log_little_shark_v_2_1 - INFO - test
 2023-08-06 17:55:32,501 - log_little_shark_v_2_1 - INFO - test
+2023-08-07 14:24:07,781 - log_little_shark_v_2_1 - INFO - test
+2023-08-07 14:24:45,604 - log_little_shark_v_2_1 - INFO - 51 pairs found
+2023-08-07 14:25:21,736 - log_little_shark_v_2_1 - INFO - 51 items stored, 0items not stored
+2023-08-07 14:25:21,791 - log_little_shark_v_2_1 - INFO - Prices saved successfully.
+2023-08-07 14:25:26,798 - log_little_shark_v_2_1 - INFO - price saved
+2023-08-07 14:25:30,146 - log_little_shark_v_2_1 - INFO - 30m_200_20_20_1.2 has been completed
+2023-08-07 14:25:33,463 - log_little_shark_v_2_1 - INFO - 30m_200_20_20_1.6 has been completed
+2023-08-07 14:25:36,803 - log_little_shark_v_2_1 - INFO - 30m_200_20_40_1.2 has been completed
+2023-08-07 14:25:40,250 - log_little_shark_v_2_1 - INFO - 30m_200_20_40_1.6 has been completed
+2023-08-07 14:25:43,725 - log_little_shark_v_2_1 - INFO - 30m_200_20_80_1.2 has been completed
+2023-08-07 14:25:47,224 - log_little_shark_v_2_1 - INFO - 30m_200_20_80_1.6 has been completed
+2023-08-07 14:25:50,679 - log_little_shark_v_2_1 - INFO - 30m_200_20_120_1.2 has been completed
+2023-08-07 14:25:54,244 - log_little_shark_v_2_1 - INFO - 30m_200_20_120_1.6 has been completed
+2023-08-07 14:25:57,698 - log_little_shark_v_2_1 - INFO - 30m_200_40_20_1.2 has been completed
+2023-08-07 14:26:01,061 - log_little_shark_v_2_1 - INFO - 30m_200_40_20_1.6 has been completed
+2023-08-07 14:26:04,434 - log_little_shark_v_2_1 - INFO - 30m_200_40_40_1.2 has been completed
+2023-08-07 14:26:07,856 - log_little_shark_v_2_1 - INFO - 30m_200_40_40_1.6 has been completed
+2023-08-07 14:26:11,331 - log_little_shark_v_2_1 - INFO - 30m_200_40_80_1.2 has been completed
+2023-08-07 14:26:14,872 - log_little_shark_v_2_1 - INFO - 30m_200_40_80_1.6 has been completed
+2023-08-07 14:26:18,337 - log_little_shark_v_2_1 - INFO - 30m_200_40_120_1.2 has been completed
+2023-08-07 14:26:21,842 - log_little_shark_v_2_1 - INFO - 30m_200_40_120_1.6 has been completed
+2023-08-07 14:26:25,186 - log_little_shark_v_2_1 - INFO - 30m_200_80_20_1.2 has been completed
+2023-08-07 14:26:28,547 - log_little_shark_v_2_1 - INFO - 30m_200_80_20_1.6 has been completed
+2023-08-07 14:26:31,948 - log_little_shark_v_2_1 - INFO - 30m_200_80_40_1.2 has been completed
+2023-08-07 14:26:35,344 - log_little_shark_v_2_1 - INFO - 30m_200_80_40_1.6 has been completed
+2023-08-07 14:26:38,818 - log_little_shark_v_2_1 - INFO - 30m_200_80_80_1.2 has been completed
+2023-08-07 14:26:42,326 - log_little_shark_v_2_1 - INFO - 30m_200_80_80_1.6 has been completed
+2023-08-07 14:26:45,806 - log_little_shark_v_2_1 - INFO - 30m_200_80_120_1.2 has been completed
+2023-08-07 14:26:49,321 - log_little_shark_v_2_1 - INFO - 30m_200_80_120_1.6 has been completed
+2023-08-07 14:26:52,683 - log_little_shark_v_2_1 - INFO - 30m_200_120_20_1.2 has been completed
+2023-08-07 14:26:56,026 - log_little_shark_v_2_1 - INFO - 30m_200_120_20_1.6 has been completed
+2023-08-07 14:26:59,403 - log_little_shark_v_2_1 - INFO - 30m_200_120_40_1.2 has been completed
+2023-08-07 14:27:02,834 - log_little_shark_v_2_1 - INFO - 30m_200_120_40_1.6 has been completed
+2023-08-07 14:27:06,321 - log_little_shark_v_2_1 - INFO - 30m_200_120_80_1.2 has been completed
+2023-08-07 14:27:09,832 - log_little_shark_v_2_1 - INFO - 30m_200_120_80_1.6 has been completed
+2023-08-07 14:27:13,319 - log_little_shark_v_2_1 - INFO - 30m_200_120_120_1.2 has been completed
+2023-08-07 14:27:16,868 - log_little_shark_v_2_1 - INFO - 30m_200_120_120_1.6 has been completed
+2023-08-07 14:27:22,178 - log_little_shark_v_2_1 - INFO - 30m_400_20_20_1.2 has been completed
+2023-08-07 14:27:27,464 - log_little_shark_v_2_1 - INFO - 30m_400_20_20_1.6 has been completed
+2023-08-07 14:27:32,826 - log_little_shark_v_2_1 - INFO - 30m_400_20_40_1.2 has been completed
+2023-08-07 14:27:38,154 - log_little_shark_v_2_1 - INFO - 30m_400_20_40_1.6 has been completed
+2023-08-07 14:27:43,507 - log_little_shark_v_2_1 - INFO - 30m_400_20_80_1.2 has been completed
+2023-08-07 14:27:48,873 - log_little_shark_v_2_1 - INFO - 30m_400_20_80_1.6 has been completed
+2023-08-07 14:27:54,333 - log_little_shark_v_2_1 - INFO - 30m_400_20_120_1.2 has been completed
+2023-08-07 14:27:59,740 - log_little_shark_v_2_1 - INFO - 30m_400_20_120_1.6 has been completed
+2023-08-07 14:28:05,097 - log_little_shark_v_2_1 - INFO - 30m_400_40_20_1.2 has been completed
+2023-08-07 14:28:10,402 - log_little_shark_v_2_1 - INFO - 30m_400_40_20_1.6 has been completed
+2023-08-07 14:28:15,729 - log_little_shark_v_2_1 - INFO - 30m_400_40_40_1.2 has been completed
+2023-08-07 14:28:21,089 - log_little_shark_v_2_1 - INFO - 30m_400_40_40_1.6 has been completed
+2023-08-07 14:28:26,442 - log_little_shark_v_2_1 - INFO - 30m_400_40_80_1.2 has been completed
+2023-08-07 14:28:31,768 - log_little_shark_v_2_1 - INFO - 30m_400_40_80_1.6 has been completed
+2023-08-07 14:28:37,247 - log_little_shark_v_2_1 - INFO - 30m_400_40_120_1.2 has been completed
+2023-08-07 14:28:42,670 - log_little_shark_v_2_1 - INFO - 30m_400_40_120_1.6 has been completed
+2023-08-07 14:28:47,980 - log_little_shark_v_2_1 - INFO - 30m_400_80_20_1.2 has been completed
+2023-08-07 14:28:53,298 - log_little_shark_v_2_1 - INFO - 30m_400_80_20_1.6 has been completed
+2023-08-07 14:28:58,635 - log_little_shark_v_2_1 - INFO - 30m_400_80_40_1.2 has been completed
+2023-08-07 14:29:03,957 - log_little_shark_v_2_1 - INFO - 30m_400_80_40_1.6 has been completed
+2023-08-07 14:29:09,347 - log_little_shark_v_2_1 - INFO - 30m_400_80_80_1.2 has been completed
+2023-08-07 14:29:14,681 - log_little_shark_v_2_1 - INFO - 30m_400_80_80_1.6 has been completed
+2023-08-07 14:29:20,136 - log_little_shark_v_2_1 - INFO - 30m_400_80_120_1.2 has been completed
+2023-08-07 14:29:25,601 - log_little_shark_v_2_1 - INFO - 30m_400_80_120_1.6 has been completed
+2023-08-07 14:29:30,925 - log_little_shark_v_2_1 - INFO - 30m_400_120_20_1.2 has been completed
+2023-08-07 14:29:36,233 - log_little_shark_v_2_1 - INFO - 30m_400_120_20_1.6 has been completed
+2023-08-07 14:29:41,598 - log_little_shark_v_2_1 - INFO - 30m_400_120_40_1.2 has been completed
+2023-08-07 14:29:46,924 - log_little_shark_v_2_1 - INFO - 30m_400_120_40_1.6 has been completed
+2023-08-07 14:29:52,284 - log_little_shark_v_2_1 - INFO - 30m_400_120_80_1.2 has been completed
+2023-08-07 14:29:57,642 - log_little_shark_v_2_1 - INFO - 30m_400_120_80_1.6 has been completed
+2023-08-07 14:30:03,093 - log_little_shark_v_2_1 - INFO - 30m_400_120_120_1.2 has been completed
+2023-08-07 14:30:08,504 - log_little_shark_v_2_1 - INFO - 30m_400_120_120_1.6 has been completed
