@@ -1,0 +1,8 @@
+{
+    "interval": "15m",
+    "trainning_period": 200,
+    "spread_window": 20,
+    "z_score_window": 120,
+    "z_score_threshod": 1.2,
+    "current_balance": 500
+}
