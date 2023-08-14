@@ -1,6 +1,6 @@
 # Little Shark v2.1 - Automated Trading Strategy
 
-Little Shark v2.1 is an automated trading strategy built for trading cryptocurrency pairs on the Binance exchange. It leverages cointegration and dynamic hedge-ratio backtesting to identify potential trading opportunities and execute trades accordingly.
+LLittle Shark v3.3 is an advanced cryptocurrency trading system built for Binance exchange. It leverages cointegration and dynamic hedge-ratio backtesting to identify potential trading opportunities and execute trades accordingly. It is designed to optimize trading pairs, execute trades, and provide summarized trading results.
 
 ## Features
 
@@ -23,7 +23,6 @@ Little Shark v2.1 is an automated trading strategy built for trading cryptocurre
 ### Installation
 
 1. Clone the repository:
-
 
 2. Set up the configuration:
 
