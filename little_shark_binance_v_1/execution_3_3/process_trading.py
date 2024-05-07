@@ -1,4 +1,4 @@
-from config import INTERVAL_INT, TRADING_TIME_LIMIT_INTERVALS
+from config import config, TRADING_TIME_LIMIT_INTERVALS
 from config_logger import logger
 from func_trading import check_trading_status, wait_trade_oppotunity, close_all_positions_dynamic, quick_open_positions, quick_open_positions_market, get_current_z_score_dynamic, get_current_hedge_ratio_dynamic
 from binance_account_observer import get_current_positions_info
@@ -39,7 +39,7 @@ def process_trading(symbol_1: str, symbol_2: str, original_z_score: float, num_w
     # Initialization
     start_time = datetime.datetime.now()
     
-    limit_end_trading_time = start_time + datetime.timedelta(minutes=INTERVAL_INT * TRADING_TIME_LIMIT_INTERVALS)
+    limit_end_trading_time = start_time + datetime.timedelta(minutes=config.INTERVAL_INT * TRADING_TIME_LIMIT_INTERVALS)
     logger.info(f"The limit time for this wave is {limit_end_trading_time}")
     
     exit_flag = False
@@ -71,6 +71,8 @@ def process_trading(symbol_1: str, symbol_2: str, original_z_score: float, num_w
         plot_reference_trading(symbol_1, symbol_2, num_wave)
 
     return total_invested_value, exit_z_score
+
+process_trading("MATICUSDT","1000SHIBUSDT", -1.486535632476312, 1)
         
         
         

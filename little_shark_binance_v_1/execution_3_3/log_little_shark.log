@@ -1,0 +1,3 @@
+2023-08-14 19:29:01,116 - log_little_shark_v_2_1 - INFO - test
+2023-08-14 19:29:02,332 - log_little_shark_v_2_1 - INFO - The limit time for this wave is 2023-08-15 07:59:02.332120
+2023-08-14 19:29:02,332 - log_little_shark_v_2_1 - CRITICAL - Checking trading status...
