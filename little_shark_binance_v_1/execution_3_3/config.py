@@ -10,8 +10,9 @@ mode = "real"
 
 
 # API KEY REAL
-api_key = "6URzPphTVbT0xY7yb9OhC0dF76Vv5vZu5iHpKENqYj3W7QC5aRe1wXE5ojlQ24qw"
-api_secret = "ZqIaRfDuTEOzzamBoxup5VfvpW1fjhxd0WRSha5oWmQnn1kVPx9CPHj9uUqf0uMn"
+# MODIFY HERE
+api_key = ""
+api_secret = ""
 
 # API KEY TEST
 api_key_test = "299b33afbbab635571177ca956140c233e5a940477aeca80349ca9bb544c4ee4"
